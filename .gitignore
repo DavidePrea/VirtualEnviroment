@@ -1,0 +1,11 @@
+/*
+!.gitignore
+!.github
+!README.md
+!pom.xml
+!resources/
+!src/
+!javadoc/
+!deliveries/
+build
+dist

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model xmlns="http://heron.ttsnetwork.com/xml/v1" name="heron-model">
-    <variables>
-        <variable name="version" type="integer" value="1"/>
-    </variables>
-    <modules>
-    </modules>
-    <connections>
-    </connections>
+<model name="model.xml" xmlns="http://heron.ttsnetwork.com/xml/v1">
+    <variables/>
+    <modules/>
+    <connections/>
 </model>

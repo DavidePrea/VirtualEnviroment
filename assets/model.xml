@@ -1,30 +1,57 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:environment xmlns="http://binding.ttsnetwork.com/commons" xmlns:ns2="http://binding.ttsnetwork.com/xml/v7" version="1.0" id="model.xml">
-    <ns2:view>
-        <background>
-            <color1 r="0.2" g="0.4" b="0.6" a="1.0"/>
-        </background>
-        <floor visible="true" shadows="true" reflections="false" width="300000.0" height="100000.0" user-specified="true">
-            <axis>Z</axis>
-            <center lengthUnit="mm">
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-            </center>
-            <sun-position lengthUnit="mm">
-                <x>-150000.0</x>
-                <y>-50000.0</y>
-                <z>100000.0</z>
-            </sun-position>
-            <top-color r="1.0" g="1.0" b="1.0" a="0.5"/>
-            <bottom-color r="0.5" g="0.5" b="0.5" a="1.0"/>
-            <shadows-color r="0.0" g="0.0" b="0.0" a="0.2"/>
-        </floor>
-        <camera-ortho/>
-        <camera-perspective/>
-    </ns2:view>
-    <ns2:group id="root">
-        <ns2:frames/>
-        <ns2:children/>
-    </ns2:group>
-</ns2:environment>
+<?xml version="1.0" encoding="UTF-8"?>
+<environment id="model.xml" version="1.0" xmlns="http://binding.ttsnetwork.com/commons" xmlns:ns2="http://binding.ttsnetwork.com/xml/v7">
+   <ns2:view>
+      <background>
+         <color1 r="0.2" g="0.4" b="0.6" a="1.0"/>
+      </background>
+      <floor visible="true" shadows="true" reflections="false" width="3000.0" height="1000.0" user-specified="true">
+         <axis>Z</axis>
+         <center lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+         </center>
+         <sun-position lengthUnit="mm">
+            <x>-150000.0</x>
+            <y>-50000.0</y>
+            <z>100000.0</z>
+         </sun-position>
+         <top-color r="1.0" g="1.0" b="1.0" a="0.5"/>
+         <bottom-color r="0.5" g="0.5" b="0.5" a="1.0"/>
+         <shadows-color r="0.0" g="0.0" b="0.0" a="0.2"/>
+      </floor>
+      <camera-ortho/>
+      <camera-perspective/>
+   </ns2:view>
+   <ns2:group id="root">
+      <ns2:frames/>
+      <ns2:children>
+         <body id="Box1" visible="true">
+            <properties>
+               <property name="#instance.uuid" type="string">2326464e-da36-41ca-ba02-8a6733587e22</property>
+               <property name="#prototype.uuid" type="string">2dc8e763-ef58-4979-b96a-e9831432c82c</property>
+            </properties>
+            <ns2:frames/>
+            <ns2:joint type="RIGID">
+               <ns2:transform>
+                  <location lengthUnit="mm">
+                     <x>0.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </ns2:transform>
+            </ns2:joint>
+            <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+               <geometry-uri>parametrics/2326464e-da36-41ca-ba02-8a6733587e22.ptx</geometry-uri>
+            </ns2:geometry>
+            <ns2:children/>
+         </body>
+      </ns2:children>
+   </ns2:group>
+</environment>

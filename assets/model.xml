@@ -52,6 +52,32 @@
             </ns2:geometry>
             <ns2:children/>
          </body>
+         <body id="Box2" visible="true">
+            <properties>
+               <property name="#instance.uuid" type="string">a1137c04-fef4-48aa-bae0-7b82220d70cf</property>
+               <property name="#prototype.uuid" type="string">2dc8e763-ef58-4979-b96a-e9831432c82c</property>
+            </properties>
+            <ns2:frames/>
+            <ns2:joint type="RIGID">
+               <ns2:transform>
+                  <location lengthUnit="mm">
+                     <x>-773.9992414188905</x>
+                     <y>384.4866503151297</y>
+                     <z>0.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </ns2:transform>
+            </ns2:joint>
+            <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+               <geometry-uri>parametrics/a1137c04-fef4-48aa-bae0-7b82220d70cf.ptx</geometry-uri>
+            </ns2:geometry>
+            <ns2:children/>
+         </body>
       </ns2:children>
    </ns2:group>
 </environment>

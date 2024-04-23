@@ -309,25 +309,13 @@
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
-   <instance name="PS1" uuid="65418799-a3cb-4950-af5c-16dd6637d7f6" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
+   <instance name="PS1" uuid="f625cd6a-ffb9-4f83-8d6f-ae7015065f89" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
       <parameter name="creationtimeInterval" type="long" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
       <parameter name="delayInterval" type="long" value="3000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
-      </parameter>
-      <parameter name="entityLength" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity length [mm]"/>
-      </parameter>
-      <parameter name="entityWidth" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity width [mm]"/>
-      </parameter>
-      <parameter name="entityHeight" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
       <parameter name="minCreationDistance" type="double" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
@@ -348,6 +336,11 @@
       <parameter name="color" type="string" value="0x999999">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="prodPlan" type="string" value="inputSource/f625cd6a-ffb9-4f83-8d6f-ae7015065f89/PlanSource1_prodPlan.csv">
+         <property name="displayName" type="string" value="Production Plan File"/>
+         <property name="file_chooser" type="string" value="file"/>
+         <property name="file_edit" type="boolean" value="true"/>
       </parameter>
       <parameter name="infoContent" type="string" value="">
          <property name="displayName" type="string" value="HUD content (HTML)"/>
@@ -403,7 +396,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="jerkTime" type="double" value="32">
+      <parameter name="jerkTime" type="double" value="16">
          <property name="displayName" type="string" value="A change time [ms]"/>
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -461,13 +454,25 @@
          <property name="file_edit" type="boolean" value="false"/>
       </parameter>
    </instance>
-   <instance name="S1" uuid="f625cd6a-ffb9-4f83-8d6f-ae7015065f89" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
+   <instance name="S1" uuid="65418799-a3cb-4950-af5c-16dd6637d7f6" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
       <parameter name="creationtimeInterval" type="long" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
       <parameter name="delayInterval" type="long" value="3000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
+      </parameter>
+      <parameter name="entityLength" type="double" value="150">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity length [mm]"/>
+      </parameter>
+      <parameter name="entityWidth" type="double" value="150">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity width [mm]"/>
+      </parameter>
+      <parameter name="entityHeight" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
       <parameter name="minCreationDistance" type="double" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
@@ -488,11 +493,6 @@
       <parameter name="color" type="string" value="0x999999">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="prodPlan" type="string" value="inputSource/f625cd6a-ffb9-4f83-8d6f-ae7015065f89/PlanSource1_prodPlan.csv">
-         <property name="displayName" type="string" value="Production Plan File"/>
-         <property name="file_chooser" type="string" value="file"/>
-         <property name="file_edit" type="boolean" value="true"/>
       </parameter>
       <parameter name="infoContent" type="string" value="">
          <property name="displayName" type="string" value="HUD content (HTML)"/>
@@ -645,11 +645,11 @@
       <parameter name="delayInterval" type="long" value="3000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="100">
+      <parameter name="entityLength" type="double" value="200">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
-      <parameter name="entityWidth" type="double" value="100">
+      <parameter name="entityWidth" type="double" value="200">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity width [mm]"/>
       </parameter>

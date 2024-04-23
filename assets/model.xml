@@ -311,7 +311,7 @@
                      </body>
                   </ns2:children>
                </body>
-               <body id="S1" visible="true">
+               <body id="PS1" visible="true">
                   <properties>
                      <property name="#instance.uuid" type="string">f625cd6a-ffb9-4f83-8d6f-ae7015065f89</property>
                      <property name="#prototype.uuid" type="string">9240bd1e-c461-4c38-bf34-e1c1780df195</property>
@@ -376,7 +376,7 @@
                      <geometry-uri>generated/source_f625cd6a-ffb9-4f83-8d6f-ae7015065f89.ptx</geometry-uri>
                   </ns2:geometry>
                   <ns2:children>
-                     <body id="S1.entity" visible="true">
+                     <body id="PS1.entity" visible="true">
                         <properties>
                            <property name="#local.name" type="string">entity</property>
                            <property name="#instance.uuid" type="string">f625cd6a-ffb9-4f83-8d6f-ae7015065f89</property>
@@ -486,7 +486,7 @@
                      </body>
                   </ns2:children>
                </body>
-               <body id="PS1" visible="true">
+               <body id="S1" visible="true">
                   <properties>
                      <property name="#instance.uuid" type="string">65418799-a3cb-4950-af5c-16dd6637d7f6</property>
                      <property name="#prototype.uuid" type="string">afa70dcf-9016-4459-995a-69cadfff917e</property>
@@ -538,7 +538,7 @@
                      <geometry-uri>generated/source_65418799-a3cb-4950-af5c-16dd6637d7f6.ptx</geometry-uri>
                   </ns2:geometry>
                   <ns2:children>
-                     <body id="PS1.entity" visible="true">
+                     <body id="S1.entity" visible="true">
                         <properties>
                            <property name="#local.name" type="string">entity</property>
                            <property name="#instance.uuid" type="string">65418799-a3cb-4950-af5c-16dd6637d7f6</property>

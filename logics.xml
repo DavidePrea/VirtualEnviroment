@@ -2,11 +2,11 @@
 <model name="model.xml" xmlns="http://heron.ttsnetwork.com/xml/v1">
     <variables/>
     <modules>
-        <module-instance name="S1" type="com.ttsnetwork.modules.standard.PlanSource">
+        <module-instance name="PS1" type="com.ttsnetwork.modules.standard.PlanSource">
             <visual x="-1500" y="-1000"/>
-            <param name="modelName">S1</param>
+            <param name="modelName">PS1</param>
             <param name="prodPlanFileName">inputSource/f625cd6a-ffb9-4f83-8d6f-ae7015065f89/PlanSource1_prodPlan.csv</param>
-            <param name="creationFrameName">S1.creationFrame</param>
+            <param name="creationFrameName">PS1.creationFrame</param>
             <param name="marker"></param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
@@ -31,7 +31,7 @@
             <param name="rotationSpeed">360</param>
             <param name="rotationAcceleration">180</param>
             <param name="modelName">R1</param>
-            <param name="jerkTime">32</param>
+            <param name="jerkTime">16</param>
             <param name="showAllGhosts">false</param>
             <param name="script"></param>
             <param name="logicClassName"></param>
@@ -147,10 +147,10 @@
             <param name="infoContent"></param>
             <param name="automatic">true</param>
         </module-instance>
-        <module-instance name="PS1" type="com.ttsnetwork.modules.standard.ParametricSource2">
+        <module-instance name="S1" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-1500" y="1000"/>
-            <param name="modelName">PS1</param>
-            <param name="creationFrameName">PS1.creationFrame</param>
+            <param name="modelName">S1</param>
+            <param name="creationFrameName">S1.creationFrame</param>
             <param name="timeInterval">3000</param>
             <param name="minCreationDistance">100</param>
             <param name="marker"></param>
@@ -178,11 +178,11 @@
             <port-in module="D1" port="in"/>
         </connection>
         <connection>
-            <port-out module="PS1" port="out"/>
+            <port-out module="S1" port="out"/>
             <port-in module="CB" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="S1" port="out"/>
+            <port-out module="PS1" port="out"/>
             <port-in module="CC" port="flowIn"/>
         </connection>
         <connection>

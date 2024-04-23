@@ -87,15 +87,18 @@ public class PL1State extends StateMachine {
 
     public void AssmBD() {
         schedule.startSerial();
-        rob.moveLinear(driver.getFrameTransform("CD2.midPos"), VROB);
+     
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
         rob.pick(workingD.entity);
         Cd.remove(workingD);
-        rob.moveLinear(driver.getFrameTransform("CD2.midPos"), VROB);
-        rob.moveLinear(driver.getFrameTransform("CB.midPos"), VROB);
-     //   rob.moveLinear(BoxUtils.targetTop(workingB), VROB);
-        rob.move(BoxUtils.targetTop(workingB), workingD.cF, VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
+      //  rob.moveLinear(driver.getFrameTransform("CB.midPos"), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB);
+        rob.move(BoxUtils.targetTop(workingB), workingD.cF, 2300.0);
         rob.release();
+        rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB);
+        
         rob.home();
         schedule.attach(workingD.entity, workingB.entity);
         setVar(finished, true);

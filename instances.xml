@@ -1,2 +1,132 @@
 <?xml version="1.0" encoding= "UTF-8" ?>
-<instances/>
+<instances>
+   <instance name="ParametricSourceV2" uuid="959d80dc-deeb-40d3-beeb-b5e854d78676" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
+      <parameter name="creationtimeInterval" type="long" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Creation interval [ms]"/>
+      </parameter>
+      <parameter name="delayInterval" type="long" value="3000">
+         <property name="displayName" type="string" value="Initial delay [ms]"/>
+      </parameter>
+      <parameter name="entityLength" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity length [mm]"/>
+      </parameter>
+      <parameter name="entityWidth" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity width [mm]"/>
+      </parameter>
+      <parameter name="entityHeight" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity height [mm]"/>
+      </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="">
+         <property name="displayName" type="string" value="Marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="counterName" type="string" value="counter">
+         <property name="displayName" type="string" value="Counter name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="entityNamePrefix" type="string" value="E_">
+         <property name="displayName" type="string" value="Entity name prefix"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="color" type="string" value="0x999999">
+         <property name="displayName" type="string" value="Color"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="infoContent" type="string" value="">
+         <property name="displayName" type="string" value="HUD content (HTML)"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="automatic" type="boolean" value="true">
+         <property name="displayName" type="string" value="Automatic"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="baseWidth" type="double" value="500">
+         <property name="displayName" type="string" value="Base width [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseLength" type="double" value="500">
+         <property name="displayName" type="string" value="Base length [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseHeight" type="double" value="900">
+         <property name="displayName" type="string" value="Base height [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+   </instance>
+   <instance name="ParametricSourceV3" uuid="c5c20bac-d2e1-4207-bb62-354390587443" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
+      <parameter name="creationtimeInterval" type="long" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Creation interval [ms]"/>
+      </parameter>
+      <parameter name="delayInterval" type="long" value="3000">
+         <property name="displayName" type="string" value="Initial delay [ms]"/>
+      </parameter>
+      <parameter name="entityLength" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity length [mm]"/>
+      </parameter>
+      <parameter name="entityWidth" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity width [mm]"/>
+      </parameter>
+      <parameter name="entityHeight" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Entity height [mm]"/>
+      </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="">
+         <property name="displayName" type="string" value="Marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="counterName" type="string" value="counter">
+         <property name="displayName" type="string" value="Counter name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="entityNamePrefix" type="string" value="E_">
+         <property name="displayName" type="string" value="Entity name prefix"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="color" type="string" value="0x999999">
+         <property name="displayName" type="string" value="Color"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="infoContent" type="string" value="">
+         <property name="displayName" type="string" value="HUD content (HTML)"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="automatic" type="boolean" value="true">
+         <property name="displayName" type="string" value="Automatic"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="baseWidth" type="double" value="500">
+         <property name="displayName" type="string" value="Base width [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseLength" type="double" value="500">
+         <property name="displayName" type="string" value="Base length [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseHeight" type="double" value="900">
+         <property name="displayName" type="string" value="Base height [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+   </instance>
+   <instance name="ProgrammableLogics1" uuid="36ef34ee-8206-418e-a34d-2bef9b998571" version="1" prototype="ffb20cba-6216-40c1-81f5-4d18313ca199">
+      <parameter name="plClass" type="string" value="my.company.PL1">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Logics class"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+</instances>

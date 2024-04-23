@@ -25,6 +25,234 @@
    </ns2:view>
    <ns2:group id="root">
       <ns2:frames/>
-      <ns2:children/>
+      <ns2:children>
+         <group id="ProgrammableLogics1">
+            <properties>
+               <property name="#instance.uuid" type="string">36ef34ee-8206-418e-a34d-2bef9b998571</property>
+               <property name="#prototype.uuid" type="string">ffb20cba-6216-40c1-81f5-4d18313ca199</property>
+            </properties>
+            <ns2:frames/>
+            <ns2:joint type="RIGID">
+               <ns2:transform>
+                  <location lengthUnit="mm">
+                     <x>292.7255354684319</x>
+                     <y>347.06191843746217</y>
+                     <z>21.349671285843925</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </ns2:transform>
+            </ns2:joint>
+            <ns2:children>
+               <body id="ProgrammableLogics1.pl_geom" visible="true">
+                  <properties>
+                     <property name="#local.name" type="string">pl_geom</property>
+                     <property name="#instance.uuid" type="string">36ef34ee-8206-418e-a34d-2bef9b998571</property>
+                     <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                  </properties>
+                  <ns2:frames>
+                     <frame name="control">
+                        <location lengthUnit="mm">
+                           <x>0.0</x>
+                           <y>0.0</y>
+                           <z>300.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>0.0</x>
+                           <y>-1.0</y>
+                           <z>0.0</z>
+                           <w>90.0</w>
+                        </orientation>
+                     </frame>
+                  </ns2:frames>
+                  <ns2:joint type="RIGID">
+                     <ns2:transform>
+                        <location lengthUnit="mm">
+                           <x>0.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>1.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                           <w>0.0</w>
+                        </orientation>
+                     </ns2:transform>
+                  </ns2:joint>
+                  <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                     <geometry-uri>generated/pl_36ef34ee-8206-418e-a34d-2bef9b998571.ptx</geometry-uri>
+                  </ns2:geometry>
+                  <ns2:children/>
+               </body>
+            </ns2:children>
+         </group>
+         <body id="ParametricSourceV2" visible="true">
+            <properties>
+               <property name="#instance.uuid" type="string">959d80dc-deeb-40d3-beeb-b5e854d78676</property>
+               <property name="#prototype.uuid" type="string">afa70dcf-9016-4459-995a-69cadfff917e</property>
+            </properties>
+            <ns2:frames>
+               <frame name="creationFrame">
+                  <location lengthUnit="mm">
+                     <x>0.0</x>
+                     <y>0.0</y>
+                     <z>900.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </frame>
+               <frame name="commandsFrame">
+                  <location lengthUnit="mm">
+                     <x>-250.0</x>
+                     <y>0.0</y>
+                     <z>900.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </frame>
+            </ns2:frames>
+            <ns2:joint type="RIGID">
+               <ns2:transform>
+                  <location lengthUnit="mm">
+                     <x>514.3737887337948</x>
+                     <y>-86.41241523763347</y>
+                     <z>0.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </ns2:transform>
+            </ns2:joint>
+            <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+               <geometry-uri>generated/source_959d80dc-deeb-40d3-beeb-b5e854d78676.ptx</geometry-uri>
+            </ns2:geometry>
+            <ns2:children>
+               <body id="ParametricSourceV2.entity" visible="true">
+                  <properties>
+                     <property name="#local.name" type="string">entity</property>
+                     <property name="#instance.uuid" type="string">959d80dc-deeb-40d3-beeb-b5e854d78676</property>
+                     <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                  </properties>
+                  <ns2:frames/>
+                  <ns2:joint type="RIGID">
+                     <ns2:transform>
+                        <location lengthUnit="mm">
+                           <x>0.0</x>
+                           <y>0.0</y>
+                           <z>900.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>1.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                           <w>0.0</w>
+                        </orientation>
+                     </ns2:transform>
+                  </ns2:joint>
+                  <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                     <geometry-uri>generated/source_959d80dc-deeb-40d3-beeb-b5e854d78676_entity.ptx</geometry-uri>
+                  </ns2:geometry>
+                  <ns2:children/>
+               </body>
+            </ns2:children>
+         </body>
+         <body id="ParametricSourceV3" visible="true">
+            <properties>
+               <property name="#instance.uuid" type="string">c5c20bac-d2e1-4207-bb62-354390587443</property>
+               <property name="#prototype.uuid" type="string">afa70dcf-9016-4459-995a-69cadfff917e</property>
+            </properties>
+            <ns2:frames>
+               <frame name="creationFrame">
+                  <location lengthUnit="mm">
+                     <x>0.0</x>
+                     <y>0.0</y>
+                     <z>900.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </frame>
+               <frame name="commandsFrame">
+                  <location lengthUnit="mm">
+                     <x>-250.0</x>
+                     <y>0.0</y>
+                     <z>900.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </frame>
+            </ns2:frames>
+            <ns2:joint type="RIGID">
+               <ns2:transform>
+                  <location lengthUnit="mm">
+                     <x>1055.7220022296901</x>
+                     <y>-96.45173142758449</y>
+                     <z>0.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
+                  </orientation>
+               </ns2:transform>
+            </ns2:joint>
+            <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+               <geometry-uri>generated/source_c5c20bac-d2e1-4207-bb62-354390587443.ptx</geometry-uri>
+            </ns2:geometry>
+            <ns2:children>
+               <body id="ParametricSourceV3.entity" visible="true">
+                  <properties>
+                     <property name="#local.name" type="string">entity</property>
+                     <property name="#instance.uuid" type="string">c5c20bac-d2e1-4207-bb62-354390587443</property>
+                     <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                  </properties>
+                  <ns2:frames/>
+                  <ns2:joint type="RIGID">
+                     <ns2:transform>
+                        <location lengthUnit="mm">
+                           <x>0.0</x>
+                           <y>0.0</y>
+                           <z>900.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>1.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                           <w>0.0</w>
+                        </orientation>
+                     </ns2:transform>
+                  </ns2:joint>
+                  <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                     <geometry-uri>generated/source_c5c20bac-d2e1-4207-bb62-354390587443_entity.ptx</geometry-uri>
+                  </ns2:geometry>
+                  <ns2:children/>
+               </body>
+            </ns2:children>
+         </body>
+      </ns2:children>
    </ns2:group>
 </environment>

@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="model.xml" xmlns="http://heron.ttsnetwork.com/xml/v1">
     <variables/>
-    <modules/>
+    <modules>
+        <module-instance name="ParametricSourceV2" type="com.ttsnetwork.modules.standard.ParametricSource2">
+            <visual x="514" y="-86"/>
+            <param name="modelName">ParametricSourceV2</param>
+            <param name="creationFrameName">ParametricSourceV2.creationFrame</param>
+            <param name="timeInterval">3000</param>
+            <param name="minCreationDistance">100</param>
+            <param name="marker"></param>
+            <param name="counterName">counter</param>
+            <param name="entityNamePrefix">E_</param>
+            <param name="delayInterval">3000</param>
+            <param name="infoContent"></param>
+            <param name="automatic">true</param>
+        </module-instance>
+        <module-instance name="ParametricSourceV3" type="com.ttsnetwork.modules.standard.ParametricSource2">
+            <visual x="1056" y="-96"/>
+            <param name="modelName">ParametricSourceV3</param>
+            <param name="creationFrameName">ParametricSourceV3.creationFrame</param>
+            <param name="timeInterval">3000</param>
+            <param name="minCreationDistance">100</param>
+            <param name="marker"></param>
+            <param name="counterName">counter</param>
+            <param name="entityNamePrefix">E_</param>
+            <param name="delayInterval">3000</param>
+            <param name="infoContent"></param>
+            <param name="automatic">true</param>
+        </module-instance>
+        <module-instance name="ProgrammableLogics1" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="293" y="347"/>
+            <param name="id">ProgrammableLogics1</param>
+            <param name="logicClassName">my.company.PL1</param>
+        </module-instance>
+    </modules>
     <connections/>
 </model>

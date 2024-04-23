@@ -8,3 +8,5 @@
 !deliveries/
 build/
 dist/
+assets/prototypes/.DS_Store
+.DS_Store

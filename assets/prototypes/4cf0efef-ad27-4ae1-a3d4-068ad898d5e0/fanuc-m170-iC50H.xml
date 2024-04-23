@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:environment xmlns="http://binding.ttsnetwork.com/commons" xmlns:ns2="http://binding.ttsnetwork.com/xml/v7" version="1.0" id="fanuc-m170-iC50H.xml">
+    <ns2:view>
+        <background>
+            <color1 r="0.2" g="0.4" b="0.6" a="1.0"/>
+        </background>
+        <floor visible="false">
+            <axis>Z</axis>
+            <center lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </center>
+            <sun-position lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </sun-position>
+            <top-color r="1.0" g="1.0" b="1.0" a="1.0"/>
+            <bottom-color r="0.5" g="0.5" b="0.5" a="1.0"/>
+            <shadows-color r="0.7" g="0.7" b="0.7" a="1.0"/>
+        </floor>
+        <camera-ortho/>
+        <camera-perspective/>
+    </ns2:view>
+    <ns2:group id="root">
+        <ns2:frames>
+            <frame name="IN">
+                <location lengthUnit="mm">
+                    <x>-454.6000061035156</x>
+                    <y>-117.0</y>
+                    <z>100.5</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="OUT">
+                <location lengthUnit="mm">
+                    <x>-454.6000061035156</x>
+                    <y>155.25922259721006</y>
+                    <z>100.5</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>1.0</z>
+                    <w>180.0</w>
+                </orientation>
+            </frame>
+        </ns2:frames>
+        <ns2:children>
+            <ns2:body visible="true" id="base">
+                <ns2:frames>
+                    <frame name="origin">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>90.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="commands">
+                        <location lengthUnit="mm">
+                            <x>-399.68420715422116</x>
+                            <y>-118.86469972773935</y>
+                            <z>120.6030843173818</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="mm" type="VRML">
+                    <geometry-uri>models/base.wrl</geometry-uri>
+                </ns2:geometry>
+                <ns2:children>
+                    <ns2:body visible="true" id="link1">
+                        <ns2:frames/>
+                        <ns2:joint type="ROTATIONAL">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                            <ns2:rotation-axis name="R">
+<axis>
+    <origin lengthUnit="mm">
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+    </origin>
+    <versor>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>1.0</z>
+    </versor>
+</axis>
+<limits>
+    <home>0.0</home>
+    <low unit="deg">-170.0</low>
+    <high unit="deg">170.0</high>
+    <max-speed unit="deg/s">175.0</max-speed>
+    <max-acceleration unit="deg/s^2">200.0</max-acceleration>
+</limits>
+                            </ns2:rotation-axis>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="VRML">
+                            <geometry-uri>models/Link1.wrl</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children>
+                            <ns2:body visible="true" id="link2">
+<ns2:frames/>
+<ns2:joint type="ROTATIONAL">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+    <ns2:rotation-axis name="R">
+        <axis>
+            <origin lengthUnit="mm">
+                <x>150.0</x>
+                <y>0.0</y>
+                <z>565.0</z>
+            </origin>
+            <versor>
+                <x>0.0</x>
+                <y>1.0</y>
+                <z>0.0</z>
+            </versor>
+        </axis>
+        <limits>
+            <home>0.0</home>
+            <low unit="deg">-45.0</low>
+            <high unit="deg">100.0</high>
+            <max-speed unit="deg/s">180.0</max-speed>
+            <max-acceleration unit="deg/s^2">200.0</max-acceleration>
+        </limits>
+    </ns2:rotation-axis>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>models/Link2.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children>
+    <ns2:body visible="true" id="link3">
+        <ns2:frames/>
+        <ns2:joint type="ROTATIONAL">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+            <ns2:rotation-axis name="R">
+                <axis>
+                    <origin lengthUnit="mm">
+                        <x>150.0</x>
+                        <y>0.0</y>
+                        <z>1435.0</z>
+                    </origin>
+                    <versor>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                    </versor>
+                </axis>
+                <limits>
+                    <home>0.0</home>
+                    <low unit="deg">-180.0</low>
+                    <high unit="deg">120.0</high>
+                    <max-speed unit="deg/s">175.0</max-speed>
+                    <max-acceleration unit="deg/s^2">200.0</max-acceleration>
+                </limits>
+            </ns2:rotation-axis>
+        </ns2:joint>
+        <ns2:geometry lengthUnit="mm" type="VRML">
+            <geometry-uri>models/Link3.wrl</geometry-uri>
+        </ns2:geometry>
+        <ns2:children>
+            <ns2:body visible="true" id="link4">
+                <ns2:frames/>
+                <ns2:joint type="ROTATIONAL">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                    <ns2:rotation-axis name="R">
+                        <axis>
+                            <origin lengthUnit="mm">
+<x>0.0</x>
+<y>0.0</y>
+<z>1595.0</z>
+                            </origin>
+                            <versor>
+<x>1.0</x>
+<y>0.0</y>
+<z>0.0</z>
+                            </versor>
+                        </axis>
+                        <limits>
+                            <home unit="deg">0.0</home>
+                            <low unit="deg">-360.0</low>
+                            <high unit="deg">360.0</high>
+                            <max-speed unit="deg/s">250.0</max-speed>
+                            <max-acceleration unit="deg/s^2">300.0</max-acceleration>
+                        </limits>
+                    </ns2:rotation-axis>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="mm" type="VRML">
+                    <geometry-uri>models/Link4.wrl</geometry-uri>
+                </ns2:geometry>
+                <ns2:children>
+                    <ns2:body visible="true" id="link5">
+                        <ns2:frames/>
+                        <ns2:joint type="ROTATIONAL">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                            <ns2:rotation-axis name="R">
+<axis>
+    <origin lengthUnit="mm">
+        <x>1120.0</x>
+        <y>0.0</y>
+        <z>1595.0</z>
+    </origin>
+    <versor>
+        <x>0.0</x>
+        <y>1.0</y>
+        <z>0.0</z>
+    </versor>
+</axis>
+<limits>
+    <home unit="deg">0.0</home>
+    <low unit="deg">-125.0</low>
+    <high unit="deg">125.0</high>
+    <max-speed unit="deg/s">250.0</max-speed>
+    <max-acceleration unit="deg/s^2">300.0</max-acceleration>
+</limits>
+                            </ns2:rotation-axis>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="VRML">
+                            <geometry-uri>models/Link5.wrl</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children>
+                            <ns2:body visible="true" id="link6">
+<ns2:frames>
+    <frame name="tcp">
+        <properties>
+            <property name="#visible" type="boolean">true</property>
+        </properties>
+        <location lengthUnit="mm">
+            <x>1289.0</x>
+            <y>0.0</y>
+            <z>1595.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+            <w>90.0</w>
+        </orientation>
+    </frame>
+</ns2:frames>
+<ns2:joint type="ROTATIONAL">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+    <ns2:rotation-axis name="R">
+        <axis>
+            <origin lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>1595.0</z>
+            </origin>
+            <versor>
+                <x>1.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </versor>
+        </axis>
+        <limits>
+            <home unit="deg">0.0</home>
+            <low unit="deg">-360.0</low>
+            <high unit="deg">360.0</high>
+            <max-speed unit="deg/s">355.0</max-speed>
+            <max-acceleration unit="deg/s^2">400.0</max-acceleration>
+        </limits>
+    </ns2:rotation-axis>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>models/Link6.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:body>
+        </ns2:children>
+    </ns2:body>
+</ns2:children>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:body>
+            <ns2:group id="circleTest">
+                <ns2:frames>
+                    <frame name="frame1">
+                        <location lengthUnit="mm">
+                            <x>500.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame2">
+                        <location lengthUnit="mm">
+                            <x>353.5533905932738</x>
+                            <y>353.5533905932737</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>45.00000000000001</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame3">
+                        <location lengthUnit="mm">
+                            <x>3.061616997868383E-14</x>
+                            <y>500.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>90.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame4">
+                        <location lengthUnit="mm">
+                            <x>-353.5533905932737</x>
+                            <y>353.5533905932738</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>135.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame5">
+                        <location lengthUnit="mm">
+                            <x>-500.0</x>
+                            <y>6.123233995736766E-14</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>180.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame6">
+                        <location lengthUnit="mm">
+                            <x>-353.55339059327383</x>
+                            <y>-353.5533905932737</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>-1.0</z>
+                            <w>135.00000000000006</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame7">
+                        <location lengthUnit="mm">
+                            <x>-9.184850993605149E-14</x>
+                            <y>-500.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>-1.0</z>
+                            <w>90.00000000000001</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame8">
+                        <location lengthUnit="mm">
+                            <x>353.55339059327366</x>
+                            <y>-353.55339059327383</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>-1.0</z>
+                            <w>45.00000000000001</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>1231.6074384344256</x>
+                            <y>0.0</y>
+                            <z>738.310743888525</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children/>
+            </ns2:group>
+            <ns2:group id="squareTest">
+                <ns2:frames>
+                    <frame name="frame1">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame2">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame3">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>400.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame4">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>400.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame5">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>800.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame6">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>800.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame7">
+                        <location lengthUnit="mm">
+                            <x>400.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame8">
+                        <location lengthUnit="mm">
+                            <x>400.0</x>
+                            <y>0.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame9">
+                        <location lengthUnit="mm">
+                            <x>400.0</x>
+                            <y>400.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame10">
+                        <location lengthUnit="mm">
+                            <x>400.0</x>
+                            <y>400.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame11">
+                        <location lengthUnit="mm">
+                            <x>400.0</x>
+                            <y>800.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame12">
+                        <location lengthUnit="mm">
+                            <x>400.0</x>
+                            <y>800.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame13">
+                        <location lengthUnit="mm">
+                            <x>800.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame14">
+                        <location lengthUnit="mm">
+                            <x>800.0</x>
+                            <y>0.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame15">
+                        <location lengthUnit="mm">
+                            <x>800.0</x>
+                            <y>400.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame16">
+                        <location lengthUnit="mm">
+                            <x>800.0</x>
+                            <y>400.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame17">
+                        <location lengthUnit="mm">
+                            <x>800.0</x>
+                            <y>800.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                    <frame name="frame18">
+                        <location lengthUnit="mm">
+                            <x>800.0</x>
+                            <y>800.0</y>
+                            <z>500.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>842.2</x>
+                            <y>-400.0</y>
+                            <z>442.0853190540794</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children/>
+            </ns2:group>
+            <ns2:group id="pickCicle">
+                <ns2:frames>
+                    <frame name="over">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children/>
+            </ns2:group>
+        </ns2:children>
+    </ns2:group>
+</ns2:environment>

@@ -1,0 +1,79 @@
+<prototype uuid="4cf0efef-ad27-4ae1-a3d4-068ad898d5e0" name="FANUC-M710-iC50-V2" version="1">	
+    <!--    <parameter name="creationtimeInterval" type="double" value="3000">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>-->
+    <parameter name="logics" type="string" value="">
+        <property name="displayName" value="Logics class name" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="speed" type="double" value="1000">
+        <property name="displayName" value="V [mm/s]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="acceleration" type="double" value="1000">
+        <property name="displayName" value="A [mm/s^2]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <!-- Acc percentuale -->
+    <parameter name="rotMaxSpeed" type="double" value="360">
+        <property name="displayName" value="Vrot [deg/s]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="rotMaxAcceleration" type="double" value="180">
+        <property name="displayName" value="Arot deg/s^2]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="jerkTime" type="double" value="32">
+        <property name="displayName" value="A change time [ms]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="showAllGhosts" type="boolena" value="false">
+        <property name="displayName" value="show collision structures" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="script" type="string" value="">
+        <property name="displayName" value="Script" type="string"/>
+        <property name="file_chooser" value="file" type="string"/>
+        <property name="file_edit" value="false" type="boolean"/>
+    </parameter>
+<!--    <input name="tool" type="com.ttsnetwork.sidel.ToolIO">
+        <property name="frame" value="link6.tcp" type="string"/>
+        <property name="logicsPort" value="tool" type="string"/>
+    </input>-->
+    <input name="IN" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="root.IN" type="string"/>
+        <property name="logicsPort" value="in" type="string"/>
+    </input>
+    <input name="TOOL" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="link6.tcp" type="string"/>
+        <property name="logicsPort" value="tool" type="string"/>
+    </input>
+    <output name="OUT" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="root.OUT" type="string"/>
+        <property name="logicsPort" value="control" type="string"/>
+    </output>
+    <property name="displayName" value="FANUC M710 iC50 Version 2" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="manipulator" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="420;6;868" type="double[]"/>
+    <property name="bounds_size" value="1750;669;1735" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.Robot6DOF2">
+        <param name="translationSpeed" type="double">${speed}</param>
+        <param name="translationAcceleration" type="double">${acceleration}</param>
+        <param name="rotationSpeed" type="double">${rotMaxSpeed}</param>
+        <param name="rotationAcceleration" type="double">${rotMaxAcceleration}</param>
+        <param name="modelName" type="string">${instance.name}</param>
+        <param name="jerkTime" type="double">${jerkTime}</param>
+        <param name="showAllGhosts" type="boolean">${showAllGhosts}</param>
+        <param name="script" type="string">${script}</param>
+        <param name="logicClassName" type="string">${logics}</param>
+    </logics>
+</prototype>

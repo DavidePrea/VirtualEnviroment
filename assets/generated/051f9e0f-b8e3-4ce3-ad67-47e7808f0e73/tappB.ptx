@@ -1,0 +1,17 @@
+<parametric-object>
+   <extrusion-object height="288.0">
+      <moveto x="0.0" y="-28.0"/>
+      <arcto x="0.0" y="28.0" radius="28.0" useMinAngle="true"/>
+      <lineto x="0.0" y="26.5"/>
+      <arcto x="0.0" y="-26.5" radius="-26.5" useMinAngle="true"/>
+      <lineto x="0.0" y="-28.0"/>
+   </extrusion-object>
+   <appearance>
+      <ambientIntensity value="0.49803922"/>
+      <diffuseColor r="1.0" g="1.0" b="1.0"/>
+      <emissiveColor r="0.0" g="0.0" b="0.0"/>
+      <shininess value="0.0"/>
+      <specularColor r="0.49803922" g="0.49803922" b="0.49803922"/>
+      <transparency value="0.0"/>
+   </appearance>
+</parametric-object>

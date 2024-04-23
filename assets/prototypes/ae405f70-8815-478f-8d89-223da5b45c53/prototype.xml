@@ -1,0 +1,127 @@
+<prototype uuid="ae405f70-8815-478f-8d89-223da5b45c53" name="ConveyorCurve" version="2">	
+    <parameter name="speed" type="double" value="1">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Speed [m/s]" type="string"/>
+    </parameter>
+    <!--<parameter name="speedRapid" type="double" value="20">
+            <property name="constraints" value=">0" type="string"/>
+            <property name="displayName" value="speed rapid [m/min]" type="string"/>
+        </parameter>
+        <parameter name="distances" type="double[]" value="3000;3000;2000;1000;2000;3000;3000">
+        </parameter>
+    -->    
+    <parameter name="radius" type="double" value="1500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Radius [mm]" type="string"/>
+    </parameter>
+    <parameter name="angle" type="double" value="90">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Angle [deg]" type="string"/>
+    </parameter>
+    <parameter name="width" type="double" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Width [mm]" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="900">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Height [mm]" type="string"/>
+    </parameter>
+    <parameter name="extraLength" type="double" value="300">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Extra Length [mm]" type="string"/>
+    </parameter>
+    <parameter name="direction" type="string" value="left">
+        <property name="options" value="right;left" type="string[]"/>
+        <property name="displayName" value="Direction" type="string"/>
+    </parameter>
+    
+    
+    <parameter name="legs" type="integer" value="3">
+        <property name="displayName" value="Number of legs" type="string"/>
+        <!--        <property name="options" value="right;left" type="string[]"/>-->
+    </parameter>
+    
+    <parameter name="sensorPositions" type="double[]" value="">
+        <property name="displayName" value="Sensor positions [mm]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="sensorNames" type="string[]" value="">
+        <property name="displayName" value="Sensor names" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="sensorReveal" type="string[]" value="">
+        <property name="displayName" value="Sensor reveal [LEAD/CENTER/TAIL]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="sensorFrames" type="string[]" value="">
+        <property name="displayName" value="Sensor frames" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="idleOnStart" type="boolean" value="false">
+        <property name="displayName" value="Idle on start" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="infoContent" type="string" value="">
+        <property name="displayName" value="HUD content (HTML)" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="lwGeom" type="boolean" value="false">
+        <property name="displayName" value="Lightweight geometry" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <!--
+    <parameter name="height" type="double" value="900">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="createUnloadBatch" type="boolean" value="false">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="create batch to unload" type="string"/>
+    </parameter>-->
+
+    <input name="onoffIn" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <input name="speedIn" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <output name="speedOut" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <output name="onoffOut" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <input name="in" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="startFrame" type="string"/>
+        <property name="logicsPort" value="flowIn" type="string"/>
+    </input>
+    <input name="insert" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="commandsInFrame" type="string"/>
+        <property name="logicsPort" value="insert" type="string"/>
+    </input>
+    <output name="control" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="sensorsOutFrame" type="string"/>
+        <property name="logicsPort" value="control" type="string"/>
+    </output>
+    <output name="out" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="endFrame" type="string"/>
+        <property name="logicsPort" value="flowOut" type="string"/>
+    </output>
+    <property name="displayName" value="Arc Conveyor" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="transport" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="719;781;503" type="double[]"/>
+    <property name="bounds_size" value="2093;2094;1006" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.ConveyorArc">
+        <param name="conveyorSpeed" type="double">${speed}</param>
+        <param name="startFrame" type="string">${instance.name}.startFrame</param>
+        <param name="endFrame" type="string">${instance.name}.endFrame</param>
+        <param name="direction" type="string">${direction}</param>
+        <param name="sensorNames" type="string[]">${sensorNames}</param>
+        <param name="sensorPositions" type="double[]">${sensorPositions}</param>
+        <param name="sensorsReveal" type="string[]">${sensorReveal}</param>
+        <param name="sensorFrames" type="string[]">${sensorFrames}</param>
+        <param name="idleOnStart" type="boolean">${idleOnStart}</param>
+        <param name="infoContent" type="string">${infoContent}</param>
+        <!--<param name="speedRapid" type="double">${speedRapid}</param>
+        <param name="createUnloadBatch" type="boolean">${createUnloadBatch}</param>
+        <param name="conveyorEndFrame" type="string">${instance.name}.endFrame</param>
+        <param name="conveyorStartFrame" type="string">${instance.name}.startFrame</param>-->
+    </logics>
+</prototype>

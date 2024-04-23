@@ -1,0 +1,80 @@
+<prototype uuid="9240bd1e-c461-4c38-bf34-e1c1780df195" name="PlanSource" version="1">
+    <parameter name="creationtimeInterval" type="long" value="3000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Creation interval [ms]" type="string"/>
+    </parameter>
+    <parameter name="delayInterval" type="long" value="3000">
+        <property name="displayName" value="Initial delay [ms]" type="string"/>
+    </parameter>
+    <parameter name="minCreationDistance" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Min creation distance [mm]" type="string"/>
+    </parameter>
+    <parameter name="marker" type="string" value="">
+        <property name="displayName" value="Marker" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="counterName" type="string" value="counter">
+        <property name="displayName" value="Counter name" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="entityNamePrefix" type="string" value="E_">
+        <property name="displayName" value="Entity name prefix" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="color" type="string" value="0x999999">
+        <property name="displayName" value="Color" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>	
+    <parameter name="prodPlan" type="string" value="">
+        <property name="displayName" value="Production Plan File" type="string"/>
+        <property name="file_chooser" value="file" type="string"/>
+        <property name="file_edit" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="infoContent" type="string" value="">
+        <property name="displayName" value="HUD content (HTML)" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="automatic" type="boolean" value="true">
+        <property name="displayName" value="Automatic" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="baseWidth" type="double" value="500">
+        <property name="displayName" value="Base width [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="baseLength" type="double" value="500">
+        <property name="displayName" value="Base length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="baseHeight" type="double" value="900">
+        <property name="displayName" value="Base height [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <output name="out" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="creationFrame" type="string"/>
+        <property name="logicsPort" value="out" type="string"/>
+    </output>
+    <output name="control" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="commandsFrame" type="string"/>
+        <property name="logicsPort" value="control" type="string"/>
+    </output>
+    <property name="displayName" value="CSV Plan Source" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="source" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="customizer" value="customizer.js" type="string"/>
+    <property name="bounds_center" value="0;0;450" type="double[]"/>
+    <property name="bounds_size" value="500;500;900" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.PlanSource">
+        <param name="modelName" type="string">${instance.name}</param>
+        <param name="prodPlanFileName" type="string">${prodPlan}</param>
+        <param name="creationFrameName" type="string">${instance.name}.creationFrame</param>
+        <param name="marker" type="string">${marker}</param>
+        <param name="infoContent" type="string">${infoContent}</param>
+        <param name="automatic" type="boolean">${automatic}</param>
+    	<param name="minCreationDistance" type="double">${minCreationDistance}</param>
+        
+    
+    </logics>
+</prototype>

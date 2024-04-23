@@ -1,0 +1,24 @@
+<prototype uuid="5a6af30b-a6c6-4d2f-8b59-55688f183628" name="Sink" version="1">	
+    <parameter name="waitBeforeDelete" type="long" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="infoContent" type="string" value="">
+        <property name="displayName" value="HUD content (HTML)" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <input name="in" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="creationFrame" type="string"/>
+        <property name="logicsPort" value="in" type="string"/>
+    </input>
+    <property name="displayName" value="Generic conveyor sink" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="source" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;450" type="double[]"/>
+    <property name="bounds_size" value="500;500;900" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.Sink">
+        <param name="timeInterval" type="long">${waitBeforeDelete}</param>
+        <param name="infoContent" type="string">${infoContent}</param>
+        <param name="infoFrame" type="string">${instance.name}.creationFrame</param>
+    </logics>
+</prototype>

@@ -1,5 +1,5 @@
 <parametric-object>
-   <box x-side-lenght="500.0" y-side-lenght="500.0" z-side-lenght="900.0"/>
+   <box x-side-lenght="500.0" y-side-lenght="300.0" z-side-lenght="900.0"/>
    <appearance>
       <ambientIntensity value="0.20714286"/>
       <diffuseColor r="0.0" g="1.0" b="0.93333334"/>

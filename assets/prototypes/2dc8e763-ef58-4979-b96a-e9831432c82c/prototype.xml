@@ -1,0 +1,16 @@
+<prototype uuid="2dc8e763-ef58-4979-b96a-e9831432c82c" name="Box"  version="1">	
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="generator" value="build.js" type="string"/>
+    <property name="bounds_center" value="0;0;50" type="double[]"/>
+    <property name="bounds_size" value="100;100;100" type="double[]"/>
+    <property name="position" type="integer" value="200"/>
+    <parameter name="width" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="depth" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+</prototype>

@@ -383,12 +383,12 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="speed" type="double" value="1000">
+      <parameter name="speed" type="double" value="15000">
          <property name="displayName" type="string" value="V [mm/s]"/>
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="acceleration" type="double" value="1000">
+      <parameter name="acceleration" type="double" value="15000">
          <property name="displayName" type="string" value="A [mm/s^2]"/>
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="affectGeometry" type="boolean" value="false"/>

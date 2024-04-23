@@ -26,8 +26,8 @@
         </module-instance>
         <module-instance name="R1" type="com.ttsnetwork.modules.standard.Robot6DOF2">
             <visual x="-120" y="2263"/>
-            <param name="translationSpeed">1000</param>
-            <param name="translationAcceleration">1000</param>
+            <param name="translationSpeed">15000</param>
+            <param name="translationAcceleration">15000</param>
             <param name="rotationSpeed">360</param>
             <param name="rotationAcceleration">180</param>
             <param name="modelName">R1</param>

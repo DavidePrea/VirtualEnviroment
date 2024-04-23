@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding= "UTF-8" ?>
-<instances>
-   <instance name="Box2" uuid="a1137c04-fef4-48aa-bae0-7b82220d70cf" version="1" prototype="2dc8e763-ef58-4979-b96a-e9831432c82c">
-      <parameter name="width" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-      </parameter>
-      <parameter name="depth" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-      </parameter>
-      <parameter name="height" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-      </parameter>
-   </instance>
-</instances>
+<instances/>

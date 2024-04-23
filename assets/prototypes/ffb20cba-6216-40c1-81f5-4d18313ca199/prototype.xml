@@ -1,0 +1,21 @@
+<prototype uuid="ffb20cba-6216-40c1-81f5-4d18313ca199" name="ProgrammableLogics" version="1">	
+    <parameter name="plClass" type="string" value="my.company.PL1">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Logics class" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <input name="in" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="pl_geom.control" type="string"/>
+        <property name="logicsPort" value="in" type="string"/>
+    </input>
+    <property name="displayName" value="Programmable Logics" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="logics" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;250" type="double[]"/>
+    <property name="bounds_size" value="500;500;500" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.PLModule">
+        <param name="id" type="string">${instance.name}</param>
+        <param name="logicClassName" type="string">${plClass}</param>
+    </logics>
+</prototype>

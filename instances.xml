@@ -175,7 +175,7 @@
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="D_sen1">
+      <parameter name="sensorNames" type="string[]" value="D2_sen1">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -698,12 +698,10 @@
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
    </instance>
-   <relationship sourcePortName="out" sourceInstanceUuid="ee2bc794-f939-4a8a-a127-6a584622166f" targetPortName="insert" targetInstanceUuid="cf1e5285-3300-42aa-b723-f097ca98ae91"/>
    <relationship sourcePortName="out" sourceInstanceUuid="ecf6e8c3-2aba-4ca3-9349-6fcafe8d9182" targetPortName="in" targetInstanceUuid="bbdad5a4-2b1b-4ad6-8291-10510f503a26"/>
    <relationship sourcePortName="out" sourceInstanceUuid="65418799-a3cb-4950-af5c-16dd6637d7f6" targetPortName="in" targetInstanceUuid="ee2bc794-f939-4a8a-a127-6a584622166f"/>
    <relationship sourcePortName="out" sourceInstanceUuid="f625cd6a-ffb9-4f83-8d6f-ae7015065f89" targetPortName="in" targetInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36"/>
    <relationship sourcePortName="out" sourceInstanceUuid="959d80dc-deeb-40d3-beeb-b5e854d78676" targetPortName="in" targetInstanceUuid="051f9e0f-b8e3-4ce3-ad67-47e7808f0e73"/>
    <relationship sourcePortName="out" sourceInstanceUuid="c5c20bac-d2e1-4207-bb62-354390587443" targetPortName="in" targetInstanceUuid="5c174963-7335-489c-874d-2da96c33d648"/>
-   <relationship sourcePortName="control" sourceInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36" targetPortName="TOOL" targetInstanceUuid="a62e06b0-9682-4057-9fb6-782d793f708f"/>
    <relationship sourcePortName="out" sourceInstanceUuid="13f28092-9e56-451d-8e45-ff39473aaeb1" targetPortName="in" targetInstanceUuid="cf1e5285-3300-42aa-b723-f097ca98ae91"/>
 </instances>

@@ -645,6 +645,22 @@
                            <w>0.0</w>
                         </orientation>
                      </frame>
+                     <frame name="midPos">
+                        <properties>
+                           <property name="#visible" type="boolean">true</property>
+                        </properties>
+                        <location lengthUnit="mm">
+                           <x>0.0</x>
+                           <y>-97.57505850461712</y>
+                           <z>1184.554658955234</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>1.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                           <w>0.0</w>
+                        </orientation>
+                     </frame>
                   </ns2:frames>
                   <ns2:joint type="RIGID">
                      <ns2:transform>
@@ -662,16 +678,31 @@
                      </ns2:transform>
                   </ns2:joint>
                   <ns2:children>
-                     <group id="CB.ConveyorV3.root">
+                     <group id="CB.CB.root">
                         <properties>
-                           <property name="#local.name" type="string">ConveyorV3.root</property>
+                           <property name="#local.name" type="string">CB.root</property>
                            <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                         </properties>
                         <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
-                           <group id="CB.ConveyorV3.relocator">
+                           <group id="CB.CB.relocator">
                               <properties>
-                                 <property name="#local.name" type="string">ConveyorV3.relocator</property>
+                                 <property name="#local.name" type="string">CB.relocator</property>
                                  <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                               </properties>
                               <ns2:frames/>
@@ -691,9 +722,9 @@
                                  </ns2:transform>
                               </ns2:joint>
                               <ns2:children>
-                                 <group id="CB.ConveyorV3.relocatorA">
+                                 <group id="CB.CB.relocatorA">
                                     <properties>
-                                       <property name="#local.name" type="string">ConveyorV3.relocatorA</property>
+                                       <property name="#local.name" type="string">CB.relocatorA</property>
                                        <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                     </properties>
                                     <ns2:frames/>
@@ -713,9 +744,9 @@
                                        </ns2:transform>
                                     </ns2:joint>
                                     <ns2:children>
-                                       <group id="CB.ConveyorV3.latoA">
+                                       <group id="CB.CB.latoA">
                                           <properties>
-                                             <property name="#local.name" type="string">ConveyorV3.latoA</property>
+                                             <property name="#local.name" type="string">CB.latoA</property>
                                              <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                           </properties>
                                           <ns2:frames/>
@@ -735,9 +766,9 @@
                                              </ns2:transform>
                                           </ns2:joint>
                                           <ns2:children>
-                                             <body id="CB.ConveyorV3.carterA1" visible="true">
+                                             <body id="CB.CB.carterA1" visible="true">
                                                 <properties>
-                                                   <property name="#local.name" type="string">ConveyorV3.carterA1</property>
+                                                   <property name="#local.name" type="string">CB.carterA1</property>
                                                    <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                                 </properties>
                                                 <ns2:frames/>
@@ -761,9 +792,9 @@
                                                 </ns2:geometry>
                                                 <ns2:children/>
                                              </body>
-                                             <body id="CB.ConveyorV3.carterA2" visible="true">
+                                             <body id="CB.CB.carterA2" visible="true">
                                                 <properties>
-                                                   <property name="#local.name" type="string">ConveyorV3.carterA2</property>
+                                                   <property name="#local.name" type="string">CB.carterA2</property>
                                                    <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                                 </properties>
                                                 <ns2:frames/>
@@ -791,9 +822,9 @@
                                        </group>
                                     </ns2:children>
                                  </group>
-                                 <group id="CB.ConveyorV3.relocatorB">
+                                 <group id="CB.CB.relocatorB">
                                     <properties>
-                                       <property name="#local.name" type="string">ConveyorV3.relocatorB</property>
+                                       <property name="#local.name" type="string">CB.relocatorB</property>
                                        <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                     </properties>
                                     <ns2:frames/>
@@ -813,9 +844,9 @@
                                        </ns2:transform>
                                     </ns2:joint>
                                     <ns2:children>
-                                       <group id="CB.ConveyorV3.latoB">
+                                       <group id="CB.CB.latoB">
                                           <properties>
-                                             <property name="#local.name" type="string">ConveyorV3.latoB</property>
+                                             <property name="#local.name" type="string">CB.latoB</property>
                                              <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                           </properties>
                                           <ns2:frames/>
@@ -835,9 +866,9 @@
                                              </ns2:transform>
                                           </ns2:joint>
                                           <ns2:children>
-                                             <body id="CB.ConveyorV3.carterB1" visible="true">
+                                             <body id="CB.CB.carterB1" visible="true">
                                                 <properties>
-                                                   <property name="#local.name" type="string">ConveyorV3.carterB1</property>
+                                                   <property name="#local.name" type="string">CB.carterB1</property>
                                                    <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                                 </properties>
                                                 <ns2:frames/>
@@ -861,9 +892,9 @@
                                                 </ns2:geometry>
                                                 <ns2:children/>
                                              </body>
-                                             <body id="CB.ConveyorV3.carterB2" visible="true">
+                                             <body id="CB.CB.carterB2" visible="true">
                                                 <properties>
-                                                   <property name="#local.name" type="string">ConveyorV3.carterB2</property>
+                                                   <property name="#local.name" type="string">CB.carterB2</property>
                                                    <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
                                                 </properties>
                                                 <ns2:frames/>
@@ -910,10 +941,10 @@
                                  <z>847.0</z>
                               </location>
                               <orientation angleUnit="deg">
-                                 <x>0.5773502691896257</x>
-                                 <y>0.5773502691896257</y>
-                                 <z>0.5773502691896257</z>
-                                 <w>119.99999999999999</w>
+                                 <x>0.5773502691896258</x>
+                                 <y>0.5773502691896258</y>
+                                 <z>0.5773502691896258</z>
+                                 <w>120.00000000000001</w>
                               </orientation>
                            </ns2:transform>
                         </ns2:joint>
@@ -1436,6 +1467,33 @@
                         </ns2:geometry>
                         <ns2:children/>
                      </body>
+                     <body id="CB.sensor_0" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">sensor_0</property>
+                           <property name="#instance.uuid" type="string">ee2bc794-f939-4a8a-a127-6a584622166f</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>900.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/conv_ee2bc794-f939-4a8a-a127-6a584622166f_snesor.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
                   </ns2:children>
                </group>
                <group id="CC">
@@ -1519,6 +1577,21 @@
                            <property name="#instance.uuid" type="string">9845bee7-adb4-4f3e-9a26-0457d457ab36</property>
                         </properties>
                         <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
                            <group id="CC.ConveyorV4.relocator">
                               <properties>
@@ -1761,10 +1834,10 @@
                                  <z>847.0</z>
                               </location>
                               <orientation angleUnit="deg">
-                                 <x>0.5773502691896257</x>
-                                 <y>0.5773502691896257</y>
-                                 <z>0.5773502691896257</z>
-                                 <w>119.99999999999999</w>
+                                 <x>0.5773502691896258</x>
+                                 <y>0.5773502691896258</y>
+                                 <z>0.5773502691896258</z>
+                                 <w>120.00000000000001</w>
                               </orientation>
                            </ns2:transform>
                         </ns2:joint>
@@ -2370,6 +2443,21 @@
                            <property name="#instance.uuid" type="string">ecf6e8c3-2aba-4ca3-9349-6fcafe8d9182</property>
                         </properties>
                         <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
                            <group id="CF.ConveyorV5.relocator">
                               <properties>
@@ -2612,10 +2700,10 @@
                                  <z>847.0</z>
                               </location>
                               <orientation angleUnit="deg">
-                                 <x>0.5773502691896257</x>
-                                 <y>0.5773502691896257</y>
-                                 <z>0.5773502691896257</z>
-                                 <w>119.99999999999999</w>
+                                 <x>0.5773502691896258</x>
+                                 <y>0.5773502691896258</y>
+                                 <z>0.5773502691896258</z>
+                                 <w>120.00000000000001</w>
                               </orientation>
                            </ns2:transform>
                         </ns2:joint>
@@ -3198,6 +3286,19 @@
                            <w>0.0</w>
                         </orientation>
                      </frame>
+                     <frame name="midPos">
+                        <location lengthUnit="mm">
+                           <x>212.6981501967989</x>
+                           <y>0.0</y>
+                           <z>1221.6803210057774</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>1.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                           <w>0.0</w>
+                        </orientation>
+                     </frame>
                   </ns2:frames>
                   <ns2:joint type="RIGID">
                      <ns2:transform>
@@ -3221,6 +3322,21 @@
                            <property name="#instance.uuid" type="string">cf1e5285-3300-42aa-b723-f097ca98ae91</property>
                         </properties>
                         <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
                            <group id="CD2.CD2.relocator">
                               <properties>
@@ -3463,10 +3579,10 @@
                                  <z>847.0</z>
                               </location>
                               <orientation angleUnit="deg">
-                                 <x>0.5773502691896257</x>
-                                 <y>0.5773502691896257</y>
-                                 <z>0.5773502691896257</z>
-                                 <w>119.99999999999999</w>
+                                 <x>0.5773502691896258</x>
+                                 <y>0.5773502691896258</y>
+                                 <z>0.5773502691896258</z>
+                                 <w>120.00000000000001</w>
                               </orientation>
                            </ns2:transform>
                         </ns2:joint>
@@ -3989,6 +4105,33 @@
                         </ns2:geometry>
                         <ns2:children/>
                      </body>
+                     <body id="CD2.sensor_0" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">sensor_0</property>
+                           <property name="#instance.uuid" type="string">cf1e5285-3300-42aa-b723-f097ca98ae91</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>175.0</x>
+                                 <y>0.0</y>
+                                 <z>900.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/conv_cf1e5285-3300-42aa-b723-f097ca98ae91_snesor.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
                   </ns2:children>
                </group>
                <group id="CD1">
@@ -4072,6 +4215,21 @@
                            <property name="#instance.uuid" type="string">051f9e0f-b8e3-4ce3-ad67-47e7808f0e73</property>
                         </properties>
                         <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
                            <group id="CD1.CD1.relocator">
                               <properties>
@@ -4314,10 +4472,10 @@
                                  <z>847.0</z>
                               </location>
                               <orientation angleUnit="deg">
-                                 <x>0.5773502691896257</x>
-                                 <y>0.5773502691896257</y>
-                                 <z>0.5773502691896257</z>
-                                 <w>119.99999999999999</w>
+                                 <x>0.5773502691896258</x>
+                                 <y>0.5773502691896258</y>
+                                 <z>0.5773502691896258</z>
+                                 <w>120.00000000000001</w>
                               </orientation>
                            </ns2:transform>
                         </ns2:joint>
@@ -4923,6 +5081,21 @@
                            <property name="#instance.uuid" type="string">5c174963-7335-489c-874d-2da96c33d648</property>
                         </properties>
                         <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
                            <group id="CE.CE.relocator">
                               <properties>
@@ -5165,10 +5338,10 @@
                                  <z>847.0</z>
                               </location>
                               <orientation angleUnit="deg">
-                                 <x>0.5773502691896257</x>
-                                 <y>0.5773502691896257</y>
-                                 <z>0.5773502691896257</z>
-                                 <w>119.99999999999999</w>
+                                 <x>0.5773502691896258</x>
+                                 <y>0.5773502691896258</y>
+                                 <z>0.5773502691896258</z>
+                                 <w>120.00000000000001</w>
                               </orientation>
                            </ns2:transform>
                         </ns2:joint>
@@ -5768,6 +5941,21 @@
                               </orientation>
                            </frame>
                         </ns2:frames>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
                            <body id="R2.base" visible="true">
                               <properties>
@@ -6563,8 +6751,8 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>0.0</x>
-                           <y>1943.1412148288864</y>
+                           <x>-120.21459337485913</x>
+                           <y>2263.172162209503</y>
                            <z>0.0</z>
                         </location>
                         <orientation angleUnit="deg">
@@ -6609,6 +6797,21 @@
                               </orientation>
                            </frame>
                         </ns2:frames>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
                            <body id="R1.base" visible="true">
                               <properties>

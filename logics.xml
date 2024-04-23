@@ -25,7 +25,7 @@
             <param name="logicClassName"></param>
         </module-instance>
         <module-instance name="R1" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="0" y="1943"/>
+            <visual x="-120" y="2263"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -103,7 +103,7 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">CD2.startFrame</param>
             <param name="endFrame">CD2.endFrame</param>
-            <param name="sensorNames">D_sen1</param>
+            <param name="sensorNames">D2_sen1</param>
             <param name="sensorPositions">550</param>
             <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
@@ -174,10 +174,6 @@
     </modules>
     <connections>
         <connection>
-            <port-out module="CB" port="flowOut"/>
-            <port-in module="CD2" port="insert"/>
-        </connection>
-        <connection>
             <port-out module="CF" port="flowOut"/>
             <port-in module="D1" port="in"/>
         </connection>
@@ -196,10 +192,6 @@
         <connection>
             <port-out module="S3" port="out"/>
             <port-in module="CE" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="CC" port="control"/>
-            <port-in module="R2" port="tool"/>
         </connection>
         <connection>
             <port-out module="S4" port="out"/>

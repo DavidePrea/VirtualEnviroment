@@ -71,15 +71,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="">
+      <parameter name="sensorPositions" type="double[]" value="1500">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="">
+      <parameter name="sensorNames" type="string[]" value="C_sen1">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="">
+      <parameter name="sensorReveal" type="string[]" value="CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -121,15 +121,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="">
+      <parameter name="sensorPositions" type="double[]" value="1300">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="">
+      <parameter name="sensorNames" type="string[]" value="D1_sen1">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="">
+      <parameter name="sensorReveal" type="string[]" value="CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -221,15 +221,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="">
+      <parameter name="sensorPositions" type="double[]" value="1300">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="">
+      <parameter name="sensorNames" type="string[]" value="E_sen1">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="">
+      <parameter name="sensorReveal" type="string[]" value="CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -370,6 +370,13 @@
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
+   <instance name="ProgrammableLogics2" uuid="fbee44eb-d446-4508-9bb6-f65c32a8724d" version="1" prototype="ffb20cba-6216-40c1-81f5-4d18313ca199">
+      <parameter name="plClass" type="string" value="my.company.PL2State">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Logics class"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
    <instance name="R1" uuid="cf237796-1b1c-479f-8fc4-c4616e054bec" version="1" prototype="4cf0efef-ad27-4ae1-a3d4-068ad898d5e0">
       <parameter name="logics" type="string" value="">
          <property name="displayName" type="string" value="Logics class name"/>
@@ -455,11 +462,11 @@
       </parameter>
    </instance>
    <instance name="S1" uuid="65418799-a3cb-4950-af5c-16dd6637d7f6" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
-      <parameter name="creationtimeInterval" type="long" value="3000">
+      <parameter name="creationtimeInterval" type="long" value="4000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
-      <parameter name="delayInterval" type="long" value="3000">
+      <parameter name="delayInterval" type="long" value="2000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
       <parameter name="entityLength" type="double" value="150">
@@ -638,11 +645,11 @@
       </parameter>
    </instance>
    <instance name="S4" uuid="13f28092-9e56-451d-8e45-ff39473aaeb1" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
-      <parameter name="creationtimeInterval" type="long" value="3000">
+      <parameter name="creationtimeInterval" type="long" value="4000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
-      <parameter name="delayInterval" type="long" value="3000">
+      <parameter name="delayInterval" type="long" value="2000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
       <parameter name="entityLength" type="double" value="200">

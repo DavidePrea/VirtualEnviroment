@@ -1,166 +1,157 @@
 DDD Simulator 2.4.12
-Reading project C:\Users\Simone\Documents\VirtualEnviroment\simulation.ini
-Reading run arguments from C:\Users\Simone\Documents\VirtualEnviroment\runargs.ini
-[simulator] 2024-04-23 15:45:23.186 INFO Application: DDD Simulator 2.4.12 
-[simulator] 2024-04-23 15:45:23.190 INFO Java version: 11.0.22 (11.0.22+7-LTS) 
-[simulator] 2024-04-23 15:45:23.190 INFO Java home: C:\Users\Simone\Desktop\Modelling\DDDModelEditor-app-4.0-RELEASE-2024-02-20\DDDModelEditor-app-4.0-SNAPSHOT\dddmodeleditor\jdk 
-[simulator] 2024-04-23 15:45:23.190 INFO Boot library path: C:\Users\Simone\Desktop\Modelling\DDDModelEditor-app-4.0-RELEASE-2024-02-20\DDDModelEditor-app-4.0-SNAPSHOT\dddmodeleditor\jdk\bin 
-[simulator] 2024-04-23 15:45:23.190 INFO Arch data model: 64 bit 
-[simulator] 2024-04-23 15:45:23.192 INFO Max threads: 12 
-[simulator] 2024-04-23 15:45:23.193 INFO Version information: 
-[simulator] 2024-04-23 15:45:23.247 INFO    2023-05-05 15:35 InfluxLib-6.8.0.jar 
-[simulator] 2024-04-23 15:45:23.248 INFO    2024-04-15 14:39 StandardCatalog.jar 
-[simulator] 2024-04-23 15:45:23.248 INFO    2016-07-11 15:12 com-sfnt-rms-natives-windows-amd64.jar 
-[simulator] 2024-04-23 15:45:23.248 INFO    2016-02-29 14:04 com-sfnt-rms-natives-windows-i586.jar 
-[simulator] 2024-04-23 15:45:23.248 INFO    2010-10-30 14:34 com-sfnt-rms.jar 
-[simulator] 2024-04-23 15:45:23.248 INFO    2024-02-19 18:29 com-ttsnetwork-model-editor-v4-com-sfnt-rms-sentinel-caffe.jar (1.7.2) 
-[simulator] 2024-04-23 15:45:23.248 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-commands.jar (2.12) 
-[simulator] 2024-04-23 15:45:23.249 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-heron-v5.jar (5.44) 
-[simulator] 2024-04-23 15:45:23.249 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-heron-xml.jar (1.8) 
-[simulator] 2024-04-23 15:45:23.249 INFO    2024-02-19 18:29 com-ttsnetwork-model-editor-v4-input.jar (2.1) 
-[simulator] 2024-04-23 15:45:23.249 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-kinematics.jar (2.7) 
-[simulator] 2024-04-23 15:45:23.249 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-modbus.jar (4.0) 
-[simulator] 2024-04-23 15:45:23.249 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-modulespack-conveyors.jar (4.0) 
-[simulator] 2024-04-23 15:45:23.250 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-motion.jar (1.11) 
-[simulator] 2024-04-23 15:45:23.250 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-simulation-commons.jar (4.0) 
-[simulator] 2024-04-23 15:45:23.250 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-simulator-v2.jar (2.5) 
-[simulator] 2024-04-23 15:45:23.250 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-statistics.jar (1.10) 
-[simulator] 2024-04-23 15:45:23.250 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-touchkit.jar (3.3) 
-[simulator] 2024-04-23 15:45:23.250 INFO    2017-03-09 14:01 commons-cli.jar (1.4.0) 
-[simulator] 2024-04-23 15:45:23.251 INFO    2020-01-22 15:10 commons-lang3.jar (3.11.0) 
-[simulator] 2024-04-23 15:45:23.251 INFO    2016-03-17 13:34 commons-math3.jar (3.6.1) 
-[simulator] 2024-04-23 15:45:23.251 INFO    2019-12-20 15:23 d3eve.jar 
-[simulator] 2024-04-23 15:45:23.251 INFO    2024-01-17 17:59 ddd-natives-linux-amd64.jar 
-[simulator] 2024-04-23 15:45:23.251 INFO    2024-01-17 17:59 ddd-natives-macosx-universal.jar 
-[simulator] 2024-04-23 15:45:23.251 INFO    2024-01-17 17:59 ddd-natives-windows-amd64.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2024-01-17 17:59 ddd.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2023-02-10 08:22 ejml-all.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2023-02-10 08:22 ejml-cdense.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2023-02-10 08:22 ejml-core.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2023-02-10 08:22 ejml-ddense.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2023-02-10 08:22 ejml-dsparse.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2023-02-10 08:22 ejml-fdense.jar 
-[simulator] 2024-04-23 15:45:23.252 INFO    2023-02-10 08:22 ejml-fsparse.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2023-02-10 08:22 ejml-simple.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2023-02-10 08:22 ejml-zdense.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2023-08-18 14:42 gluegen-rt-natives-linux-amd64.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2023-08-18 14:43 gluegen-rt-natives-macosx-universal.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2023-08-18 14:43 gluegen-rt-natives-windows-amd64.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2023-08-18 14:42 gluegen-rt.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2005-12-01 12:03 iicm.jar 
-[simulator] 2024-04-23 15:45:23.253 INFO    2021-08-20 18:46 j2mod.jar (3.0.0) 
-[simulator] 2024-04-23 15:45:23.254 INFO    2021-04-14 18:18 jSerialComm.jar (2.7.0) 
-[simulator] 2024-04-23 15:45:23.254 INFO    2019-01-16 10:47 javafx-base-win.jar 
-[simulator] 2024-04-23 15:45:23.254 INFO    2019-01-16 10:23 javafx-base.jar 
-[simulator] 2024-04-23 15:45:23.254 INFO    2019-01-16 10:49 javafx-controls-win.jar 
-[simulator] 2024-04-23 15:45:23.254 INFO    2019-01-16 11:19 javafx-controls.jar 
-[simulator] 2024-04-23 15:45:23.254 INFO    2019-01-16 10:49 javafx-fxml-win.jar 
-[simulator] 2024-04-23 15:45:23.255 INFO    2019-01-16 11:19 javafx-fxml.jar 
-[simulator] 2024-04-23 15:45:23.255 INFO    2019-01-16 10:55 javafx-graphics-win.jar 
-[simulator] 2024-04-23 15:45:23.255 INFO    2019-01-16 11:19 javafx-graphics.jar 
-[simulator] 2024-04-23 15:45:23.255 INFO    2019-01-16 10:55 javafx-swing-win.jar 
-[simulator] 2024-04-23 15:45:23.255 INFO    2019-01-16 11:20 javafx-swing.jar 
-[simulator] 2024-04-23 15:45:23.255 INFO    2007-10-12 11:10 javolution.jar 
-[simulator] 2024-04-23 15:45:23.255 INFO    2021-11-08 20:28 jna.jar (5.10.0) 
-[simulator] 2024-04-23 15:45:23.255 INFO    2023-08-18 15:01 jogl-all-natives-linux-amd64.jar 
-[simulator] 2024-04-23 15:45:23.256 INFO    2023-08-18 15:00 jogl-all-natives-macosx-universal.jar 
-[simulator] 2024-04-23 15:45:23.256 INFO    2023-08-18 15:04 jogl-all-natives-windows-amd64.jar 
-[simulator] 2024-04-23 15:45:23.256 INFO    2023-08-18 15:01 jogl-all.jar 
-[simulator] 2024-04-23 15:45:23.256 INFO    2021-03-08 03:55 json-20210307.jar (20210307.0.0) 
-[simulator] 2024-04-23 15:45:23.256 INFO    2021-03-08 03:55 json.jar (20210307.0.0) 
-[simulator] 2024-04-23 15:45:23.256 INFO    2017-03-31 10:55 jsr305.jar (3.0.2) 
-[simulator] 2024-04-23 15:45:23.256 INFO    2022-09-19 10:49 openpdf.jar (1.3.30) 
-[simulator] 2024-04-23 15:45:23.256 INFO    2023-11-29 17:52 operationsLibrary.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2020-07-14 09:05 org.eclipse.paho.client.mqttv3-1.2.5.jar (1.2.5) 
-[simulator] 2024-04-23 15:45:23.257 INFO    2013-07-07 19:39 simple-xml.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2023-12-14 17:34 statisticreports-core.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2023-12-14 17:34 statisticreports-javafx.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2023-12-14 17:34 statisticreports-pdf.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2006-03-13 20:05 stax-api.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2006-06-19 20:42 stax.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2021-11-04 10:13 unikey.jar 
-[simulator] 2024-04-23 15:45:23.257 INFO    2003-07-01 14:15 xpp3.jar 
-[simulator] 2024-04-23 15:45:23.258 INFO    2022-12-01 17:43 xresults.jar 
-[simulator] 2024-04-23 15:45:23.401 INFO Network options: C:\Users\Simone\Desktop\Modelling\DDDModelEditor-app-4.0-RELEASE-2024-02-20\DDDModelEditor-app-4.0-SNAPSHOT\dddmodeleditor\jdk\bin\NetUniKey.ini (not found) 
-[simulator] 2024-04-23 15:45:24.217 INFO Loading logics... 
+Reading project /Users/preatons/Progetto_FinaleVE/simulation.ini
+Reading run arguments from /Users/preatons/Progetto_FinaleVE/runargs.ini
+[simulator] 2024-04-24 12:20:08.784 INFO Application: DDD Simulator 2.4.12 
+[simulator] 2024-04-24 12:20:08.791 INFO Java version: 11.0.22 (11.0.22+7-LTS) 
+[simulator] 2024-04-24 12:20:08.791 INFO Java home: /private/var/folders/d5/stcskvd93tx48rr7t2ndyjr80000gn/T/AppTranslocation/2D7714CF-C6F0-46B0-8E07-B4E032B40FCF/d/dddmodeleditor.app/Contents/Resources/dddmodeleditor/jdk64 
+[simulator] 2024-04-24 12:20:08.792 INFO Boot library path: /private/var/folders/d5/stcskvd93tx48rr7t2ndyjr80000gn/T/AppTranslocation/2D7714CF-C6F0-46B0-8E07-B4E032B40FCF/d/dddmodeleditor.app/Contents/Resources/dddmodeleditor/jdk64/lib 
+[simulator] 2024-04-24 12:20:08.792 INFO Arch data model: 64 bit 
+[simulator] 2024-04-24 12:20:08.805 INFO Max threads: 8 
+[simulator] 2024-04-24 12:20:08.814 INFO Version information: 
+[simulator] 2024-04-24 12:20:08.979 INFO    2023-05-05 15:35 InfluxLib-6.8.0.jar 
+[simulator] 2024-04-24 12:20:08.981 INFO    2024-04-15 14:39 StandardCatalog.jar 
+[simulator] 2024-04-24 12:20:08.981 INFO    2016-07-11 15:12 com-sfnt-rms-natives-windows-amd64.jar 
+[simulator] 2024-04-24 12:20:08.983 INFO    2016-02-29 14:04 com-sfnt-rms-natives-windows-i586.jar 
+[simulator] 2024-04-24 12:20:08.983 INFO    2010-10-30 14:34 com-sfnt-rms.jar 
+[simulator] 2024-04-24 12:20:08.983 INFO    2024-02-19 17:40 com-ttsnetwork-model-editor-v4-com-sfnt-rms-sentinel-caffe.jar (1.7.2) 
+[simulator] 2024-04-24 12:20:08.983 INFO    2024-02-19 17:37 com-ttsnetwork-model-editor-v4-commands.jar (2.12) 
+[simulator] 2024-04-24 12:20:08.983 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-heron-v5.jar (5.44) 
+[simulator] 2024-04-24 12:20:08.984 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-heron-xml.jar (1.8) 
+[simulator] 2024-04-24 12:20:08.984 INFO    2024-02-19 17:41 com-ttsnetwork-model-editor-v4-input.jar (2.1) 
+[simulator] 2024-04-24 12:20:08.984 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-kinematics.jar (2.7) 
+[simulator] 2024-04-24 12:20:08.985 INFO    2024-02-19 17:42 com-ttsnetwork-model-editor-v4-modbus.jar (4.0) 
+[simulator] 2024-04-24 12:20:08.985 INFO    2024-02-19 17:42 com-ttsnetwork-model-editor-v4-modulespack-conveyors.jar (4.0) 
+[simulator] 2024-04-24 12:20:08.985 INFO    2024-02-19 17:37 com-ttsnetwork-model-editor-v4-motion.jar (1.11) 
+[simulator] 2024-04-24 12:20:08.986 INFO    2024-02-19 17:42 com-ttsnetwork-model-editor-v4-simulation-commons.jar (4.0) 
+[simulator] 2024-04-24 12:20:08.986 INFO    2024-02-19 17:41 com-ttsnetwork-model-editor-v4-simulator-v2.jar (2.5) 
+[simulator] 2024-04-24 12:20:08.986 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-statistics.jar (1.10) 
+[simulator] 2024-04-24 12:20:08.986 INFO    2024-02-19 17:41 com-ttsnetwork-model-editor-v4-touchkit.jar (3.3) 
+[simulator] 2024-04-24 12:20:08.986 INFO    2017-03-09 14:01 commons-cli.jar (1.4.0) 
+[simulator] 2024-04-24 12:20:08.988 INFO    2020-01-22 15:10 commons-lang3.jar (3.11.0) 
+[simulator] 2024-04-24 12:20:08.988 INFO    2016-03-17 13:34 commons-math3.jar (3.6.1) 
+[simulator] 2024-04-24 12:20:08.988 INFO    2019-12-20 15:23 d3eve.jar 
+[simulator] 2024-04-24 12:20:08.988 INFO    2024-01-17 17:59 ddd-natives-linux-amd64.jar 
+[simulator] 2024-04-24 12:20:08.988 INFO    2024-01-17 17:59 ddd-natives-macosx-universal.jar 
+[simulator] 2024-04-24 12:20:08.990 INFO    2024-01-17 17:59 ddd-natives-windows-amd64.jar 
+[simulator] 2024-04-24 12:20:08.991 INFO    2024-01-17 17:59 ddd.jar 
+[simulator] 2024-04-24 12:20:08.991 INFO    2023-02-10 08:22 ejml-all.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-cdense.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-core.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-ddense.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-dsparse.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-fdense.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-fsparse.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-simple.jar 
+[simulator] 2024-04-24 12:20:08.992 INFO    2023-02-10 08:22 ejml-zdense.jar 
+[simulator] 2024-04-24 12:20:08.993 INFO    2023-08-18 14:42 gluegen-rt-natives-linux-amd64.jar 
+[simulator] 2024-04-24 12:20:08.993 INFO    2023-08-18 14:43 gluegen-rt-natives-macosx-universal.jar 
+[simulator] 2024-04-24 12:20:08.993 INFO    2023-08-18 14:43 gluegen-rt-natives-windows-amd64.jar 
+[simulator] 2024-04-24 12:20:08.993 INFO    2023-08-18 14:42 gluegen-rt.jar 
+[simulator] 2024-04-24 12:20:08.994 INFO    2005-12-01 12:03 iicm.jar 
+[simulator] 2024-04-24 12:20:08.994 INFO    2021-08-20 18:46 j2mod.jar (3.0.0) 
+[simulator] 2024-04-24 12:20:08.994 INFO    2021-04-14 18:18 jSerialComm.jar (2.7.0) 
+[simulator] 2024-04-24 12:20:08.994 INFO    2019-01-16 09:24 javafx-base-mac.jar 
+[simulator] 2024-04-24 12:20:08.994 INFO    2019-01-16 10:23 javafx-base.jar 
+[simulator] 2024-04-24 12:20:08.994 INFO    2019-01-16 09:24 javafx-controls-mac.jar 
+[simulator] 2024-04-24 12:20:08.994 INFO    2019-01-16 11:19 javafx-controls.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2019-01-16 09:24 javafx-fxml-mac.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2019-01-16 11:19 javafx-fxml.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2019-01-16 09:24 javafx-graphics-mac.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2019-01-16 11:19 javafx-graphics.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2019-01-16 09:24 javafx-swing-mac.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2019-01-16 11:20 javafx-swing.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2007-10-12 11:10 javolution.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2021-11-08 20:28 jna.jar (5.10.0) 
+[simulator] 2024-04-24 12:20:08.995 INFO    2023-08-18 15:01 jogl-all-natives-linux-amd64.jar 
+[simulator] 2024-04-24 12:20:08.995 INFO    2023-08-18 15:00 jogl-all-natives-macosx-universal.jar 
+[simulator] 2024-04-24 12:20:08.996 INFO    2023-08-18 15:04 jogl-all-natives-windows-amd64.jar 
+[simulator] 2024-04-24 12:20:08.996 INFO    2023-08-18 15:01 jogl-all.jar 
+[simulator] 2024-04-24 12:20:08.996 INFO    2021-03-08 03:55 json-20210307.jar (20210307.0.0) 
+[simulator] 2024-04-24 12:20:08.996 INFO    2021-03-08 03:55 json.jar (20210307.0.0) 
+[simulator] 2024-04-24 12:20:08.997 INFO    2017-03-31 10:55 jsr305.jar (3.0.2) 
+[simulator] 2024-04-24 12:20:08.997 INFO    2022-09-19 10:49 openpdf.jar (1.3.30) 
+[simulator] 2024-04-24 12:20:08.998 INFO    2023-11-29 17:52 operationsLibrary.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2020-07-14 09:05 org.eclipse.paho.client.mqttv3-1.2.5.jar (1.2.5) 
+[simulator] 2024-04-24 12:20:08.998 INFO    2013-07-07 19:39 simple-xml.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2023-12-14 17:34 statisticreports-core.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2023-12-14 17:34 statisticreports-javafx.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2023-12-14 17:34 statisticreports-pdf.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2006-03-13 20:05 stax-api.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2006-06-19 20:42 stax.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2021-11-04 10:13 unikey.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2003-07-01 14:15 xpp3.jar 
+[simulator] 2024-04-24 12:20:08.998 INFO    2022-12-01 17:43 xresults.jar 
+[simulator] 2024-04-24 12:20:11.797 INFO Loading logics... 
 Java Bindings for OpenGL Runtime Environment 2.5.0 (JogAmp Community)
 OpenGL Driver Info:
-	Vendor = "Intel"
-	Renderer = "Intel(R) Iris(R) Xe Graphics"
-	Version = "4.6.0 - Build 31.0.101.4953"
+	Vendor = "Apple"
+	Renderer = "Apple M1"
+	Version = "2.1 Metal - 88"
 	glMultiDrawArrays = true
 	GL_MAX_TEXTURE_SIZE = 16384
 Auto-detected buffer type: NONE
 Current buffer type: NONE
-[simulator] 2024-04-23 15:45:24.330 INFO Loading model... 
-[simulator] 2024-04-23 15:45:24.524 INFO Loading all layers... 
-[simulator] 2024-04-23 15:45:24.524 INFO Geometries to load: 172 / 172 
-[simulator] 2024-04-23 15:45:24.736 INFO Model loaded in 519 ms 
-[simulator] 2024-04-23 15:45:24.771 INFO Verifying license... 
-[simulator] 2024-04-23 15:45:24.771 INFO Time to verify: 0 ms 
-[simulator] 2024-04-23 15:45:24.772 SEVERE License not found! 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.772 CONFIG Loading model... 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.774 CONFIG Adapting model model.xml 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.809 CONFIG Loading module instance PS1 of type com.ttsnetwork.modules.standard.PlanSource 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.818 WARNING Parameter: PS1.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.818 WARNING Parameter: PS1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.819 CONFIG Loading module instance R2 of type com.ttsnetwork.modules.standard.Robot6DOF2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.822 WARNING Parameter: R2.script has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.823 WARNING Parameter: R2.logicClassName has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.823 CONFIG Loading module instance R1 of type com.ttsnetwork.modules.standard.Robot6DOF2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.823 WARNING Parameter: R1.script has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.823 WARNING Parameter: R1.logicClassName has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.823 CONFIG Loading module instance CD1 of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.829 WARNING Parameter: CD1.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.829 WARNING Parameter: CD1.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.829 WARNING Parameter: CD1.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.829 WARNING Parameter: CD1.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.829 WARNING Parameter: CD1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.831 CONFIG Loading module instance CB of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.832 WARNING Parameter: CB.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.832 WARNING Parameter: CB.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.832 CONFIG Loading module instance S4 of type com.ttsnetwork.modules.standard.ParametricSource2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.833 WARNING Parameter: S4.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.833 WARNING Parameter: S4.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.833 CONFIG Loading module instance S2 of type com.ttsnetwork.modules.standard.ParametricSource2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 WARNING Parameter: S2.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 WARNING Parameter: S2.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 CONFIG Loading module instance CC of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 WARNING Parameter: CC.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 WARNING Parameter: CC.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 WARNING Parameter: CC.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 WARNING Parameter: CC.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 WARNING Parameter: CC.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.834 CONFIG Loading module instance CD2 of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CD2.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CD2.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 CONFIG Loading module instance CF of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CF.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CF.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CF.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CF.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CF.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 CONFIG Loading module instance CE of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CE.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CE.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CE.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CE.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: CE.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 CONFIG Loading module instance S3 of type com.ttsnetwork.modules.standard.ParametricSource2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.835 WARNING Parameter: S3.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.836 WARNING Parameter: S3.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.836 CONFIG Loading module instance S1 of type com.ttsnetwork.modules.standard.ParametricSource2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.836 WARNING Parameter: S1.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.836 WARNING Parameter: S1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.836 CONFIG Loading module instance ProgrammableLogics1 of type com.ttsnetwork.modules.standard.PLModule 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.838 CONFIG Loading module instance D1 of type com.ttsnetwork.modules.standard.Sink 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.839 WARNING Parameter: D1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.839 CONFIG Creating new connection between IN=D1.in and OUT=CF.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.842 CONFIG Creating new connection between IN=CB.flowIn and OUT=S1.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.843 CONFIG Creating new connection between IN=CC.flowIn and OUT=PS1.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.843 CONFIG Creating new connection between IN=CD1.flowIn and OUT=S2.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.843 CONFIG Creating new connection between IN=CE.flowIn and OUT=S3.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-23 15:45:29.843 CONFIG Creating new connection between IN=CD2.flowIn and OUT=S4.out 
+[simulator] 2024-04-24 12:20:12.089 INFO Loading model... 
+[simulator] 2024-04-24 12:20:12.591 INFO Loading all layers... 
+[simulator] 2024-04-24 12:20:12.593 INFO Geometries to load: 176 / 176 
+[simulator] 2024-04-24 12:20:13.087 INFO Model loaded in 1,291 ms 
+[simulator] 2024-04-24 12:20:13.128 INFO Verifying license... 
+[simulator] 2024-04-24 12:20:13.134 INFO Time to verify: 0 ms 
+[simulator] 2024-04-24 12:20:13.134 SEVERE License not found! 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.142 CONFIG Loading model... 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.145 CONFIG Adapting model model.xml 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.218 CONFIG Loading module instance PS1 of type com.ttsnetwork.modules.standard.PlanSource 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.241 WARNING Parameter: PS1.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.242 WARNING Parameter: PS1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.243 CONFIG Loading module instance R2 of type com.ttsnetwork.modules.standard.Robot6DOF2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.247 WARNING Parameter: R2.script has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.247 WARNING Parameter: R2.logicClassName has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.247 CONFIG Loading module instance R1 of type com.ttsnetwork.modules.standard.Robot6DOF2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.248 WARNING Parameter: R1.script has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.248 WARNING Parameter: R1.logicClassName has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.248 CONFIG Loading module instance CD1 of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.267 WARNING Parameter: CD1.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.268 WARNING Parameter: CD1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.272 CONFIG Loading module instance CB of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.272 WARNING Parameter: CB.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.273 WARNING Parameter: CB.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.273 CONFIG Loading module instance S4 of type com.ttsnetwork.modules.standard.ParametricSource2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 WARNING Parameter: S4.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 WARNING Parameter: S4.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 CONFIG Loading module instance S2 of type com.ttsnetwork.modules.standard.ParametricSource2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 WARNING Parameter: S2.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 WARNING Parameter: S2.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 CONFIG Loading module instance CC of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 WARNING Parameter: CC.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.274 WARNING Parameter: CC.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.275 CONFIG Loading module instance CD2 of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.275 WARNING Parameter: CD2.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.275 WARNING Parameter: CD2.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.275 CONFIG Loading module instance CF of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.275 WARNING Parameter: CF.sensorNames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 WARNING Parameter: CF.sensorPositions has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 WARNING Parameter: CF.sensorsReveal has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 WARNING Parameter: CF.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 WARNING Parameter: CF.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 CONFIG Loading module instance CE of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 WARNING Parameter: CE.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 WARNING Parameter: CE.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 CONFIG Loading module instance S3 of type com.ttsnetwork.modules.standard.ParametricSource2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.276 WARNING Parameter: S3.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.277 WARNING Parameter: S3.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.277 CONFIG Loading module instance S1 of type com.ttsnetwork.modules.standard.ParametricSource2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.277 WARNING Parameter: S1.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.277 WARNING Parameter: S1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.277 CONFIG Loading module instance ProgrammableLogics1 of type com.ttsnetwork.modules.standard.PLModule 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.278 CONFIG Loading module instance ProgrammableLogics2 of type com.ttsnetwork.modules.standard.PLModule 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.279 CONFIG Loading module instance D1 of type com.ttsnetwork.modules.standard.Sink 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.281 WARNING Parameter: D1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.282 CONFIG Creating new connection between IN=D1.in and OUT=CF.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.290 CONFIG Creating new connection between IN=CB.flowIn and OUT=S1.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.293 CONFIG Creating new connection between IN=CC.flowIn and OUT=PS1.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.294 CONFIG Creating new connection between IN=CD1.flowIn and OUT=S2.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.294 CONFIG Creating new connection between IN=CE.flowIn and OUT=S3.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-24 12:20:18.294 CONFIG Creating new connection between IN=CD2.flowIn and OUT=S4.out 
 Warning: Nashorn engine is planned to be removed from a future JDK release
 Adapting machine from joints
 Adapting serial chain of the machine
@@ -224,45 +215,12 @@ Accelero a 1.0
 Accelero a 1.0
 Accelero a 1.0
 Accelero a 1.0
-[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-04-23 15:45:30.324 SEVERE unable to set internal parameter id 
-[simulator] 2024-04-23 15:45:30.328 INFO Animation delta times: [50, 500, 1000, 2000, 5000, 10000, 60000, 600000, 3600000] 
-[simulator] 2024-04-23 15:45:30.328 INFO Animation delta time: 50 
-[simulator] 2024-04-23 15:45:30.413 INFO Animation delta time: 50 
-d3native -> C:\Users\Simone\AppData\Local\Temp\ddd_cache\0458821042242ddd974aa0b8fd62a2b5\windows-amd64\d3native.dll (9 ms, found)
+[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-04-24 12:20:19.270 SEVERE unable to set internal parameter id 
+[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-04-24 12:20:19.288 SEVERE unable to set internal parameter id 
+[simulator] 2024-04-24 12:20:19.290 INFO Animation delta times: [50, 500, 1000, 2000, 5000, 10000, 60000, 600000, 3600000] 
+[simulator] 2024-04-24 12:20:19.290 INFO Animation delta time: 50 
+[simulator] 2024-04-24 12:20:19.571 INFO Animation delta time: 50 
+d3native -> /private/var/folders/d5/stcskvd93tx48rr7t2ndyjr80000gn/T/ddd_cache/4637c4e13d0fb6e0b8337fe1cae755e7/macosx-universal/libd3native.jnilib (16 ms, found)
 *** DDD Native Library ***
 my.company.PL1State-> Switching to 100
-my.company.PL1State-> Switching to 200
-my.company.PL1State-> Switching to 300
-my.company.PL1State-> Switching to 400
-my.company.PL1State-> Switching to 500
-my.company.PL1State-> Switching to 100
-my.company.PL1State-> Switching to 200
-my.company.PL1State-> Switching to 300
-my.company.PL1State-> Switching to 400
-my.company.PL1State-> Switching to 500
-my.company.PL1State-> Switching to 100
-my.company.PL1State-> Switching to 200
-my.company.PL1State-> Switching to 300
-my.company.PL1State-> Switching to 400
-my.company.PL1State-> Switching to 500
-my.company.PL1State-> Switching to 100
-my.company.PL1State-> Switching to 200
-my.company.PL1State-> Switching to 300
-my.company.PL1State-> Switching to 400
-my.company.PL1State-> Switching to 500
-my.company.PL1State-> Switching to 100
-my.company.PL1State-> Switching to 200
-my.company.PL1State-> Switching to 300
-my.company.PL1State-> Switching to 400
-my.company.PL1State-> Switching to 500
-my.company.PL1State-> Switching to 100
-my.company.PL1State-> Switching to 200
-my.company.PL1State-> Switching to 300
-my.company.PL1State-> Switching to 400
-my.company.PL1State-> Switching to 500
-my.company.PL1State-> Switching to 100
-my.company.PL1State-> Switching to 200
-my.company.PL1State-> Switching to 300
-my.company.PL1State-> Switching to 400
-[simulator] 2024-04-23 15:46:07.077 INFO Exectution completed in 37,305 ms 
-[simulator] 2024-04-23 15:46:07.078 INFO Exit code: 0 
+my.company.PL2State-> Switching to 100

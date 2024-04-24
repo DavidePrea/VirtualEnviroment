@@ -41,9 +41,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">CD1.startFrame</param>
             <param name="endFrame">CD1.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">D1_sen1</param>
+            <param name="sensorPositions">1300</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -64,12 +64,12 @@
             <visual x="761" y="2125"/>
             <param name="modelName">S4</param>
             <param name="creationFrameName">S4.creationFrame</param>
-            <param name="timeInterval">3000</param>
+            <param name="timeInterval">4000</param>
             <param name="minCreationDistance">100</param>
             <param name="marker"></param>
             <param name="counterName">counter</param>
             <param name="entityNamePrefix">E_</param>
-            <param name="delayInterval">3000</param>
+            <param name="delayInterval">2000</param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
         </module-instance>
@@ -91,9 +91,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">CC.startFrame</param>
             <param name="endFrame">CC.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">C_sen1</param>
+            <param name="sensorPositions">1500</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -127,9 +127,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">CE.startFrame</param>
             <param name="endFrame">CE.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">E_sen1</param>
+            <param name="sensorPositions">1300</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -151,12 +151,12 @@
             <visual x="-1500" y="1000"/>
             <param name="modelName">S1</param>
             <param name="creationFrameName">S1.creationFrame</param>
-            <param name="timeInterval">3000</param>
+            <param name="timeInterval">4000</param>
             <param name="minCreationDistance">100</param>
             <param name="marker"></param>
             <param name="counterName">counter</param>
             <param name="entityNamePrefix">E_</param>
-            <param name="delayInterval">3000</param>
+            <param name="delayInterval">2000</param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
         </module-instance>
@@ -164,6 +164,11 @@
             <visual x="293" y="347"/>
             <param name="id">ProgrammableLogics1</param>
             <param name="logicClassName">my.company.PL1State</param>
+        </module-instance>
+        <module-instance name="ProgrammableLogics2" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="297" y="0"/>
+            <param name="id">ProgrammableLogics2</param>
+            <param name="logicClassName">my.company.PL2State</param>
         </module-instance>
         <module-instance name="D1" type="com.ttsnetwork.modules.standard.Sink">
             <visual x="3550" y="0"/>

@@ -186,6 +186,7 @@ public class PL2State extends StateMachine {
         rob.moveLinear(BoxUtils.targetTop(workingE), VROB);
         rob.pick(workingE.entity);
         Ce.remove(workingE);
+        
         rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0, 300+BoxUtils.zSize(workingE), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 200+BoxUtils.zSize(workingD)+BoxUtils.zSize(workingC), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, BoxUtils.zSize(workingD)+BoxUtils.zSize(workingC), 0, 0, 0),workingE.cF, VROB_attach); // variante del movimento del concetto di external TCP

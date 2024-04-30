@@ -1,0 +1,15 @@
+<parametric-object>
+   <extrusion-object height="5.0">
+      <lineto x="0.0" y="-75.0"/>
+      <lineto x="37.5" y="-37.5"/>
+      <lineto x="0.0" y="0.0"/>
+   </extrusion-object>
+   <appearance>
+      <ambientIntensity value="0.2"/>
+      <diffuseColor r="0.0" g="1.0" b="0.0"/>
+      <emissiveColor r="0.0" g="0.0" b="0.0"/>
+      <shininess value="0.0"/>
+      <specularColor r="0.0" g="0.0" b="0.0"/>
+      <transparency value="0.0"/>
+   </appearance>
+</parametric-object>

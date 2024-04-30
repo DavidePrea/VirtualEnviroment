@@ -1,2 +1,3 @@
 code;length;width;height;probability;interval;weight;rfid
 300;200;100;50;3000;450;P001;PA
+400;200;75;100;7000;300;P002;PB

@@ -19,8 +19,9 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
  */
 public class PL2State extends StateMachine {
 
-    double VROB = 6000;
-
+    double VROB = 3000;
+    double VROB_attach = 500;
+    
     IRobotCommands rob;
 
     IConveyorCommands Cc;
@@ -39,10 +40,12 @@ public class PL2State extends StateMachine {
     SimpleStateVar finishedBDE = new SimpleStateVar();
     
 
-    ConveyorBox workingB;
+    
     ConveyorBox workingC;
     ConveyorBox workingD;
-
+    ConveyorBox workingE;
+   
+    
     @Override
     public void onInit() {
         
@@ -73,7 +76,6 @@ public class PL2State extends StateMachine {
         setVar(partC, sc.box);
         schedule.end();
     }
-
     public void d_sensor1(SensorCatch sc) {
         schedule.startSerial();
         Cd.lock(sc.box);
@@ -95,16 +97,12 @@ public class PL2State extends StateMachine {
     }
 
     public void state_200() {
-        try{
             String type = workingC.entity.getProperty("rfid");
             if(type.equals("PA")){
                 switchState(2000);
             }else{
                 switchState(3000);
             }
-        }catch(Exception e){
-            System.out.println("error state_200()");
-        }
 
     }
     public void state_2000(){
@@ -122,18 +120,16 @@ public class PL2State extends StateMachine {
         
         schedule.startSerial();
      
-        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
         rob.pick(workingD.entity);
         Cd.remove(workingD);
         rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300+BoxUtils.zSize(workingC), 0, 0, 0), VROB);
-        rob.move(BoxUtils.targetTop(workingC), workingC.cF, 2300.0);
+        rob.move(BoxUtils.targetTop(workingC), workingD.cF, 2300.0);
         rob.release();
-        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300+BoxUtils.zSize(workingC), 0, 0, 0), VROB);
-        
         rob.home();
-        schedule.attach(workingD.entity, workingB.entity);
+        schedule.attach(workingD.entity, workingC.entity);
         setVar(finishedAD, true);
         schedule.end();
 
@@ -151,36 +147,58 @@ public class PL2State extends StateMachine {
     }
 
     public void state_3000() {
+        if(partD.read() != null){
+            workingD = partD.readAndForget();
+            switchState(3005);
+        }
+    }
+    public void state_3005() {
+        if(partE.read() != null){
+            workingE = partE.readAndForget();
+            switchState(3010);
+        }
+    }
+    public void state_3010() {
         AssmBDE();
-        switchState(3010);
+        switchState(3020);
+    }
+    public void state_3020() {
+        if(finishedBDE.readBoolean()){
+            finishedBDE.write(false);
+            switchState(2030);
+        }
     }
     public void AssmBDE() {
         
         schedule.startSerial();
      
-       /* rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
         rob.pick(workingD.entity);
         Cd.remove(workingD);
         rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300+BoxUtils.zSize(workingC), 0, 0, 0), VROB);
-        rob.move(BoxUtils.targetTop(workingC), workingC.cF, 2300.0);
+        rob.moveLinear(BoxUtils.targetTop(workingC), workingD.cF, VROB_attach);
         rob.release();
-        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300+BoxUtils.zSize(workingC), 0, 0, 0), VROB);
-        
+        //rob.home();
+        schedule.attach(workingD.entity, workingC.entity);
+        rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0, 300+BoxUtils.zSize(workingE), 0, 0, 0), VROB);
+        rob.moveLinear(BoxUtils.targetTop(workingE), VROB);
+        rob.pick(workingE.entity);
+        Ce.remove(workingE);
+        rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0, 300+BoxUtils.zSize(workingE), 0, 0, 0), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 200+BoxUtils.zSize(workingD)+BoxUtils.zSize(workingC), 0, 0, 0), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, BoxUtils.zSize(workingD)+BoxUtils.zSize(workingC), 0, 0, 0),workingE.cF, VROB_attach); // variante del movimento del concetto di external TCP
+        rob.release();
+        schedule.attach(workingE.entity, workingD.entity);
         rob.home();
-        schedule.attach(workingD.entity, workingB.entity);
-        setVar(finishedAD, true);*/
+        
+        setVar(finishedBDE, true);
         schedule.end();
 
       
     }
-    public void state_3010() {
-        if (finishedBDE.readBoolean()) {
-            finishedBDE.write(false);
-            switchState(2030);
-        }
-    }
+
 
 
     public void releasebox() {

@@ -1,0 +1,88 @@
+<prototype uuid="9660f1e1-96e8-42e9-815d-bb0bb86c7285" name="CustomConveyorSplit" version="1">	
+    <parameter name="speed" type="double" value="1">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Speed [m/s]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="out1Length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="OUT1 Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="out2Length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="OUT2 Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="out3Length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="OUT3 Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="width" type="double" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Width [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="height" type="double" value="900">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Height [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="splitRuleClass" type="string" value="">
+        <property name="displayName" value="Rule class name" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+
+    <input name="onoffIn" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <input name="speedIn" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <output name="speedOut" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <output name="onoffOut" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <output name="out1" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="outConv1.endFrame" type="string"/>
+        <property name="logicsPort" value="out1" type="string"/>
+    </output>
+    <output name="out2" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="outConv2.endFrame" type="string"/>
+        <property name="logicsPort" value="out2" type="string"/>
+    </output>
+    <output name="out3" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="outConv3.endFrame" type="string"/>
+        <property name="logicsPort" value="out3" type="string"/>
+    </output>
+    <input name="in" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="main.startFrame" type="string"/>
+        <property name="logicsPort" value="flowIn" type="string"/>
+    </input>
+    <property name="displayName" value="Split Custom" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="transport" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;-28;532" type="double[]"/>
+    <property name="bounds_size" value="1000;588;1064" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.CustomConveyorSplit">
+        <param name="conveyorSpeed" type="double">${speed}</param>
+        <param name="out1Frame" type="string">${instance.name}.outConv1.endFrame</param>
+        <param name="out2Frame" type="string">${instance.name}.outConv2.endFrame</param>
+        <param name="out3Frame" type="string">${instance.name}.outConv3.endFrame</param>
+        <param name="startFrame" type="string">${instance.name}.main.startFrame</param>
+        <param name="endFrame" type="string">${instance.name}.main.endFrame</param>
+        <param name="idleOnStart" type="boolean">${idleOnStart}</param>
+        <param name="infoContent" type="string">${infoContent}</param>
+        <param name="mainLength" type="double">${length}</param>
+        <param name="out1Length" type="double">${in1Length}</param>
+        <param name="out2Length" type="double">${in2Length}</param>
+        <param name="out3Length" type="double">${in3Length}</param>
+        <param name="width" type="double">${width}</param>
+        <param name="splitRuleClass" type="string">${splitRuleClass}</param>
+    </logics>
+</prototype>

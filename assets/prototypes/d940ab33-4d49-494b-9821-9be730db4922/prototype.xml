@@ -1,0 +1,86 @@
+<prototype uuid="d940ab33-4d49-494b-9821-9be730db4922" name="ConveyorJoin" version="1">	
+    <parameter name="speed" type="double" value="1">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Speed [m/s]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="in1Length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="IN1 Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="in2Length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="IN2 Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="in3Length" type="double" value="1000">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="IN3 Length [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="width" type="double" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Width [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="height" type="double" value="900">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Height [mm]" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <input name="onoffIn" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <input name="speedIn" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <output name="speedOut" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <output name="onoffOut" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <input name="in1" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="inConv1.startFrame" type="string"/>
+        <property name="logicsPort" value="in1" type="string"/>
+    </input>
+    <input name="in2" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="inConv2.startFrame" type="string"/>
+        <property name="logicsPort" value="in2" type="string"/>
+    </input>
+    <input name="in3" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="inConv3.startFrame" type="string"/>
+        <property name="logicsPort" value="in3" type="string"/>
+    </input>
+    <output name="out" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="main.endFrame" type="string"/>
+        <property name="logicsPort" value="flowOut" type="string"/>
+    </output>
+    <property name="displayName" value="Join" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="transport" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;-28;532" type="double[]"/>
+    <property name="bounds_size" value="1000;588;1064" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.ConveyorJoin">
+        <param name="conveyorSpeed" type="double">${speed}</param>
+        <param name="in1Frame" type="string">${instance.name}.inConv1.startFrame</param>
+        <param name="in2Frame" type="string">${instance.name}.inConv2.startFrame</param>
+        <param name="in3Frame" type="string">${instance.name}.inConv3.startFrame</param>
+        <param name="startFrame" type="string">${instance.name}.main.startFrame</param>
+        <param name="endFrame" type="string">${instance.name}.main.endFrame</param>
+        <param name="idleOnStart" type="boolean">${idleOnStart}</param>
+        <param name="infoContent" type="string">${infoContent}</param>
+        <param name="mainLength" type="double">${length}</param>
+        <param name="in1Length" type="double">${in1Length}</param>
+        <param name="in2Length" type="double">${in2Length}</param>
+        <param name="in3Length" type="double">${in3Length}</param>
+        <param name="width" type="double">${width}</param>
+        <!--<param name="speedRapid" type="double">${speedRapid}</param>
+        <param name="createUnloadBatch" type="boolean">${createUnloadBatch}</param>
+        <param name="conveyorEndFrame" type="string">${instance.name}.endFrame</param>
+        <param name="conveyorStartFrame" type="string">${instance.name}.startFrame</param>-->
+    </logics>
+</prototype>

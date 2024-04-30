@@ -3,13 +3,6 @@
         <property name="constraints" value=">0" type="string"/>
         <property name="displayName" value="Speed [m/s]" type="string"/>
     </parameter>
-    <!--<parameter name="speedRapid" type="double" value="20">
-            <property name="constraints" value=">0" type="string"/>
-            <property name="displayName" value="speed rapid [m/min]" type="string"/>
-        </parameter>
-        <parameter name="distances" type="double[]" value="3000;3000;2000;1000;2000;3000;3000">
-        </parameter>
-    -->    
     <parameter name="radius" type="double" value="1500">
         <property name="constraints" value=">0" type="string"/>
         <property name="displayName" value="Radius [mm]" type="string"/>
@@ -25,10 +18,6 @@
     <parameter name="height" type="double" value="900">
         <property name="constraints" value=">0" type="string"/>
         <property name="displayName" value="Height [mm]" type="string"/>
-    </parameter>
-    <parameter name="extraLength" type="double" value="300">
-        <property name="constraints" value=">0" type="string"/>
-        <property name="displayName" value="Extra Length [mm]" type="string"/>
     </parameter>
     <parameter name="direction" type="string" value="left">
         <property name="options" value="right;left" type="string[]"/>
@@ -59,13 +48,13 @@
     </parameter>
     <parameter name="idleOnStart" type="boolean" value="false">
         <property name="displayName" value="Idle on start" type="string"/>
-        <property name="affectGeometry" value="false" type="boolean"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
     </parameter>
     <parameter name="infoContent" type="string" value="">
         <property name="displayName" value="HUD content (HTML)" type="string"/>
         <property name="affectGeometry" value="false" type="boolean"/>
     </parameter>
-    <parameter name="lwGeom" type="boolean" value="false">
+    <parameter name="lwGeom" type="boolean" value="true">
         <property name="displayName" value="Lightweight geometry" type="string"/>
         <property name="affectGeometry" value="true" type="boolean"/>
     </parameter>
@@ -102,7 +91,7 @@
         <property name="frame" value="endFrame" type="string"/>
         <property name="logicsPort" value="flowOut" type="string"/>
     </output>
-    <property name="displayName" value="Arc Conveyor" type="string"/>
+    <property name="displayName" value="Conveyor Arc" type="string"/>
     <property name="vendor" value="TTS" type="string"/>
     <property name="category" value="transport" type="string"/>
     <property name="generator" value="builder.js" type="string"/>
@@ -119,9 +108,5 @@
         <param name="sensorFrames" type="string[]">${sensorFrames}</param>
         <param name="idleOnStart" type="boolean">${idleOnStart}</param>
         <param name="infoContent" type="string">${infoContent}</param>
-        <!--<param name="speedRapid" type="double">${speedRapid}</param>
-        <param name="createUnloadBatch" type="boolean">${createUnloadBatch}</param>
-        <param name="conveyorEndFrame" type="string">${instance.name}.endFrame</param>
-        <param name="conveyorStartFrame" type="string">${instance.name}.startFrame</param>-->
     </logics>
 </prototype>

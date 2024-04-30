@@ -3,7 +3,7 @@ var width;
 var height;
 var radius;
 var angle;
-var extraLength = 300;
+var extraLength = 0;
 var BASELINE_HEIGHT = 958;
 var direction;
 var legs;
@@ -137,7 +137,7 @@ function configure3D() {
         legEndParent.rotate(0, 0, angle);
     }
 
-
+    directionArrow(instance.name, 0);
 
 
 
@@ -366,4 +366,32 @@ function crossbar(count, parent) {
             .parametric(dirName + 'cross' + count + '.ptx', cBox);
 
     return cObject;
+}
+
+function directionArrow(convId, dpos){
+    var dapp;
+    var dn = convId + '_direction';
+    
+    if(idleOnStart){
+        dapp = parametric.appearance()
+        .diffuseColor(0xAAAAAA)
+        .shininess(0.504);
+    }else{
+        dapp = parametric.appearance()
+        .diffuseColor(0x00FF00)
+        .shininess(0.504);
+    }
+    
+    var dirMarker = extrusion()
+            .lineTo(0, -width*0.15)
+            .lineTo(width*0.075, -width*0.075)
+            .lineTo(0,0)
+            .height(5)
+            .appearance(dapp);
+    
+    var dirObject = builder
+            .createChild(dn)
+            .parametric(dirName + dn, dirMarker)
+            .rotate(0, 0, 0)
+            .translate(dpos,width*0.075,height);
 }

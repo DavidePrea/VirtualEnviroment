@@ -103,16 +103,14 @@ function configure3D() {
                     .frame('ROOT', 0, 0, 0, 0, 0, 0);
         }
     }
+    
+    direction(instance.name, 0);
 
 }
 
 function midStructure(displacement) {
 
     var strName = 'midStructure';
-
-
-
-
 
     var structure = extrusion()
             .lineTo(width, 0)
@@ -209,10 +207,6 @@ function lwMidStructure(displacement) {
 
     var strName = 'midStructure';
 
-
-
-
-
     var structure = extrusion()
             .lineTo(width+1, 0)
             .lineTo(width+1, prfHg)
@@ -237,35 +231,6 @@ function lwMidStructure(displacement) {
             .parametric(dirName + 'tappeto.ptx', tapp)
             .rotate(0, 0, 0)
             .translate(width / 2.0, prfHg + tappDst + tappTh / 2.0, 0);
-
-//    var tappCurve = extrusion()
-//            .moveTo(0, -cylRadius - tappDst - tappTh)
-//            .arcTo(0, +cylRadius + tappDst + tappTh, cylRadius + tappDst + tappTh, true)
-//            .lineTo(0, +cylRadius + tappDst)
-//            .arcTo(0, -cylRadius - tappDst, -(cylRadius + tappDst), true)
-//            .lineTo(0, -cylRadius - tappDst - tappTh)
-//            .height(width - deltaTapp)
-//            .appearance(appTapp);
-//    var tappCurveB = extrusion()
-//            .moveTo(0, -cylRadius - tappDst - tappTh)
-//            .arcTo(0, +cylRadius + tappDst + tappTh, cylRadius + tappDst + tappTh, true)
-//            .lineTo(0, +cylRadius + tappDst)
-//            .arcTo(0, -cylRadius - tappDst, -(cylRadius + tappDst), true)
-//            .lineTo(0, -cylRadius - tappDst - tappTh)
-//            .height(width - deltaTapp)
-//            .appearance(appTapp);
-//
-//    var tappAObject = builder
-//            .createChild('tappA')
-//            .parametric(dirName + 'tappA.ptx', tappCurve)
-//            .rotate(90, 0, 0)
-//            .translate(length / 2.0, (width - deltaTapp) / 2.0, height - tappDst - tappTh - prfHg / 2.0);
-//
-//    var tappBObject = builder
-//            .createChild('tappB')
-//            .parametric(dirName + 'tappB.ptx', tappCurve)
-//            .rotate(90, 180, 0)
-//            .translate(-length / 2.0, -(width - deltaTapp) / 2.0, height - tappDst - tappTh - prfHg / 2.0);
 
     var cylA = cylinder(cylRadius + tappDst + tappTh, width);
     cylA.appearance(appTapp);
@@ -328,3 +293,32 @@ function crossbar(count, x) {
             .parametric(dirName + 'cross' + count + '.ptx', cBox)
             .translate(x, 0, Math.max(height / 5, legConeHgt + legWidth));
 }
+
+function direction(convId, dpos){
+    var dapp;
+    var dn = convId + '_direction';
+    
+    if(idleOnStart){
+        dapp = parametric.appearance()
+        .diffuseColor(0xAAAAAA)
+        .shininess(0.504);
+    }else{
+        dapp = parametric.appearance()
+        .diffuseColor(0x00FF00)
+        .shininess(0.504);
+    }
+    
+    var dirMarker = extrusion()
+            .lineTo(0, -width*0.15)
+            .lineTo(width*0.075, -width*0.075)
+            .lineTo(0,0)
+            .height(5)
+            .appearance(dapp);
+    
+    var dirObject = builder
+            .createChild(dn)
+            .parametric(dirName + dn, dirMarker)
+            .rotate(0, 0, 0)
+            .translate(dpos,width*0.075,height);
+}
+

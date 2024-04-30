@@ -37,26 +37,17 @@
     </parameter>
     <parameter name="idleOnStart" type="boolean" value="false">
         <property name="displayName" value="Idle on start" type="string"/>
-        <property name="affectGeometry" value="false" type="boolean"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
     </parameter>
     
     <parameter name="infoContent" type="string" value="">
         <property name="displayName" value="HUD content (HTML)" type="string"/>
         <property name="affectGeometry" value="false" type="boolean"/>
     </parameter>
-    <parameter name="lwGeom" type="boolean" value="false">
+    <parameter name="lwGeom" type="boolean" value="true">
         <property name="displayName" value="Lightweight geometry" type="string"/>
         <property name="affectGeometry" value="true" type="boolean"/>
     </parameter>
-    <!--
-    <parameter name="height" type="double" value="900">
-        <property name="constraints" value=">0" type="string"/>
-    </parameter>
-    <parameter name="createUnloadBatch" type="boolean" value="false">
-        <property name="constraints" value=">0" type="string"/>
-        <property name="displayName" value="create batch to unload" type="string"/>
-    </parameter>-->
-
     <input name="onoffIn" type="com.ttsnetwork.heron.v5.InputSignal">
     </input>
     <input name="speedIn" type="com.ttsnetwork.heron.v5.InputSignal">
@@ -81,7 +72,7 @@
         <property name="frame" value="endFrame" type="string"/>
         <property name="logicsPort" value="flowOut" type="string"/>
     </output>
-    <property name="displayName" value="Straight Conveyor V2" type="string"/>
+    <property name="displayName" value="Conveyor Line" type="string"/>
     <property name="vendor" value="TTS" type="string"/>
     <property name="category" value="transport" type="string"/>
     <property name="generator" value="builder.js" type="string"/>

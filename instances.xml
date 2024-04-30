@@ -636,7 +636,7 @@
       <parameter name="delayInterval" type="long" value="3000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
+      <parameter name="minCreationDistance" type="double" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -788,11 +788,11 @@
       <parameter name="delayInterval" type="long" value="300">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="100">
+      <parameter name="entityLength" type="double" value="200">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
-      <parameter name="entityWidth" type="double" value="100">
+      <parameter name="entityWidth" type="double" value="200">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity width [mm]"/>
       </parameter>
@@ -800,7 +800,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
+      <parameter name="minCreationDistance" type="double" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -816,7 +816,7 @@
          <property name="displayName" type="string" value="Entity name prefix"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="color" type="string" value="0x999999">
+      <parameter name="color" type="string" value="#c5dbe9">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -853,7 +853,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
-      <parameter name="entityWidth" type="double" value="50">
+      <parameter name="entityWidth" type="double" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity width [mm]"/>
       </parameter>
@@ -861,7 +861,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
+      <parameter name="minCreationDistance" type="double" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -877,7 +877,7 @@
          <property name="displayName" type="string" value="Entity name prefix"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="color" type="string" value="0x999999">
+      <parameter name="color" type="string" value="#d8a8d8">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -922,7 +922,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
+      <parameter name="minCreationDistance" type="double" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -938,7 +938,7 @@
          <property name="displayName" type="string" value="Entity name prefix"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="color" type="string" value="0x999999">
+      <parameter name="color" type="string" value="#c5dbe9">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>

@@ -22,7 +22,7 @@
             <param name="marker"></param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
-            <param name="minCreationDistance">100</param>
+            <param name="minCreationDistance">3000</param>
         </module-instance>
         <module-instance name="R2" type="com.ttsnetwork.modules.standard.Robot6DOF2">
             <visual x="-408" y="-1895"/>
@@ -107,7 +107,7 @@
             <param name="modelName">S4</param>
             <param name="creationFrameName">S4.creationFrame</param>
             <param name="timeInterval">4000</param>
-            <param name="minCreationDistance">100</param>
+            <param name="minCreationDistance">3000</param>
             <param name="marker"></param>
             <param name="counterName">counter</param>
             <param name="entityNamePrefix">E_</param>
@@ -120,7 +120,7 @@
             <param name="modelName">S2</param>
             <param name="creationFrameName">S2.creationFrame</param>
             <param name="timeInterval">3000</param>
-            <param name="minCreationDistance">100</param>
+            <param name="minCreationDistance">3000</param>
             <param name="marker"></param>
             <param name="counterName">counter</param>
             <param name="entityNamePrefix">E_</param>
@@ -207,7 +207,7 @@
             <param name="modelName">S3</param>
             <param name="creationFrameName">S3.creationFrame</param>
             <param name="timeInterval">3000</param>
-            <param name="minCreationDistance">100</param>
+            <param name="minCreationDistance">3000</param>
             <param name="marker"></param>
             <param name="counterName">counter</param>
             <param name="entityNamePrefix">E_</param>

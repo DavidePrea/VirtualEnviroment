@@ -21,7 +21,7 @@ public class PL2State extends StateMachine {
 
     double VROB = 3000;
     double VROB_attach = 500;
-    
+    public PLGlobal cont;
     IRobotCommands rob;
 
     IConveyorCommands Cc;
@@ -29,6 +29,9 @@ public class PL2State extends StateMachine {
     IConveyorCommands Ce;
 
     ISensorProvider CcSen1;
+    ISensorProvider CcSen2; //init sensor for n2
+    ISensorProvider CcSen3; //finish sensor for n2
+    
     ISensorProvider CdSen1;
     ISensorProvider CeSen1;
     
@@ -56,10 +59,16 @@ public class PL2State extends StateMachine {
         Ce = useSkill(IConveyorCommands.class, "CE");
         
         CcSen1 = useSkill(ISensorProvider.class, "CC");
+        CcSen2 = useSkill(ISensorProvider.class, "CC");
+        CcSen3 = useSkill(ISensorProvider.class, "CC");
+        
         CdSen1 = useSkill(ISensorProvider.class, "CD1");
         CeSen1 = useSkill(ISensorProvider.class, "CE");
         
         CcSen1.registerOnSensors(this::c_sensor1, "C_sen1");
+        CcSen2.registerOnSensors(this::c_sensorInit, "C_senInit");
+        CcSen3.registerOnSensors(this::c_sensorFinish, "C_senFinish");
+
         CdSen1.registerOnSensors(this::d_sensor1, "D1_sen1");
         CeSen1.registerOnSensors(this::e_sensor1, "E_sen1");
 
@@ -88,6 +97,20 @@ public class PL2State extends StateMachine {
         setVar(partE, sc.box);
         schedule.end();
     }
+    
+    public void c_sensorInit(SensorCatch sc) {
+        schedule.startSerial();
+        //incrementing N2  
+            cont.N2 ++;
+        schedule.end();
+    }
+    public void c_sensorFinish(SensorCatch sc) {
+        schedule.startSerial();
+        //decrementing N2   
+            cont.N2--;
+        schedule.end();
+    }
+
 
     public void state_100() {
         if (partC.read() != null) {

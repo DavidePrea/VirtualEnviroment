@@ -1,213 +1,214 @@
 DDD Simulator 2.4.12
-Reading project /Users/preatons/Progetto_FinaleVE/simulation.ini
-Reading run arguments from /Users/preatons/Progetto_FinaleVE/runargs.ini
-[simulator] 2024-04-30 12:41:47.155 INFO Application: DDD Simulator 2.4.12 
-[simulator] 2024-04-30 12:41:47.164 INFO Java version: 11.0.22 (11.0.22+7-LTS) 
-[simulator] 2024-04-30 12:41:47.165 INFO Java home: /private/var/folders/d5/stcskvd93tx48rr7t2ndyjr80000gn/T/AppTranslocation/F43192F2-F0E8-4FE1-9F4C-5FCCB7A79DE5/d/dddmodeleditor.app/Contents/Resources/dddmodeleditor/jdk64 
-[simulator] 2024-04-30 12:41:47.165 INFO Boot library path: /private/var/folders/d5/stcskvd93tx48rr7t2ndyjr80000gn/T/AppTranslocation/F43192F2-F0E8-4FE1-9F4C-5FCCB7A79DE5/d/dddmodeleditor.app/Contents/Resources/dddmodeleditor/jdk64/lib 
-[simulator] 2024-04-30 12:41:47.165 INFO Arch data model: 64 bit 
-[simulator] 2024-04-30 12:41:47.173 INFO Max threads: 8 
-[simulator] 2024-04-30 12:41:47.176 INFO Version information: 
-[simulator] 2024-04-30 12:41:47.525 INFO    2023-05-05 15:35 InfluxLib-6.8.0.jar 
-[simulator] 2024-04-30 12:41:47.527 INFO    2024-04-29 17:27 StandardCatalog.jar 
-[simulator] 2024-04-30 12:41:47.528 INFO    2016-07-11 15:12 com-sfnt-rms-natives-windows-amd64.jar 
-[simulator] 2024-04-30 12:41:47.528 INFO    2016-02-29 14:04 com-sfnt-rms-natives-windows-i586.jar 
-[simulator] 2024-04-30 12:41:47.528 INFO    2010-10-30 14:34 com-sfnt-rms.jar 
-[simulator] 2024-04-30 12:41:47.529 INFO    2024-02-19 17:40 com-ttsnetwork-model-editor-v4-com-sfnt-rms-sentinel-caffe.jar (1.7.2) 
-[simulator] 2024-04-30 12:41:47.529 INFO    2024-02-19 17:37 com-ttsnetwork-model-editor-v4-commands.jar (2.12) 
-[simulator] 2024-04-30 12:41:47.532 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-heron-v5.jar (5.44) 
-[simulator] 2024-04-30 12:41:47.533 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-heron-xml.jar (1.8) 
-[simulator] 2024-04-30 12:41:47.534 INFO    2024-02-19 17:41 com-ttsnetwork-model-editor-v4-input.jar (2.1) 
-[simulator] 2024-04-30 12:41:47.534 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-kinematics.jar (2.7) 
-[simulator] 2024-04-30 12:41:47.536 INFO    2024-02-19 17:42 com-ttsnetwork-model-editor-v4-modbus.jar (4.0) 
-[simulator] 2024-04-30 12:41:47.551 INFO    2024-02-19 17:42 com-ttsnetwork-model-editor-v4-modulespack-conveyors.jar (4.0) 
-[simulator] 2024-04-30 12:41:47.559 INFO    2024-02-19 17:37 com-ttsnetwork-model-editor-v4-motion.jar (1.11) 
-[simulator] 2024-04-30 12:41:47.564 INFO    2024-02-19 17:42 com-ttsnetwork-model-editor-v4-simulation-commons.jar (4.0) 
-[simulator] 2024-04-30 12:41:47.565 INFO    2024-02-19 17:41 com-ttsnetwork-model-editor-v4-simulator-v2.jar (2.5) 
-[simulator] 2024-04-30 12:41:47.565 INFO    2024-02-19 17:38 com-ttsnetwork-model-editor-v4-statistics.jar (1.10) 
-[simulator] 2024-04-30 12:41:47.565 INFO    2024-02-19 17:41 com-ttsnetwork-model-editor-v4-touchkit.jar (3.3) 
-[simulator] 2024-04-30 12:41:47.565 INFO    2017-03-09 14:01 commons-cli.jar (1.4.0) 
-[simulator] 2024-04-30 12:41:47.566 INFO    2020-01-22 15:10 commons-lang3.jar (3.11.0) 
-[simulator] 2024-04-30 12:41:47.566 INFO    2016-03-17 13:34 commons-math3.jar (3.6.1) 
-[simulator] 2024-04-30 12:41:47.566 INFO    2019-12-20 15:23 d3eve.jar 
-[simulator] 2024-04-30 12:41:47.567 INFO    2024-01-17 17:59 ddd-natives-linux-amd64.jar 
-[simulator] 2024-04-30 12:41:47.567 INFO    2024-01-17 17:59 ddd-natives-macosx-universal.jar 
-[simulator] 2024-04-30 12:41:47.569 INFO    2024-01-17 17:59 ddd-natives-windows-amd64.jar 
-[simulator] 2024-04-30 12:41:47.571 INFO    2024-01-17 17:59 ddd.jar 
-[simulator] 2024-04-30 12:41:47.572 INFO    2023-02-10 08:22 ejml-all.jar 
-[simulator] 2024-04-30 12:41:47.572 INFO    2023-02-10 08:22 ejml-cdense.jar 
-[simulator] 2024-04-30 12:41:47.573 INFO    2023-02-10 08:22 ejml-core.jar 
-[simulator] 2024-04-30 12:41:47.573 INFO    2023-02-10 08:22 ejml-ddense.jar 
-[simulator] 2024-04-30 12:41:47.574 INFO    2023-02-10 08:22 ejml-dsparse.jar 
-[simulator] 2024-04-30 12:41:47.576 INFO    2023-02-10 08:22 ejml-fdense.jar 
-[simulator] 2024-04-30 12:41:47.579 INFO    2023-02-10 08:22 ejml-fsparse.jar 
-[simulator] 2024-04-30 12:41:47.580 INFO    2023-02-10 08:22 ejml-simple.jar 
-[simulator] 2024-04-30 12:41:47.580 INFO    2023-02-10 08:22 ejml-zdense.jar 
-[simulator] 2024-04-30 12:41:47.580 INFO    2023-08-18 14:42 gluegen-rt-natives-linux-amd64.jar 
-[simulator] 2024-04-30 12:41:47.581 INFO    2023-08-18 14:43 gluegen-rt-natives-macosx-universal.jar 
-[simulator] 2024-04-30 12:41:47.584 INFO    2023-08-18 14:43 gluegen-rt-natives-windows-amd64.jar 
-[simulator] 2024-04-30 12:41:47.585 INFO    2023-08-18 14:42 gluegen-rt.jar 
-[simulator] 2024-04-30 12:41:47.585 INFO    2005-12-01 12:03 iicm.jar 
-[simulator] 2024-04-30 12:41:47.585 INFO    2021-08-20 18:46 j2mod.jar (3.0.0) 
-[simulator] 2024-04-30 12:41:47.585 INFO    2021-04-14 18:18 jSerialComm.jar (2.7.0) 
-[simulator] 2024-04-30 12:41:47.585 INFO    2019-01-16 09:24 javafx-base-mac.jar 
-[simulator] 2024-04-30 12:41:47.586 INFO    2019-01-16 10:23 javafx-base.jar 
-[simulator] 2024-04-30 12:41:47.586 INFO    2019-01-16 09:24 javafx-controls-mac.jar 
-[simulator] 2024-04-30 12:41:47.586 INFO    2019-01-16 11:19 javafx-controls.jar 
-[simulator] 2024-04-30 12:41:47.586 INFO    2019-01-16 09:24 javafx-fxml-mac.jar 
-[simulator] 2024-04-30 12:41:47.586 INFO    2019-01-16 11:19 javafx-fxml.jar 
-[simulator] 2024-04-30 12:41:47.586 INFO    2019-01-16 09:24 javafx-graphics-mac.jar 
-[simulator] 2024-04-30 12:41:47.586 INFO    2019-01-16 11:19 javafx-graphics.jar 
-[simulator] 2024-04-30 12:41:47.587 INFO    2019-01-16 09:24 javafx-swing-mac.jar 
-[simulator] 2024-04-30 12:41:47.587 INFO    2019-01-16 11:20 javafx-swing.jar 
-[simulator] 2024-04-30 12:41:47.587 INFO    2007-10-12 11:10 javolution.jar 
-[simulator] 2024-04-30 12:41:47.589 INFO    2021-11-08 20:28 jna.jar (5.10.0) 
-[simulator] 2024-04-30 12:41:47.590 INFO    2023-08-18 15:01 jogl-all-natives-linux-amd64.jar 
-[simulator] 2024-04-30 12:41:47.590 INFO    2023-08-18 15:00 jogl-all-natives-macosx-universal.jar 
-[simulator] 2024-04-30 12:41:47.590 INFO    2023-08-18 15:04 jogl-all-natives-windows-amd64.jar 
-[simulator] 2024-04-30 12:41:47.590 INFO    2023-08-18 15:01 jogl-all.jar 
-[simulator] 2024-04-30 12:41:47.590 INFO    2021-03-08 03:55 json-20210307.jar (20210307.0.0) 
-[simulator] 2024-04-30 12:41:47.593 INFO    2021-03-08 03:55 json.jar (20210307.0.0) 
-[simulator] 2024-04-30 12:41:47.593 INFO    2017-03-31 10:55 jsr305.jar (3.0.2) 
-[simulator] 2024-04-30 12:41:47.593 INFO    2022-09-19 10:49 openpdf.jar (1.3.30) 
-[simulator] 2024-04-30 12:41:47.594 INFO    2023-11-29 17:52 operationsLibrary.jar 
-[simulator] 2024-04-30 12:41:47.594 INFO    2020-07-14 09:05 org.eclipse.paho.client.mqttv3-1.2.5.jar (1.2.5) 
-[simulator] 2024-04-30 12:41:47.594 INFO    2013-07-07 19:39 simple-xml.jar 
-[simulator] 2024-04-30 12:41:47.594 INFO    2023-12-14 17:34 statisticreports-core.jar 
-[simulator] 2024-04-30 12:41:47.594 INFO    2023-12-14 17:34 statisticreports-javafx.jar 
-[simulator] 2024-04-30 12:41:47.595 INFO    2023-12-14 17:34 statisticreports-pdf.jar 
-[simulator] 2024-04-30 12:41:47.595 INFO    2006-03-13 20:05 stax-api.jar 
-[simulator] 2024-04-30 12:41:47.595 INFO    2006-06-19 20:42 stax.jar 
-[simulator] 2024-04-30 12:41:47.595 INFO    2021-11-04 10:13 unikey.jar 
-[simulator] 2024-04-30 12:41:47.596 INFO    2003-07-01 14:15 xpp3.jar 
-[simulator] 2024-04-30 12:41:47.596 INFO    2022-12-01 17:43 xresults.jar 
-[simulator] 2024-04-30 12:41:51.590 INFO Loading logics... 
+Reading project C:\Users\Simone\Documents\VirtualEnviroment\simulation.ini
+Reading run arguments from C:\Users\Simone\Documents\VirtualEnviroment\runargs.ini
+[simulator] 2024-05-07 10:59:07.753 INFO Application: DDD Simulator 2.4.12 
+[simulator] 2024-05-07 10:59:07.757 INFO Java version: 11.0.22 (11.0.22+7-LTS) 
+[simulator] 2024-05-07 10:59:07.757 INFO Java home: C:\Users\Simone\Desktop\Modelling\DDDModelEditor-app-4.0-RELEASE-2024-02-20\DDDModelEditor-app-4.0-SNAPSHOT\dddmodeleditor\jdk 
+[simulator] 2024-05-07 10:59:07.757 INFO Boot library path: C:\Users\Simone\Desktop\Modelling\DDDModelEditor-app-4.0-RELEASE-2024-02-20\DDDModelEditor-app-4.0-SNAPSHOT\dddmodeleditor\jdk\bin 
+[simulator] 2024-05-07 10:59:07.757 INFO Arch data model: 64 bit 
+[simulator] 2024-05-07 10:59:07.759 INFO Max threads: 12 
+[simulator] 2024-05-07 10:59:07.760 INFO Version information: 
+[simulator] 2024-05-07 10:59:07.825 INFO    2023-05-05 15:35 InfluxLib-6.8.0.jar 
+[simulator] 2024-05-07 10:59:07.825 INFO    2024-04-29 17:27 StandardCatalog.jar 
+[simulator] 2024-05-07 10:59:07.825 INFO    2016-07-11 15:12 com-sfnt-rms-natives-windows-amd64.jar 
+[simulator] 2024-05-07 10:59:07.826 INFO    2016-02-29 14:04 com-sfnt-rms-natives-windows-i586.jar 
+[simulator] 2024-05-07 10:59:07.826 INFO    2010-10-30 14:34 com-sfnt-rms.jar 
+[simulator] 2024-05-07 10:59:07.826 INFO    2024-02-19 18:29 com-ttsnetwork-model-editor-v4-com-sfnt-rms-sentinel-caffe.jar (1.7.2) 
+[simulator] 2024-05-07 10:59:07.826 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-commands.jar (2.12) 
+[simulator] 2024-05-07 10:59:07.826 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-heron-v5.jar (5.44) 
+[simulator] 2024-05-07 10:59:07.826 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-heron-xml.jar (1.8) 
+[simulator] 2024-05-07 10:59:07.827 INFO    2024-02-19 18:29 com-ttsnetwork-model-editor-v4-input.jar (2.1) 
+[simulator] 2024-05-07 10:59:07.827 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-kinematics.jar (2.7) 
+[simulator] 2024-05-07 10:59:07.827 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-modbus.jar (4.0) 
+[simulator] 2024-05-07 10:59:07.827 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-modulespack-conveyors.jar (4.0) 
+[simulator] 2024-05-07 10:59:07.827 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-motion.jar (1.11) 
+[simulator] 2024-05-07 10:59:07.827 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-simulation-commons.jar (4.0) 
+[simulator] 2024-05-07 10:59:07.828 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-simulator-v2.jar (2.5) 
+[simulator] 2024-05-07 10:59:07.828 INFO    2024-02-19 18:28 com-ttsnetwork-model-editor-v4-statistics.jar (1.10) 
+[simulator] 2024-05-07 10:59:07.828 INFO    2024-02-19 18:30 com-ttsnetwork-model-editor-v4-touchkit.jar (3.3) 
+[simulator] 2024-05-07 10:59:07.828 INFO    2017-03-09 14:01 commons-cli.jar (1.4.0) 
+[simulator] 2024-05-07 10:59:07.828 INFO    2020-01-22 15:10 commons-lang3.jar (3.11.0) 
+[simulator] 2024-05-07 10:59:07.828 INFO    2016-03-17 13:34 commons-math3.jar (3.6.1) 
+[simulator] 2024-05-07 10:59:07.828 INFO    2019-12-20 15:23 d3eve.jar 
+[simulator] 2024-05-07 10:59:07.828 INFO    2024-01-17 17:59 ddd-natives-linux-amd64.jar 
+[simulator] 2024-05-07 10:59:07.828 INFO    2024-01-17 17:59 ddd-natives-macosx-universal.jar 
+[simulator] 2024-05-07 10:59:07.829 INFO    2024-01-17 17:59 ddd-natives-windows-amd64.jar 
+[simulator] 2024-05-07 10:59:07.829 INFO    2024-01-17 17:59 ddd.jar 
+[simulator] 2024-05-07 10:59:07.829 INFO    2023-02-10 08:22 ejml-all.jar 
+[simulator] 2024-05-07 10:59:07.829 INFO    2023-02-10 08:22 ejml-cdense.jar 
+[simulator] 2024-05-07 10:59:07.829 INFO    2023-02-10 08:22 ejml-core.jar 
+[simulator] 2024-05-07 10:59:07.829 INFO    2023-02-10 08:22 ejml-ddense.jar 
+[simulator] 2024-05-07 10:59:07.829 INFO    2023-02-10 08:22 ejml-dsparse.jar 
+[simulator] 2024-05-07 10:59:07.830 INFO    2023-02-10 08:22 ejml-fdense.jar 
+[simulator] 2024-05-07 10:59:07.830 INFO    2023-02-10 08:22 ejml-fsparse.jar 
+[simulator] 2024-05-07 10:59:07.830 INFO    2023-02-10 08:22 ejml-simple.jar 
+[simulator] 2024-05-07 10:59:07.830 INFO    2023-02-10 08:22 ejml-zdense.jar 
+[simulator] 2024-05-07 10:59:07.830 INFO    2023-08-18 14:42 gluegen-rt-natives-linux-amd64.jar 
+[simulator] 2024-05-07 10:59:07.831 INFO    2023-08-18 14:43 gluegen-rt-natives-macosx-universal.jar 
+[simulator] 2024-05-07 10:59:07.831 INFO    2023-08-18 14:43 gluegen-rt-natives-windows-amd64.jar 
+[simulator] 2024-05-07 10:59:07.831 INFO    2023-08-18 14:42 gluegen-rt.jar 
+[simulator] 2024-05-07 10:59:07.831 INFO    2005-12-01 12:03 iicm.jar 
+[simulator] 2024-05-07 10:59:07.831 INFO    2021-08-20 18:46 j2mod.jar (3.0.0) 
+[simulator] 2024-05-07 10:59:07.831 INFO    2021-04-14 18:18 jSerialComm.jar (2.7.0) 
+[simulator] 2024-05-07 10:59:07.831 INFO    2019-01-16 10:47 javafx-base-win.jar 
+[simulator] 2024-05-07 10:59:07.831 INFO    2019-01-16 10:23 javafx-base.jar 
+[simulator] 2024-05-07 10:59:07.832 INFO    2019-01-16 10:49 javafx-controls-win.jar 
+[simulator] 2024-05-07 10:59:07.832 INFO    2019-01-16 11:19 javafx-controls.jar 
+[simulator] 2024-05-07 10:59:07.832 INFO    2019-01-16 10:49 javafx-fxml-win.jar 
+[simulator] 2024-05-07 10:59:07.832 INFO    2019-01-16 11:19 javafx-fxml.jar 
+[simulator] 2024-05-07 10:59:07.832 INFO    2019-01-16 10:55 javafx-graphics-win.jar 
+[simulator] 2024-05-07 10:59:07.832 INFO    2019-01-16 11:19 javafx-graphics.jar 
+[simulator] 2024-05-07 10:59:07.833 INFO    2019-01-16 10:55 javafx-swing-win.jar 
+[simulator] 2024-05-07 10:59:07.833 INFO    2019-01-16 11:20 javafx-swing.jar 
+[simulator] 2024-05-07 10:59:07.833 INFO    2007-10-12 11:10 javolution.jar 
+[simulator] 2024-05-07 10:59:07.833 INFO    2021-11-08 20:28 jna.jar (5.10.0) 
+[simulator] 2024-05-07 10:59:07.833 INFO    2023-08-18 15:01 jogl-all-natives-linux-amd64.jar 
+[simulator] 2024-05-07 10:59:07.833 INFO    2023-08-18 15:00 jogl-all-natives-macosx-universal.jar 
+[simulator] 2024-05-07 10:59:07.833 INFO    2023-08-18 15:04 jogl-all-natives-windows-amd64.jar 
+[simulator] 2024-05-07 10:59:07.833 INFO    2023-08-18 15:01 jogl-all.jar 
+[simulator] 2024-05-07 10:59:07.834 INFO    2021-03-08 03:55 json-20210307.jar (20210307.0.0) 
+[simulator] 2024-05-07 10:59:07.834 INFO    2021-03-08 03:55 json.jar (20210307.0.0) 
+[simulator] 2024-05-07 10:59:07.834 INFO    2017-03-31 10:55 jsr305.jar (3.0.2) 
+[simulator] 2024-05-07 10:59:07.834 INFO    2022-09-19 10:49 openpdf.jar (1.3.30) 
+[simulator] 2024-05-07 10:59:07.834 INFO    2023-11-29 17:52 operationsLibrary.jar 
+[simulator] 2024-05-07 10:59:07.834 INFO    2020-07-14 09:05 org.eclipse.paho.client.mqttv3-1.2.5.jar (1.2.5) 
+[simulator] 2024-05-07 10:59:07.834 INFO    2013-07-07 19:39 simple-xml.jar 
+[simulator] 2024-05-07 10:59:07.834 INFO    2023-12-14 17:34 statisticreports-core.jar 
+[simulator] 2024-05-07 10:59:07.834 INFO    2023-12-14 17:34 statisticreports-javafx.jar 
+[simulator] 2024-05-07 10:59:07.834 INFO    2023-12-14 17:34 statisticreports-pdf.jar 
+[simulator] 2024-05-07 10:59:07.835 INFO    2006-03-13 20:05 stax-api.jar 
+[simulator] 2024-05-07 10:59:07.835 INFO    2006-06-19 20:42 stax.jar 
+[simulator] 2024-05-07 10:59:07.835 INFO    2021-11-04 10:13 unikey.jar 
+[simulator] 2024-05-07 10:59:07.835 INFO    2003-07-01 14:15 xpp3.jar 
+[simulator] 2024-05-07 10:59:07.835 INFO    2022-12-01 17:43 xresults.jar 
+[simulator] 2024-05-07 10:59:07.943 INFO Network options: C:\Users\Simone\Desktop\Modelling\DDDModelEditor-app-4.0-RELEASE-2024-02-20\DDDModelEditor-app-4.0-SNAPSHOT\dddmodeleditor\jdk\bin\NetUniKey.ini (not found) 
+[simulator] 2024-05-07 10:59:08.775 INFO Loading logics... 
 Java Bindings for OpenGL Runtime Environment 2.5.0 (JogAmp Community)
 OpenGL Driver Info:
-	Vendor = "Apple"
-	Renderer = "Apple M1"
-	Version = "2.1 Metal - 88"
+	Vendor = "Intel"
+	Renderer = "Intel(R) Iris(R) Xe Graphics"
+	Version = "4.6.0 - Build 31.0.101.4953"
 	glMultiDrawArrays = true
 	GL_MAX_TEXTURE_SIZE = 16384
 Auto-detected buffer type: NONE
 Current buffer type: NONE
-[simulator] 2024-04-30 12:41:52.285 INFO Loading model... 
-[simulator] 2024-04-30 12:41:53.067 INFO Loading all layers... 
-[simulator] 2024-04-30 12:41:53.068 INFO Geometries to load: 329 / 329 
-[simulator] 2024-04-30 12:41:53.893 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:53.921 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:53.928 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:53.959 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:53.965 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:54.146 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:54.151 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:54.181 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:54.185 WARNING Box dimensions must  be positive numbers 
-[simulator] 2024-04-30 12:41:54.214 INFO Model loaded in 2,625 ms 
-[simulator] 2024-04-30 12:41:54.262 INFO Verifying license... 
-[simulator] 2024-04-30 12:41:54.267 INFO Time to verify: 0 ms 
-[simulator] 2024-04-30 12:41:54.267 SEVERE License not found! 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.277 CONFIG Loading model... 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.279 CONFIG Adapting model model.xml 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.350 CONFIG Loading module instance ConveyorV2 of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.399 WARNING Parameter: ConveyorV2.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.401 WARNING Parameter: ConveyorV2.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.401 WARNING Parameter: ConveyorV2.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.402 WARNING Parameter: ConveyorV2.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.402 WARNING Parameter: ConveyorV2.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.409 CONFIG Loading module instance PS1 of type com.ttsnetwork.modules.standard.PlanSource 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.422 WARNING Parameter: PS1.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.424 WARNING Parameter: PS1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.426 CONFIG Loading module instance R2 of type com.ttsnetwork.modules.standard.Robot6DOF2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.430 WARNING Parameter: R2.script has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.431 WARNING Parameter: R2.logicClassName has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.433 CONFIG Loading module instance R1 of type com.ttsnetwork.modules.standard.Robot6DOF2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.433 WARNING Parameter: R1.script has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.433 WARNING Parameter: R1.logicClassName has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.433 CONFIG Loading module instance CD1 of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.434 WARNING Parameter: CD1.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.434 WARNING Parameter: CD1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.435 CONFIG Loading module instance CustomConveyorSplit1 of type com.ttsnetwork.modules.standard.CustomConveyorSplit 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.436 WARNING Unable to set parameter: CustomConveyorSplit1.idleOnStart=${idleOnStart} 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.438 WARNING Unable to set parameter: CustomConveyorSplit1.infoContent=${infoContent} 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.439 WARNING Unable to set parameter: CustomConveyorSplit1.out1Length=${in1Length} 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.440 WARNING Unable to set parameter: CustomConveyorSplit1.out2Length=${in2Length} 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.440 WARNING Unable to set parameter: CustomConveyorSplit1.out3Length=${in3Length} 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.440 CONFIG Loading module instance CArch4 of type com.ttsnetwork.modules.standard.ConveyorArc 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.446 WARNING Parameter: CArch4.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.447 WARNING Parameter: CArch4.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.447 WARNING Parameter: CArch4.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.447 WARNING Parameter: CArch4.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.448 WARNING Parameter: CArch4.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.449 CONFIG Loading module instance CB of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.449 WARNING Parameter: CB.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.449 WARNING Parameter: CB.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.450 CONFIG Loading module instance S4 of type com.ttsnetwork.modules.standard.ParametricSource2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.452 WARNING Parameter: S4.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.453 WARNING Parameter: S4.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.453 CONFIG Loading module instance S2 of type com.ttsnetwork.modules.standard.ParametricSource2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.453 WARNING Parameter: S2.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.453 WARNING Parameter: S2.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.453 CONFIG Loading module instance CC of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CC.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CC.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 CONFIG Loading module instance CD2 of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CD2.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CD2.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 CONFIG Loading module instance CArch1 of type com.ttsnetwork.modules.standard.ConveyorArc 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CArch1.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CArch1.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CArch1.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.454 WARNING Parameter: CArch1.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CArch1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 CONFIG Loading module instance CF of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CF.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CF.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CF.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CF.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CF.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 CONFIG Loading module instance CArch3 of type com.ttsnetwork.modules.standard.ConveyorArc 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CArch3.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.455 WARNING Parameter: CArch3.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 WARNING Parameter: CArch3.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 WARNING Parameter: CArch3.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 WARNING Parameter: CArch3.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 CONFIG Loading module instance CE of type com.ttsnetwork.modules.standard.ConveyorLine2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 WARNING Parameter: CE.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 WARNING Parameter: CE.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 CONFIG Loading module instance S3 of type com.ttsnetwork.modules.standard.ParametricSource2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.456 WARNING Parameter: S3.marker has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.460 WARNING Parameter: S3.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.460 CONFIG Loading module instance CArch2 of type com.ttsnetwork.modules.standard.ConveyorArc 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.460 WARNING Parameter: CArch2.sensorNames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.460 WARNING Parameter: CArch2.sensorPositions has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.460 WARNING Parameter: CArch2.sensorsReveal has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.460 WARNING Parameter: CArch2.sensorFrames has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.460 WARNING Parameter: CArch2.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.461 CONFIG Loading module instance ProgrammableLogics1 of type com.ttsnetwork.modules.standard.PLModule 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.462 CONFIG Loading module instance ProgrammableLogics2 of type com.ttsnetwork.modules.standard.PLModule 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.462 CONFIG Loading module instance join of type com.ttsnetwork.modules.standard.ConveyorJoin 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.463 WARNING Unable to set parameter: join.idleOnStart=${idleOnStart} 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.463 WARNING Unable to set parameter: join.infoContent=${infoContent} 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.465 CONFIG Loading module instance D1 of type com.ttsnetwork.modules.standard.Sink 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.466 WARNING Parameter: D1.infoContent has null value 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.467 CONFIG Creating new connection between IN=CD1.flowIn and OUT=S2.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.470 CONFIG Creating new connection between IN=CE.flowIn and OUT=S3.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.470 CONFIG Creating new connection between IN=join.in2 and OUT=CArch1.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.471 CONFIG Creating new connection between IN=CF.flowIn and OUT=join.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.472 CONFIG Creating new connection between IN=D1.in and OUT=CF.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.480 CONFIG Creating new connection between IN=join.in1 and OUT=CArch2.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.484 CONFIG Creating new connection between IN=CArch2.flowIn and OUT=CB.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.484 CONFIG Creating new connection between IN=CD2.flowIn and OUT=S4.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.485 CONFIG Creating new connection between IN=CArch1.flowIn and OUT=CC.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.485 CONFIG Creating new connection between IN=CArch3.flowIn and OUT=CustomConveyorSplit1.out2 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.485 CONFIG Creating new connection between IN=CC.flowIn and OUT=CArch3.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.485 CONFIG Creating new connection between IN=CC.flowIn and OUT=CArch3.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.485 CONFIG Creating new connection between IN=CB.flowIn and OUT=CArch4.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.486 CONFIG Creating new connection between IN=CB.flowIn and OUT=CArch4.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.486 CONFIG Creating new connection between IN=CustomConveyorSplit1.flowIn and OUT=ConveyorV2.flowOut 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.487 CONFIG Creating new connection between IN=ConveyorV2.flowIn and OUT=PS1.out 
-[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-04-30 12:41:59.488 CONFIG Creating new connection between IN=CArch4.flowIn and OUT=CustomConveyorSplit1.out1 
+[simulator] 2024-05-07 10:59:08.905 INFO Loading model... 
+[simulator] 2024-05-07 10:59:09.157 INFO Loading all layers... 
+[simulator] 2024-05-07 10:59:09.157 INFO Geometries to load: 338 / 338 
+[simulator] 2024-05-07 10:59:09.347 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.363 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.366 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.378 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.380 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.390 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.394 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.408 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.410 WARNING Box dimensions must  be positive numbers 
+[simulator] 2024-05-07 10:59:09.453 INFO Model loaded in 678 ms 
+[simulator] 2024-05-07 10:59:09.489 INFO Verifying license... 
+[simulator] 2024-05-07 10:59:09.489 INFO Time to verify: 0 ms 
+[simulator] 2024-05-07 10:59:09.489 SEVERE License not found! 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.490 CONFIG Loading model... 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.492 CONFIG Adapting model model.xml 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.524 CONFIG Loading module instance CA of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.538 WARNING Parameter: CA.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.539 WARNING Parameter: CA.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.541 CONFIG Loading module instance PS1 of type com.ttsnetwork.modules.standard.PlanSource 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.543 WARNING Parameter: PS1.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.543 WARNING Parameter: PS1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.543 CONFIG Loading module instance R2 of type com.ttsnetwork.modules.standard.Robot6DOF2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 WARNING Parameter: R2.script has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 WARNING Parameter: R2.logicClassName has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 CONFIG Loading module instance R1 of type com.ttsnetwork.modules.standard.Robot6DOF2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 WARNING Parameter: R1.script has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 WARNING Parameter: R1.logicClassName has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 CONFIG Loading module instance CD1 of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 WARNING Parameter: CD1.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.546 WARNING Parameter: CD1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.547 CONFIG Loading module instance CArch4 of type com.ttsnetwork.modules.standard.ConveyorArc 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.549 WARNING Parameter: CArch4.sensorNames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.549 WARNING Parameter: CArch4.sensorPositions has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.549 WARNING Parameter: CArch4.sensorsReveal has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.549 WARNING Parameter: CArch4.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.549 WARNING Parameter: CArch4.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.549 CONFIG Loading module instance CB of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.550 WARNING Parameter: CB.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.550 WARNING Parameter: CB.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.550 CONFIG Loading module instance S4 of type com.ttsnetwork.modules.standard.ParametricSource2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.551 WARNING Parameter: S4.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.552 WARNING Parameter: S4.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.552 CONFIG Loading module instance ProgrammableLogics3 of type com.ttsnetwork.modules.standard.PLModule 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.553 CONFIG Loading module instance S2 of type com.ttsnetwork.modules.standard.ParametricSource2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.553 WARNING Parameter: S2.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.553 WARNING Parameter: S2.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.553 CONFIG Loading module instance ProgrammableLogics4 of type com.ttsnetwork.modules.standard.PLModule 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.553 CONFIG Loading module instance CC of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.553 WARNING Parameter: CC.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.553 WARNING Parameter: CC.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 CONFIG Loading module instance CD2 of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 WARNING Parameter: CD2.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 WARNING Parameter: CD2.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 CONFIG Loading module instance CArch1 of type com.ttsnetwork.modules.standard.ConveyorArc 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 WARNING Parameter: CArch1.sensorNames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 WARNING Parameter: CArch1.sensorPositions has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 WARNING Parameter: CArch1.sensorsReveal has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 WARNING Parameter: CArch1.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 WARNING Parameter: CArch1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.554 CONFIG Loading module instance CF of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CF.sensorNames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CF.sensorPositions has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CF.sensorsReveal has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CF.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CF.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 CONFIG Loading module instance CArch3 of type com.ttsnetwork.modules.standard.ConveyorArc 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CArch3.sensorNames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CArch3.sensorPositions has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CArch3.sensorsReveal has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CArch3.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.555 WARNING Parameter: CArch3.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 CONFIG Loading module instance CE of type com.ttsnetwork.modules.standard.ConveyorLine2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: CE.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: CE.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 CONFIG Loading module instance S3 of type com.ttsnetwork.modules.standard.ParametricSource2 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: S3.marker has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: S3.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 CONFIG Loading module instance CArch2 of type com.ttsnetwork.modules.standard.ConveyorArc 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: CArch2.sensorNames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: CArch2.sensorPositions has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: CArch2.sensorsReveal has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.556 WARNING Parameter: CArch2.sensorFrames has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.557 WARNING Parameter: CArch2.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.557 CONFIG Loading module instance ProgrammableLogics1 of type com.ttsnetwork.modules.standard.PLModule 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.557 CONFIG Loading module instance ProgrammableLogics2 of type com.ttsnetwork.modules.standard.PLModule 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.557 CONFIG Loading module instance join of type com.ttsnetwork.modules.standard.ConveyorJoin 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.557 WARNING Unable to set parameter: join.idleOnStart=${idleOnStart} 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.558 WARNING Unable to set parameter: join.infoContent=${infoContent} 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.558 CONFIG Loading module instance D1 of type com.ttsnetwork.modules.standard.Sink 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.559 WARNING Parameter: D1.infoContent has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.559 CONFIG Loading module instance PLFLow of type com.ttsnetwork.modules.standard.PropertyConveyorSplit 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.560 WARNING Unable to set parameter: PLFLow.idleOnStart=${idleOnStart} 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.560 WARNING Unable to set parameter: PLFLow.infoContent=${infoContent} 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.560 WARNING Unable to set parameter: PLFLow.out1Length=${in1Length} 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.560 WARNING Unable to set parameter: PLFLow.out2Length=${in2Length} 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.560 WARNING Unable to set parameter: PLFLow.out3Length=${in3Length} 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.561 WARNING Parameter: PLFLow.out3Values has null value 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.561 CONFIG Creating new connection between IN=CD1.flowIn and OUT=S2.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.563 CONFIG Creating new connection between IN=CE.flowIn and OUT=S3.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.563 CONFIG Creating new connection between IN=join.in2 and OUT=CArch1.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.563 CONFIG Creating new connection between IN=CF.flowIn and OUT=join.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.563 CONFIG Creating new connection between IN=D1.in and OUT=CF.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.565 CONFIG Creating new connection between IN=join.in1 and OUT=CArch2.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CArch2.flowIn and OUT=CB.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CD2.flowIn and OUT=S4.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CArch1.flowIn and OUT=CC.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CC.flowIn and OUT=CArch3.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CC.flowIn and OUT=CArch3.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CB.flowIn and OUT=CArch4.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CB.flowIn and OUT=CArch4.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CA.flowIn and OUT=PS1.out 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=PLFLow.flowIn and OUT=CA.flowOut 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CArch4.flowIn and OUT=PLFLow.out1 
+[com.ttsnetwork.heron.v5.xml.ModelLoader] 2024-05-07 10:59:14.566 CONFIG Creating new connection between IN=CArch3.flowIn and OUT=PLFLow.out2 
 Accelero a 1.0
 Warning: Nashorn engine is planned to be removed from a future JDK release
 Adapting machine from joints
@@ -269,6 +270,19 @@ SOLVER ALFA: 1.9660800000000003E-5
 Accelero a 1.0
 Accelero a 1.0
 Accelero a 1.0
+[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-05-07 10:59:14.971 SEVERE unable to set internal parameter id 
+[run 00001] 2024-05-07 10:59:14.971 SEVERE Could not find module cont 
+Accelero a 1.0
+Accelero a 1.0
+Accelero a 1.0
+Accelero a 1.0
+Accelero a 1.0
+Accelero a 1.0
+Accelero a 1.0
+[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-05-07 10:59:14.975 SEVERE unable to set internal parameter id 
+[run 00001] 2024-05-07 10:59:14.975 SEVERE Could not find module cont 
+[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-05-07 10:59:14.976 SEVERE unable to set internal parameter id 
+[run 00001] 2024-05-07 10:59:14.976 SEVERE Could not find module cont 
 Accelero a 1.0
 Accelero a 1.0
 Accelero a 1.0
@@ -277,107 +291,1159 @@ Accelero a 1.0
 Accelero a 1.0
 Accelero a 1.0
 Accelero a 1.0
-Accelero a 1.0
-Accelero a 1.0
-Accelero a 1.0
-[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-04-30 12:42:00.964 SEVERE unable to set internal parameter id 
-[com.ttsnetwork.modules.standard.InternalCustomLogics] 2024-04-30 12:42:00.981 SEVERE unable to set internal parameter id 
-Accelero a 1.0
-Accelero a 1.0
-Accelero a 1.0
-Accelero a 1.0
-[simulator] 2024-04-30 12:42:00.987 INFO Animation delta times: [50, 500, 1000, 2000, 5000, 10000, 60000, 600000, 3600000] 
-[simulator] 2024-04-30 12:42:00.989 INFO Animation delta time: 50 
-[simulator] 2024-04-30 12:42:01.312 INFO Animation delta time: 50 
-d3native -> /private/var/folders/d5/stcskvd93tx48rr7t2ndyjr80000gn/T/ddd_cache/4637c4e13d0fb6e0b8337fe1cae755e7/macosx-universal/libd3native.jnilib (23 ms, found)
+[simulator] 2024-05-07 10:59:14.979 INFO Animation delta times: [50, 500, 1000, 2000, 5000, 10000, 60000, 600000, 3600000] 
+[simulator] 2024-05-07 10:59:14.980 INFO Animation delta time: 50 
+[simulator] 2024-05-07 10:59:15.062 INFO Animation delta time: 50 
+d3native -> C:\Users\Simone\AppData\Local\Temp\ddd_cache\0458821042242ddd974aa0b8fd62a2b5\windows-amd64\d3native.dll (9 ms, found)
 *** DDD Native Library ***
 my.company.PL1State-> Switching to 100
 my.company.PL2State-> Switching to 100
-[run 00001] 2024-04-30 12:42:22.285 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:22.611 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:22.943 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:23.272 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:23.764 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:24.252 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:24.577 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:24.907 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:25.231 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:25.561 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:25.561 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:25.561 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:26.055 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:26.882 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:27.206 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:27.698 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:17.090 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:17.575 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:17.882 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:18.344 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:18.826 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:19.313 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:19.621 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:20.077 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:20.242 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:20.242 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:20.553 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:21.561 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:21.893 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:22.391 WARNING Box not created, position occupied by last created box 
 my.company.PL2State-> Switching to 200
-my.company.PL2State-> Switching to 3000
-my.company.PL2State-> Switching to 3005
-my.company.PL2State-> Switching to 3010
-my.company.PL2State-> Switching to 3020
-[run 00001] 2024-04-30 12:42:28.236 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:28.515 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:28.678 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:28.844 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:28.844 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:29.168 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:29.655 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:29.986 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:30.314 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:30.809 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:31.472 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:31.796 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:32.126 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:32.127 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:32.127 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:32.457 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2000
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:22.893 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:23.200 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:23.371 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:23.528 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:23.528 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:23.851 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:24.353 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:24.837 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:25.329 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:26.321 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:26.641 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:26.801 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:26.801 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:27.121 WARNING Box not created, position occupied by last created box 
 my.company.PL1State-> Switching to 200
 my.company.PL1State-> Switching to 300
 my.company.PL1State-> Switching to 400
-[run 00001] 2024-04-30 12:42:32.787 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:32.891 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:33.275 WARNING Box not created, position occupied by last created box 
-my.company.PL2State-> Switching to 2030
-my.company.PL2State-> Switching to 100
-[run 00001] 2024-04-30 12:42:33.769 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:34.242 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:34.560 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:34.890 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:35.219 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:35.383 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:35.383 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:36.042 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:27.536 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:27.587 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:28.074 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:28.380 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:28.865 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:29.342 WARNING Box not created, position occupied by last created box 
+[simulator] 2024-05-07 10:59:29.865 INFO Animation delta time: 500 
+[run 00001] 2024-05-07 10:59:29.872 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:29.872 WARNING Box not created, position occupied by last created box 
 my.company.PL1State-> Switching to 500
 my.company.PL1State-> Switching to 100
-[run 00001] 2024-04-30 12:42:36.526 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:36.848 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:37.177 WARNING Box not created, position occupied by last created box 
-[run 00001] 2024-04-30 12:42:37.232 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:29.922 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:29.972 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.022 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.022 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:30.078 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.079 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.125 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.175 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.175 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.175 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.226 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.275 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.275 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:30.399 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.450 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:30.501 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.501 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.501 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.551 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.552 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.601 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.665 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.715 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.765 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.821 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.871 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.871 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.922 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:30.976 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:30.976 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.024 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.073 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.124 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.124 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.125 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.174 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
 my.company.PL2State-> Switching to 200
 my.company.PL2State-> Switching to 3000
-[run 00001] 2024-04-30 12:42:37.499 WARNING Box not created, position occupied by last created box 
-[simulator] 2024-04-30 12:42:37.847 INFO Exectution completed in 38,571 ms 
-[simulator] 2024-04-30 12:42:37.853 INFO Exit code: 0 
-java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
-	at java.desktop/java.awt.Component.getLocationOnScreen_NoTreeLock(Component.java:2101)
-	at java.desktop/java.awt.Component.getLocationOnScreen(Component.java:2075)
-	at java.desktop/sun.lwawt.macosx.CAccessibility$23.call(CAccessibility.java:419)
-	at java.desktop/sun.lwawt.macosx.CAccessibility$23.call(CAccessibility.java:417)
-	at java.desktop/sun.lwawt.macosx.LWCToolkit$CallableWrapper.run(LWCToolkit.java:674)
-	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:303)
-	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
-	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
-	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
-	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
-	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
-	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
-	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
-	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
-	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
-	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
-	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
-	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
-	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[run 00001] 2024-05-07 10:59:31.275 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.275 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.325 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.379 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:31.430 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.430 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.430 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.431 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.481 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.530 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.580 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.630 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.680 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:31.732 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.733 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.733 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.782 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:31.833 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:31.895 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.896 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.934 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:31.984 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.035 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.036 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.036 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.136 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:32.188 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.190 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.239 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.288 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.337 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.337 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.337 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:32.388 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.438 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.502 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:32.504 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.553 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.554 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.604 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.654 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:32.704 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.754 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:32.804 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.805 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.854 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.904 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.956 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:32.956 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:33.006 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.061 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:33.113 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.114 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.162 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.212 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.263 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.263 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.263 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:33.314 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.315 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.364 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.416 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.467 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.468 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:33.517 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.567 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.567 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.618 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.668 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:33.720 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.769 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:33.870 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.872 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.872 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.872 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:33.921 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:33.971 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+[run 00001] 2024-05-07 10:59:34.021 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.070 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:34.121 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.122 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.122 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.171 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.171 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.171 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.271 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.322 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.322 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.377 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.428 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.479 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.480 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.480 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.529 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.580 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:34.631 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.732 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.783 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.784 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.784 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:34.784 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.835 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.891 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.933 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.934 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:34.983 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.034 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.093 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.093 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.093 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:35.145 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.195 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:35.249 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.300 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.352 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.352 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.402 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.453 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.503 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:35.561 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.604 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.654 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.706 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.706 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.706 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.756 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.806 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:35.857 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.864 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:35.907 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.007 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.007 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.007 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:36.057 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.058 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.108 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:36.158 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.159 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.209 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.260 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.311 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.312 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.425 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:36.475 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.526 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.576 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.626 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.627 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.627 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:36.636 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.691 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:36.743 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:36.794 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.893 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.943 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.943 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.943 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.943 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:36.996 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:36.996 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.044 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.110 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.110 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.160 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.218 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.268 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.318 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.373 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:37.433 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.436 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.475 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:37.526 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.574 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.575 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.575 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.625 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.626 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+[run 00001] 2024-05-07 10:59:37.724 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.775 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:37.826 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:37.828 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.875 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.875 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.875 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.876 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.925 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:37.978 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.028 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.079 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.183 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.183 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.184 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.235 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.285 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:38.337 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.337 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.386 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.437 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.486 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.486 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.486 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.586 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.637 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:38.639 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.639 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:38.688 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.737 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.787 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.787 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.787 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:38.838 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.839 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.888 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:38.988 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.039 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.089 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:39.140 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.141 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.191 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:39.242 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.291 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.341 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.392 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.393 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.393 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.393 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:39.442 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.443 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.492 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:39.549 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.593 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.593 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.643 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.702 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.702 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.703 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.752 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.863 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.864 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:39.913 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:39.964 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.030 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.030 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.079 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.129 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:40.184 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:40.280 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.281 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.330 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.330 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.331 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.331 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.380 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:40.431 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:40.480 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.545 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.607 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.657 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.657 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.707 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.758 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.808 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:40.809 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.858 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.908 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.958 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:40.958 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.008 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.058 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:41.121 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:41.122 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.159 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.210 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:41.260 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.260 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.260 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.260 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.312 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.371 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+[run 00001] 2024-05-07 10:59:41.421 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.471 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.588 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.588 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.588 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:41.596 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.639 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.688 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.739 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.789 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.839 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.890 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.891 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.891 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:41.940 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:41.991 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:42.048 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.048 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.092 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.143 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.194 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.195 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.195 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.195 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.244 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.294 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.395 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.446 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.507 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.507 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.507 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL1State-> Switching to 200
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:42.509 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:42.569 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.608 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.658 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.708 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.759 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.759 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.809 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:42.859 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:42.909 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:42.972 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.010 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.060 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.110 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.111 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.111 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.111 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.161 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.161 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+[run 00001] 2024-05-07 10:59:43.277 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.326 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.380 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.430 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.430 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.430 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.481 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.534 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.585 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.586 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.635 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:43.736 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.736 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.737 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.787 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.837 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:43.891 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.937 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:43.990 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:43.990 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.038 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.041 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.041 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.089 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.141 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.191 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.241 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:44.241 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.296 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.346 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.346 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.346 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:44.347 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:44.397 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.447 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:44.497 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.547 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.598 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.648 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.699 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.748 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:44.804 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:44.805 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.805 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.849 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.900 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.950 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.951 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:44.951 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.000 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:45.062 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+[run 00001] 2024-05-07 10:59:45.113 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.162 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.218 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.268 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.268 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.268 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:45.277 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.318 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.368 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.469 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.519 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.569 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.569 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.569 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:45.622 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.622 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.673 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:45.733 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.783 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.884 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.885 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.885 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.885 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.934 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:45.984 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:45.985 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.034 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.084 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:46.135 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.185 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.186 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.186 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:46.186 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:46.286 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.336 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.386 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:46.437 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.437 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.488 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.488 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.542 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.593 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:46.643 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.749 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.799 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.800 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.800 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.800 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:46.849 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.899 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:46.952 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:46.953 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.000 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.058 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.110 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.110 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.159 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.209 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.209 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:47.274 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.275 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.324 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.382 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.432 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.432 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.493 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.493 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:47.596 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.644 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.694 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.745 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.745 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.745 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.746 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:47.797 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.846 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.896 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.897 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:47.997 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.047 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.047 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.047 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:48.098 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.098 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:48.148 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.148 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.199 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.256 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.306 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.357 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.358 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.459 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:48.516 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.517 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.560 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:48.610 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.660 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.661 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.661 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.710 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.761 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.811 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.862 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:48.912 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.912 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.963 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.963 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:48.963 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:49.018 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.068 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.118 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.118 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.172 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.223 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.324 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.375 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:49.431 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.431 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.476 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.525 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.576 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.576 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.576 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.576 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.627 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.677 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:49.728 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.728 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.777 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.841 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.904 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.904 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.904 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:49.954 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.012 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.074 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.125 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.233 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.233 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:50.245 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.284 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.334 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:50.393 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.394 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.450 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.499 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.550 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.550 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.550 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:50.599 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.650 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:50.713 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.713 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.763 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.824 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.874 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.874 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.874 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.933 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:50.995 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.107 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.107 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:51.158 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.209 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.210 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.260 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.310 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:51.365 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.410 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.410 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:51.462 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.510 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.510 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.510 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.560 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.616 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL1State-> Switching to 200
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+[run 00001] 2024-05-07 10:59:51.666 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.717 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.772 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.834 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.834 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.834 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.834 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.884 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:51.996 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:51.997 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.045 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.095 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.145 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.146 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.195 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.246 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:52.300 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:52.300 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.300 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.397 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.461 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.461 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.461 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.512 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.562 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.612 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.665 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.716 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.775 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.775 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.775 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 3000
+[run 00001] 2024-05-07 10:59:52.831 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.877 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.931 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:52.981 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.032 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.082 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:53.135 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:53.136 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.185 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 3005
+my.company.PL2State-> Switching to 3010
+my.company.PL2State-> Switching to 3020
+[run 00001] 2024-05-07 10:59:53.245 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.286 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.336 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.387 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.388 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.388 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.438 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.488 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.489 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.540 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.589 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:53.689 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.689 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.690 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.690 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:53.740 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.790 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.840 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.890 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:53.943 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:53.943 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.993 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:53.993 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.113 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:54.164 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.222 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.272 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.323 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.324 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.324 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.373 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.423 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:54.476 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.524 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.574 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.628 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.628 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.629 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.678 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.728 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.785 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:54.786 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.786 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.835 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.885 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.941 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.941 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:54.990 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.041 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:55.096 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.096 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.141 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.191 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.242 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.242 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.242 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:55.292 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:55.393 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.394 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.443 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.493 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.543 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.543 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.543 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:55.594 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:55.594 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.644 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.704 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.704 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.813 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.876 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.876 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.876 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.937 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:55.988 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:56.040 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.089 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+[run 00001] 2024-05-07 10:59:56.140 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.190 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.191 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.191 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.241 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:56.307 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+[run 00001] 2024-05-07 10:59:56.344 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.395 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:56.450 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:56.450 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.500 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.500 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.500 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.500 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.557 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.618 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.719 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.774 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.824 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.824 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.874 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.929 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:56.929 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 300
+my.company.PL1State-> Switching to 400
+my.company.PL2State-> Switching to 2010
+my.company.PL2State-> Switching to 2020
+[run 00001] 2024-05-07 10:59:56.979 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.030 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.079 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.131 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.131 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.131 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.180 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 2030
+my.company.PL2State-> Switching to 100
+[run 00001] 2024-05-07 10:59:57.230 WARNING Box not created, position occupied by last created box 
+my.company.PL2State-> Switching to 200
+my.company.PL2State-> Switching to 2000
+my.company.PL1State-> Switching to 500
+my.company.PL1State-> Switching to 100
+[run 00001] 2024-05-07 10:59:57.280 WARNING Box not created, position occupied by last created box 
+my.company.PL1State-> Switching to 200
+[run 00001] 2024-05-07 10:59:57.280 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.334 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.334 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.385 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.435 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.435 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.435 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.486 WARNING Box not created, position occupied by last created box 
+[run 00001] 2024-05-07 10:59:57.486 WARNING Box not created, position occupied by last created box 
+[simulator] 2024-05-07 11:00:00.086 INFO Exectution completed in 45,596 ms 
+[simulator] 2024-05-07 11:00:00.086 INFO Exit code: 0 

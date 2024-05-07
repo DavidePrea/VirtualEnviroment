@@ -20,13 +20,15 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
 public class PL1State extends StateMachine {
 
     double VROB = 6000;
-
+    public PLGlobal cont;
     IRobotCommands rob;
 
     IConveyorCommands Cb;
     IConveyorCommands Cd;
 
     ISensorProvider CbSen1;
+    ISensorProvider CbSen2; //init for B
+    ISensorProvider CbSen3; //finish for B
     ISensorProvider CdSen1;
 
     SimpleStateVar partB = new SimpleStateVar();
@@ -44,9 +46,14 @@ public class PL1State extends StateMachine {
         Cd = useSkill(IConveyorCommands.class, "CD2");
 
         CbSen1 = useSkill(ISensorProvider.class, "CB");
+        CbSen2 = useSkill(ISensorProvider.class, "CB");
+        CbSen3 = useSkill(ISensorProvider.class, "CB");
         CdSen1 = useSkill(ISensorProvider.class, "CD2");
 
         CbSen1.registerOnSensors(this::b_sensor1, "B_sen1");
+        CbSen2.registerOnSensors(this::b_sensorInit, "B_senInit");
+        CbSen3.registerOnSensors(this::b_sensorFinish, "B_senFinish");
+        
         CdSen1.registerOnSensors(this::d_sensor1, "D2_sen1");
 
     }
@@ -69,7 +76,16 @@ public class PL1State extends StateMachine {
         setVar(partD, sc.box);
         schedule.end();
     }
-
+    public void b_sensorInit(SensorCatch sc) {
+        schedule.startSerial();
+             cont.N1++;
+        schedule.end();
+    }
+    public void b_sensorFinish(SensorCatch sc) {
+        schedule.startSerial();
+             cont.N1--;
+        schedule.end();
+    }
     public void state_100() {
         if (partB.read() != null) {
             workingB = partB.readAndForget();

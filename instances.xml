@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding= "UTF-8" ?>
 <instances>
+   <instance name="CA" uuid="8defd9c2-4b31-4915-b6c1-d35bdbf26962" version="1" prototype="468e049a-e061-4e96-8ba8-32583dd93a0c">
+      <parameter name="speed" type="double" value="1">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Speed [m/s]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="1000">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Length [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="width" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Width [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="height" type="double" value="900">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Height [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="sensorPositions" type="double[]" value="500">
+         <property name="displayName" type="string" value="Sensor positions [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="sensorNames" type="string[]" value="SA">
+         <property name="displayName" type="string" value="Sensor names"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="sensorReveal" type="string[]" value="CENTER">
+         <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="sensorFrames" type="string[]" value="">
+         <property name="displayName" type="string" value="Sensor frames"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="idleOnStart" type="boolean" value="false">
+         <property name="displayName" type="string" value="Idle on start"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="infoContent" type="string" value="">
+         <property name="displayName" type="string" value="HUD content (HTML)"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="lwGeom" type="boolean" value="true">
+         <property name="displayName" type="string" value="Lightweight geometry"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+   </instance>
    <instance name="CArch1" uuid="486efa0f-84f5-475b-847b-92d68a790796" version="2" prototype="ae405f70-8815-478f-8d89-223da5b45c53">
       <parameter name="speed" type="double" value="1">
          <property name="constraints" type="string" value="&gt;0"/>
@@ -249,15 +299,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="1500">
+      <parameter name="sensorPositions" type="double[]" value="1500;200;2800">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="B_sen1">
+      <parameter name="sensorNames" type="string[]" value="B_sen1;B_senInit;B_senFinish">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="CENTER">
+      <parameter name="sensorReveal" type="string[]" value="CENTER;CENTER;CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -299,15 +349,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="1500">
+      <parameter name="sensorPositions" type="double[]" value="1500;200;2800">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="C_sen1">
+      <parameter name="sensorNames" type="string[]" value="C_sen1;C_senInit;C_senFinish">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="CENTER">
+      <parameter name="sensorReveal" type="string[]" value="CENTER;CENTER;CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -528,57 +578,16 @@
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
    </instance>
-   <instance name="ConveyorV2" uuid="8defd9c2-4b31-4915-b6c1-d35bdbf26962" version="1" prototype="468e049a-e061-4e96-8ba8-32583dd93a0c">
-      <parameter name="speed" type="double" value="1">
+   <instance name="D1" uuid="bbdad5a4-2b1b-4ad6-8291-10510f503a26" version="1" prototype="5a6af30b-a6c6-4d2f-8b59-55688f183628">
+      <parameter name="waitBeforeDelete" type="long" value="1000">
          <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Speed [m/s]"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="length" type="double" value="1000">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Length [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="width" type="double" value="500">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Width [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="height" type="double" value="900">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Height [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="sensorPositions" type="double[]" value="">
-         <property name="displayName" type="string" value="Sensor positions [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="sensorNames" type="string[]" value="">
-         <property name="displayName" type="string" value="Sensor names"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="sensorReveal" type="string[]" value="">
-         <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="sensorFrames" type="string[]" value="">
-         <property name="displayName" type="string" value="Sensor frames"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="idleOnStart" type="boolean" value="false">
-         <property name="displayName" type="string" value="Idle on start"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
       <parameter name="infoContent" type="string" value="">
          <property name="displayName" type="string" value="HUD content (HTML)"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="lwGeom" type="boolean" value="true">
-         <property name="displayName" type="string" value="Lightweight geometry"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
    </instance>
-   <instance name="CustomConveyorSplit1" uuid="4cc0762e-d370-4a78-8d51-0013a4170cd0" version="1" prototype="9660f1e1-96e8-42e9-815d-bb0bb86c7285">
+   <instance name="PLFLow" uuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2" version="1" prototype="42538426-1e50-4f5f-a208-be64fc5ae44f">
       <parameter name="speed" type="double" value="1">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Speed [m/s]"/>
@@ -599,7 +608,7 @@
          <property name="displayName" type="string" value="OUT2 Length [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="out3Length" type="double" value="200">
+      <parameter name="out3Length" type="double" value="250">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="OUT3 Length [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
@@ -614,18 +623,26 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="splitRuleClass" type="string" value="my.company.RuleClass">
-         <property name="displayName" type="string" value="Rule class name"/>
+      <parameter name="propertyName" type="string" value="SU">
+         <property name="displayName" type="string" value="Property name"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-   </instance>
-   <instance name="D1" uuid="bbdad5a4-2b1b-4ad6-8291-10510f503a26" version="1" prototype="5a6af30b-a6c6-4d2f-8b59-55688f183628">
-      <parameter name="waitBeforeDelete" type="long" value="1000">
-         <property name="constraints" type="string" value="&gt;0"/>
-      </parameter>
-      <parameter name="infoContent" type="string" value="">
-         <property name="displayName" type="string" value="HUD content (HTML)"/>
+      <parameter name="out1Values" type="string[]" value="0">
+         <property name="displayName" type="string" value="OUT1 property values"/>
          <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="out2Values" type="string[]" value="1">
+         <property name="displayName" type="string" value="OUT2 property values"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="out3Values" type="string[]" value="">
+         <property name="displayName" type="string" value="OUT3 property values"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="defaultExitIndex" type="int" value="1">
+         <property name="displayName" type="string" value="Default exit index"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+         <property name="options" type="string[]" value="1;2;3"/>
       </parameter>
    </instance>
    <instance name="PS1" uuid="f625cd6a-ffb9-4f83-8d6f-ae7015065f89" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
@@ -691,6 +708,20 @@
    </instance>
    <instance name="ProgrammableLogics2" uuid="fbee44eb-d446-4508-9bb6-f65c32a8724d" version="1" prototype="ffb20cba-6216-40c1-81f5-4d18313ca199">
       <parameter name="plClass" type="string" value="my.company.PL2State">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Logics class"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="ProgrammableLogics3" uuid="0b1f5b8b-cfac-483d-acc0-8d24b4a3fcce" version="1" prototype="ffb20cba-6216-40c1-81f5-4d18313ca199">
+      <parameter name="plClass" type="string" value="my.company.PLGlobal">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Logics class"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="ProgrammableLogics4" uuid="41533933-4f76-4b7b-824e-3587def3b9fe" version="1" prototype="ffb20cba-6216-40c1-81f5-4d18313ca199">
+      <parameter name="plClass" type="string" value="my.company.PLFLow">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Logics class"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1009,12 +1040,12 @@
    <relationship sourcePortName="out" sourceInstanceUuid="ee2bc794-f939-4a8a-a127-6a584622166f" targetPortName="in" targetInstanceUuid="4a1996ce-47d6-422c-beab-8b8c059e89f8"/>
    <relationship sourcePortName="out" sourceInstanceUuid="13f28092-9e56-451d-8e45-ff39473aaeb1" targetPortName="in" targetInstanceUuid="cf1e5285-3300-42aa-b723-f097ca98ae91"/>
    <relationship sourcePortName="out" sourceInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36" targetPortName="in" targetInstanceUuid="486efa0f-84f5-475b-847b-92d68a790796"/>
-   <relationship sourcePortName="out2" sourceInstanceUuid="4cc0762e-d370-4a78-8d51-0013a4170cd0" targetPortName="in" targetInstanceUuid="177a94eb-8ae6-4728-9e7e-ff6a55083a90"/>
    <relationship sourcePortName="out" sourceInstanceUuid="177a94eb-8ae6-4728-9e7e-ff6a55083a90" targetPortName="in" targetInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36"/>
    <relationship sourcePortName="out" sourceInstanceUuid="177a94eb-8ae6-4728-9e7e-ff6a55083a90" targetPortName="in" targetInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36"/>
    <relationship sourcePortName="out" sourceInstanceUuid="54e5501e-a305-49b7-bfed-3eb2dcc2d89a" targetPortName="in" targetInstanceUuid="ee2bc794-f939-4a8a-a127-6a584622166f"/>
    <relationship sourcePortName="out" sourceInstanceUuid="54e5501e-a305-49b7-bfed-3eb2dcc2d89a" targetPortName="in" targetInstanceUuid="ee2bc794-f939-4a8a-a127-6a584622166f"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="8defd9c2-4b31-4915-b6c1-d35bdbf26962" targetPortName="in" targetInstanceUuid="4cc0762e-d370-4a78-8d51-0013a4170cd0"/>
    <relationship sourcePortName="out" sourceInstanceUuid="f625cd6a-ffb9-4f83-8d6f-ae7015065f89" targetPortName="in" targetInstanceUuid="8defd9c2-4b31-4915-b6c1-d35bdbf26962"/>
-   <relationship sourcePortName="out1" sourceInstanceUuid="4cc0762e-d370-4a78-8d51-0013a4170cd0" targetPortName="in" targetInstanceUuid="54e5501e-a305-49b7-bfed-3eb2dcc2d89a"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="8defd9c2-4b31-4915-b6c1-d35bdbf26962" targetPortName="in" targetInstanceUuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2"/>
+   <relationship sourcePortName="out1" sourceInstanceUuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2" targetPortName="in" targetInstanceUuid="54e5501e-a305-49b7-bfed-3eb2dcc2d89a"/>
+   <relationship sourcePortName="out2" sourceInstanceUuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2" targetPortName="in" targetInstanceUuid="177a94eb-8ae6-4728-9e7e-ff6a55083a90"/>
 </instances>

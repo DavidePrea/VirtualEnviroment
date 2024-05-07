@@ -21,7 +21,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="500">
+      <parameter name="sensorPositions" type="double[]" value="900">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -434,7 +434,7 @@
          <property name="displayName" type="string" value="Speed [m/s]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="length" type="double" value="750">
+      <parameter name="length" type="double" value="1250">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Length [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
@@ -587,6 +587,86 @@
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
+   <instance name="Fences1" uuid="f04885f1-022b-4a5b-9865-55fb54172a7b" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Fences2" uuid="821c34ec-2e48-4cad-a0ea-b5b9d89ca753" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Fences3" uuid="d01e418b-f484-48ca-8b3e-ce2fa0b6b760" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="2280">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Fences4" uuid="96366c95-2130-475e-b0de-f5b0e480815d" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="2250">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Fences5" uuid="4a62cc99-1d02-4946-a3ab-ebd9230aacb8" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Fences6" uuid="a1381527-3732-45fb-8393-6eaa29d44c39" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Fences7" uuid="0ec8407c-597a-484d-92db-9ba83600ea53" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="2500">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Fences8" uuid="d39066f0-01be-4a43-9eed-242977a0809f" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
+      <parameter name="length" type="double" value="2500">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Operator1" uuid="951ffb2b-680b-4e17-8954-61b5a395d027" version="1" prototype="630fb14e-0949-46c8-ac36-40a0f15eea25">
+      <parameter name="length" type="double" value="4000">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="Operator2" uuid="abf0fddd-b2ea-448e-af07-52a31f445f51" version="1" prototype="630fb14e-0949-46c8-ac36-40a0f15eea25">
+      <parameter name="length" type="double" value="4000">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="1800">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
    <instance name="PLFLow" uuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2" version="1" prototype="42538426-1e50-4f5f-a208-be64fc5ae44f">
       <parameter name="speed" type="double" value="1">
          <property name="constraints" type="string" value="&gt;0"/>
@@ -646,7 +726,7 @@
       </parameter>
    </instance>
    <instance name="PS1" uuid="f625cd6a-ffb9-4f83-8d6f-ae7015065f89" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
-      <parameter name="creationtimeInterval" type="long" value="3000">
+      <parameter name="creationtimeInterval" type="long" value="1500">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
@@ -811,15 +891,17 @@
          <property name="file_edit" type="boolean" value="false"/>
       </parameter>
    </instance>
+   <instance name="RobotGripper1" uuid="a99e6390-eae0-4679-85a3-b7e20f54d564" version="1" prototype="24925e13-84ee-4438-a2c8-e7e33076f003"/>
+   <instance name="RobotGripper2" uuid="576c655d-eb1b-43d2-90a7-2f167cefde96" version="1" prototype="24925e13-84ee-4438-a2c8-e7e33076f003"/>
    <instance name="S2" uuid="959d80dc-deeb-40d3-beeb-b5e854d78676" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
-      <parameter name="creationtimeInterval" type="long" value="3000">
+      <parameter name="creationtimeInterval" type="long" value="6000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
-      <parameter name="delayInterval" type="long" value="300">
+      <parameter name="delayInterval" type="long" value="6000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="200">
+      <parameter name="entityLength" type="double" value="50">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
@@ -831,7 +913,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="3000">
+      <parameter name="minCreationDistance" type="double" value="300">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -873,11 +955,11 @@
       </parameter>
    </instance>
    <instance name="S3" uuid="c5c20bac-d2e1-4207-bb62-354390587443" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
-      <parameter name="creationtimeInterval" type="long" value="3000">
+      <parameter name="creationtimeInterval" type="long" value="6000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
-      <parameter name="delayInterval" type="long" value="300">
+      <parameter name="delayInterval" type="long" value="6000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
       <parameter name="entityLength" type="double" value="150">
@@ -892,7 +974,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="3000">
+      <parameter name="minCreationDistance" type="double" value="200">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -934,14 +1016,14 @@
       </parameter>
    </instance>
    <instance name="S4" uuid="13f28092-9e56-451d-8e45-ff39473aaeb1" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
-      <parameter name="creationtimeInterval" type="long" value="4000">
+      <parameter name="creationtimeInterval" type="long" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
-      <parameter name="delayInterval" type="long" value="2000">
+      <parameter name="delayInterval" type="long" value="6000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="200">
+      <parameter name="entityLength" type="double" value="50">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
@@ -953,7 +1035,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="3000">
+      <parameter name="minCreationDistance" type="double" value="300">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -1038,7 +1120,6 @@
    <relationship sourcePortName="out" sourceInstanceUuid="ecf6e8c3-2aba-4ca3-9349-6fcafe8d9182" targetPortName="in" targetInstanceUuid="bbdad5a4-2b1b-4ad6-8291-10510f503a26"/>
    <relationship sourcePortName="out" sourceInstanceUuid="4a1996ce-47d6-422c-beab-8b8c059e89f8" targetPortName="in1" targetInstanceUuid="51b572cc-1de3-4488-940c-e4555fd45aa7"/>
    <relationship sourcePortName="out" sourceInstanceUuid="ee2bc794-f939-4a8a-a127-6a584622166f" targetPortName="in" targetInstanceUuid="4a1996ce-47d6-422c-beab-8b8c059e89f8"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="13f28092-9e56-451d-8e45-ff39473aaeb1" targetPortName="in" targetInstanceUuid="cf1e5285-3300-42aa-b723-f097ca98ae91"/>
    <relationship sourcePortName="out" sourceInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36" targetPortName="in" targetInstanceUuid="486efa0f-84f5-475b-847b-92d68a790796"/>
    <relationship sourcePortName="out" sourceInstanceUuid="177a94eb-8ae6-4728-9e7e-ff6a55083a90" targetPortName="in" targetInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36"/>
    <relationship sourcePortName="out" sourceInstanceUuid="177a94eb-8ae6-4728-9e7e-ff6a55083a90" targetPortName="in" targetInstanceUuid="9845bee7-adb4-4f3e-9a26-0457d457ab36"/>
@@ -1048,4 +1129,20 @@
    <relationship sourcePortName="out" sourceInstanceUuid="8defd9c2-4b31-4915-b6c1-d35bdbf26962" targetPortName="in" targetInstanceUuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2"/>
    <relationship sourcePortName="out1" sourceInstanceUuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2" targetPortName="in" targetInstanceUuid="54e5501e-a305-49b7-bfed-3eb2dcc2d89a"/>
    <relationship sourcePortName="out2" sourceInstanceUuid="9093f4dc-bc63-410d-b8e7-1bb679e40bb2" targetPortName="in" targetInstanceUuid="177a94eb-8ae6-4728-9e7e-ff6a55083a90"/>
+   <relationship sourcePortName="TOOL" sourceInstanceUuid="a99e6390-eae0-4679-85a3-b7e20f54d564" targetPortName="TOOL" targetInstanceUuid="a62e06b0-9682-4057-9fb6-782d793f708f"/>
+   <relationship sourcePortName="TOOL" sourceInstanceUuid="576c655d-eb1b-43d2-90a7-2f167cefde96" targetPortName="in" targetInstanceUuid="36ef34ee-8206-418e-a34d-2bef9b998571"/>
+   <relationship sourcePortName="TOOL" sourceInstanceUuid="576c655d-eb1b-43d2-90a7-2f167cefde96" targetPortName="TOOL" targetInstanceUuid="cf237796-1b1c-479f-8fc4-c4616e054bec"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="13f28092-9e56-451d-8e45-ff39473aaeb1" targetPortName="in" targetInstanceUuid="cf1e5285-3300-42aa-b723-f097ca98ae91"/>
+   <modifiers type="attach">
+      <property name="childInstance" type="string" value="a99e6390-eae0-4679-85a3-b7e20f54d564"/>
+      <property name="parentInstance" type="string" value="a62e06b0-9682-4057-9fb6-782d793f708f"/>
+      <property name="parentNode" type="string" value="R2.link6"/>
+      <property name="matrix" type="double[]" value="0.0;-1.0;0.0;0.0;0.0;0.0;1.0;0.0;-1.0;0.0;0.0;0.0;3180.64;787.96096100824;1584.116622834013;1.0"/>
+   </modifiers>
+   <modifiers type="attach">
+      <property name="childInstance" type="string" value="576c655d-eb1b-43d2-90a7-2f167cefde96"/>
+      <property name="parentInstance" type="string" value="cf237796-1b1c-479f-8fc4-c4616e054bec"/>
+      <property name="parentNode" type="string" value="R1.link6"/>
+      <property name="matrix" type="double[]" value="0.0;1.0;0.0;0.0;0.0;0.0;-1.0;0.0;-1.0;0.0;0.0;0.0;3180.64;-787.9609610082398;1605.883377165987;1.0"/>
+   </modifiers>
 </instances>

@@ -1,0 +1,76 @@
+<prototype uuid="24925e13-84ee-4438-a2c8-e7e33076f003" name="RobotGripper" version="1">	
+<!--    <parameter name="width" type="double" value="1000">
+        <property name="displayName" value="Width [mm]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="height" type="double" value="1000">
+        <property name="displayName" value="Height [mm]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="length" type="double" value="1000">
+        <property name="displayName" value="Length [mm]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="delay" type="long" value="1000">
+        <property name="displayName" value="Delay [ms]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="boxColor" type="string" value="0x0000FF">
+        <property name="displayName" value="Color (0x[hex-color-code])" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="transparency" type="double" value="0.5">
+        <property name="displayName" value="Transparency [0.0-1.0]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="propNameIn" type="string" value="">
+        <property name="displayName" value="Input property" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="propNameOut" type="string" value="">
+        <property name="displayName" value="Output property" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="sensors" type="string[]" value="">
+        <property name="displayName" value="Monitored sensors (array)" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="thresholds" type="double[]" value="">
+        <property name="displayName" value="Threshold values (array)" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+     <parameter name="tags" type="string[]" value="">
+        <property name="displayName" value="Output tags (array)" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="infoContent" type="string" value="">
+        <property name="displayName" value="HUD content (HTML)" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <input name="in" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="inFrame" type="string"/>
+        <property name="logicsPort" value="in" type="string"/>
+    </input>-->
+    <output name="TOOL" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="GruppoPinza.attach" type="string"/>
+        <property name="logicsPort" value="control" type="string"/>
+    </output>
+    <property name="displayName" value="Robot gripper" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="tool" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;450" type="double[]"/>
+    <property name="bounds_size" value="500;500;900" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.RobotGripper">
+        <param name="tcpFrameId" type="string">${instance.name}.GruppoPinza.tcp</param>
+        <param name="leftJoint" type="string">${instance.name}.pinza_singola_sx.T</param>
+        <param name="rightJoint" type="string">${instance.name}.pinza_singola_dx.T</param>
+        <param name="zero" type="double">551.0</param>
+    </logics>
+</prototype>

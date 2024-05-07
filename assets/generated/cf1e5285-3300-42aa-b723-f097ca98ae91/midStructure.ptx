@@ -1,5 +1,5 @@
 <parametric-object>
-   <extrusion-object height="750.0">
+   <extrusion-object height="1250.0">
       <lineto x="300.0" y="0.0"/>
       <lineto x="300.0" y="18.0"/>
       <lineto x="295.5" y="18.0"/>

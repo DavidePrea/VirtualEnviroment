@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:environment xmlns="http://binding.ttsnetwork.com/commons" xmlns:ns2="http://binding.ttsnetwork.com/xml/v7" version="1.0" id="model_750.xml">
+    <ns2:view>
+        <background>
+            <color1 r="0.2" g="0.4" b="0.6" a="1.0"/>
+        </background>
+        <floor visible="false">
+            <axis>Z</axis>
+            <center lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </center>
+            <sun-position lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </sun-position>
+            <top-color r="1.0" g="1.0" b="1.0" a="1.0"/>
+            <bottom-color r="0.5" g="0.5" b="0.5" a="1.0"/>
+            <shadows-color r="0.7" g="0.7" b="0.7" a="1.0"/>
+        </floor>
+        <camera-ortho/>
+        <camera-perspective/>
+    </ns2:view>
+    <ns2:group id="Content">
+        <ns2:frames/>
+        <ns2:children>
+            <ns2:group id="GruppoPinza">
+                <ns2:frames>
+                    <frame name="tcp">
+                        <location lengthUnit="mm">
+                            <x>787.96</x>
+                            <y>10.880000000000223</y>
+                            <z>1530.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>3.6651461745828344E-17</x>
+                            <y>-1.0703678112042357E-16</y>
+                            <z>-1.0000000000000004</z>
+                            <w>150.00000000000003</w>
+                        </orientation>
+                    </frame>
+                    <frame name="attach">
+                        <location lengthUnit="mm">
+                            <x>787.96</x>
+                            <y>10.88000000000011</y>
+                            <z>1891.64</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>29.99999999999998</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>403.4033174014145</x>
+                            <y>-676.9499999999995</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>60.00000000000001</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children>
+                    <ns2:body visible="true" id="pinza_750">
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>787.9575557925825</x>
+    <y>10.88252084054227</y>
+    <z>1879.6358630727655</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.9351131265310293</x>
+    <y>0.2505628070857317</y>
+    <z>0.25056280708573175</z>
+    <w>93.84096571625813</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="VRML">
+                            <geometry-uri>pinza_750.wrl</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children>
+                            <ns2:body visible="true" id="pinza_singola_sx">
+<ns2:frames/>
+<ns2:joint type="TRANSLATIONAL">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-4.796163466380676E-14</x>
+            <y>0.0</y>
+            <z>28.5</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+    <ns2:translation-axis name="T">
+        <axis>
+            <origin lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </origin>
+            <versor>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>1.0</z>
+            </versor>
+        </axis>
+        <limits>
+            <home>0.0</home>
+            <low>0.0</low>
+            <high>430.0</high>
+        </limits>
+    </ns2:translation-axis>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>pinza_singola_dx.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="pinza_singola_dx">
+<ns2:frames/>
+<ns2:joint type="TRANSLATIONAL">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>5.1514348342607263E-14</x>
+            <y>0.0</y>
+            <z>-28.500000000000114</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+            <w>180.0</w>
+        </orientation>
+    </ns2:transform>
+    <ns2:translation-axis name="T">
+        <axis>
+            <origin lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </origin>
+            <versor>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>1.0</z>
+            </versor>
+        </axis>
+        <limits>
+            <home>0.0</home>
+            <low>0.0</low>
+            <high>430.0</high>
+        </limits>
+    </ns2:translation-axis>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>pinza_singola_dx.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="base">
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-1.7763568394002505E-15</x>
+            <y>-130.0</y>
+            <z>-2.2737367544323206E-13</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>-1.0</x>
+            <y>1.4874168143337537E-17</y>
+            <z>-3.1819273924420947E-16</z>
+            <w>90.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>base.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:group>
+        </ns2:children>
+    </ns2:group>
+</ns2:environment>

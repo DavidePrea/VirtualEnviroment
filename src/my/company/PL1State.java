@@ -6,6 +6,7 @@ package my.company;
 
 import com.ttsnetwork.modules.standard.BoxUtils;
 import com.ttsnetwork.modules.standard.IConveyorCommands;
+import com.ttsnetwork.modules.standard.IGripper;
 import com.ttsnetwork.modules.standard.IRobotCommands;
 import com.ttsnetwork.modules.standard.ISensorProvider;
 import com.ttsnetwork.modules.standard.SimpleStateVar;
@@ -20,8 +21,10 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
 public class PL1State extends StateMachine {
 
     double VROB = 6000;
+    double VROB_attach = 500;
     public PLGlobal cont;
     IRobotCommands rob;
+    IGripper gripper;
 
     IConveyorCommands Cb;
     IConveyorCommands Cd;
@@ -30,6 +33,8 @@ public class PL1State extends StateMachine {
     ISensorProvider CbSen2; //init for B
     ISensorProvider CbSen3; //finish for B
     ISensorProvider CdSen1;
+    
+    
 
     SimpleStateVar partB = new SimpleStateVar();
     SimpleStateVar partD = new SimpleStateVar();
@@ -41,6 +46,7 @@ public class PL1State extends StateMachine {
     @Override
     public void onInit() {
         rob = useSkill(IRobotCommands.class, "R1");
+        gripper = useSkill(IGripper.class, "RobotGripper2");
 
         Cb = useSkill(IConveyorCommands.class, "CB");
         Cd = useSkill(IConveyorCommands.class, "CD2");
@@ -106,14 +112,15 @@ public class PL1State extends StateMachine {
      
         rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
+        gripper.moveGripTo(BoxUtils.ySize(workingD), 500);
         rob.pick(workingD.entity);
         Cd.remove(workingD);
         rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
-      //  rob.moveLinear(driver.getFrameTransform("CB.midPos"), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB);
-        rob.move(BoxUtils.targetTop(workingB), workingD.cF, 2300.0);
+        rob.moveLinear(BoxUtils.targetTop(workingB), workingD.cF,VROB_attach);
         rob.release();
-        rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB);
+        gripper.moveGripTo(551, 500);
+        rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB_attach);
         
         rob.home();
         schedule.attach(workingD.entity, workingB.entity);

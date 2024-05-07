@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<body id="piede_dx">
+    <geometry type="VRML" lengthUnit="m">
+        <geometry-uri>piede_dx.wrl</geometry-uri>
+    </geometry>
+    <children>
+        <body id="gamba_dx">
+            <joint type="ROTATIONAL">
+                <current-attach-frame-id>ROOT</current-attach-frame-id>
+                <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                <rotation-axis name="R">
+                    <axis>
+                        <origin lengthUnit="m">
+                            <x>0.05352099984884262</x>
+                            <y>0.06630299985408783</y>
+                            <z>-0.1055150032043457</z>
+                        </origin>
+                        <versor>
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                        </versor>
+                    </axis>
+                    <limits>
+                        <home unit="deg">0.0</home>
+                        <low unit="deg">-50.0</low>
+                        <high unit="deg">50.0</high>
+                    </limits>
+                </rotation-axis>
+            </joint>
+            <geometry type="VRML" lengthUnit="m">
+                <geometry-uri>gamba_dx.wrl</geometry-uri>
+            </geometry>
+            <children>
+                <body id="coscia_dx">
+                    <joint type="ROTATIONAL">
+                        <current-attach-frame-id>ROOT</current-attach-frame-id>
+                        <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                        <rotation-axis name="R">
+                            <axis>
+<origin lengthUnit="m">
+    <x>0.05521399900317192</x>
+    <y>0.55139</y>
+    <z>-0.09777099639177322</z>
+</origin>
+<versor>
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>1.0</z>
+</versor>
+                            </axis>
+                            <limits>
+<home unit="deg">0.0</home>
+<low unit="deg">-90.0</low>
+<high unit="deg">10.0</high>
+                            </limits>
+                        </rotation-axis>
+                    </joint>
+                    <geometry type="VRML" lengthUnit="m">
+                        <geometry-uri>coscia_dx.wrl</geometry-uri>
+                    </geometry>
+                    <children>
+                        <body id="bacino">
+                            <joint type="ROTATIONAL">
+<current-attach-frame-id>ROOT</current-attach-frame-id>
+<parent-attach-frame-id>ROOT</parent-attach-frame-id>
+<rotation-axis name="R">
+    <axis>
+        <origin lengthUnit="m">
+            <x>0.078</x>
+            <y>0.9649</y>
+            <z>0.0</z>
+        </origin>
+        <versor>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </versor>
+    </axis>
+    <limits>
+        <home unit="deg">0.0</home>
+        <low unit="deg">-90.0</low>
+        <high unit="deg">90.0</high>
+    </limits>
+</rotation-axis>
+                            </joint>
+                            <geometry type="VRML" lengthUnit="m">
+<geometry-uri>bacino.wrl</geometry-uri>
+                            </geometry>
+                            <children>
+<body id="coscia_sx">
+    <joint type="ROTATIONAL">
+        <current-attach-frame-id>ROOT</current-attach-frame-id>
+        <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+        <rotation-axis name="R">
+            <axis>
+                <origin lengthUnit="m">
+                    <x>0.078</x>
+                    <y>0.96494</y>
+                    <z>0.1784520000219345</z>
+                </origin>
+                <versor>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>1.0</z>
+                </versor>
+            </axis>
+            <limits>
+                <home unit="deg">0.0</home>
+                <low unit="deg">-90.0</low>
+                <high unit="deg">90.0</high>
+            </limits>
+        </rotation-axis>
+    </joint>
+    <geometry type="VRML" lengthUnit="m">
+        <geometry-uri>coscia_sx.wrl</geometry-uri>
+    </geometry>
+    <children>
+        <body id="gamba_sx">
+            <joint type="ROTATIONAL">
+                <current-attach-frame-id>ROOT</current-attach-frame-id>
+                <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                <rotation-axis name="R">
+                    <axis>
+                        <origin lengthUnit="m">
+                            <x>0.05522000044584274</x>
+                            <y>0.552</y>
+                            <z>0.09778200089931488</z>
+                        </origin>
+                        <versor>
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                        </versor>
+                    </axis>
+                    <limits>
+                        <home unit="deg">0.0</home>
+                        <low unit="deg">-10.0</low>
+                        <high unit="deg">90.0</high>
+                    </limits>
+                </rotation-axis>
+            </joint>
+            <geometry type="VRML" lengthUnit="m">
+                <geometry-uri>gamba_sx.wrl</geometry-uri>
+            </geometry>
+            <children>
+                <body id="piede_sx">
+                    <joint type="ROTATIONAL">
+                        <current-attach-frame-id>ROOT</current-attach-frame-id>
+                        <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                        <rotation-axis name="R">
+                            <axis>
+<origin lengthUnit="m">
+    <x>0.05362600088119507</x>
+    <y>0.06630200147628784</y>
+    <z>0.10552699863910675</z>
+</origin>
+<versor>
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>1.0</z>
+</versor>
+                            </axis>
+                            <limits>
+<home unit="deg">0.0</home>
+<low unit="deg">-50.0</low>
+<high unit="deg">50.0</high>
+                            </limits>
+                        </rotation-axis>
+                    </joint>
+                    <geometry type="VRML" lengthUnit="m">
+                        <geometry-uri>piede_sx.wrl</geometry-uri>
+                    </geometry>
+                </body>
+            </children>
+        </body>
+    </children>
+</body>
+<body id="torace">
+    <geometry type="VRML" lengthUnit="m">
+        <geometry-uri>torace.wrl</geometry-uri>
+    </geometry>
+    <children>
+        <body id="testa">
+            <joint type="ROTATIONAL">
+                <current-attach-frame-id>ROOT</current-attach-frame-id>
+                <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                <rotation-axis name="R">
+                    <axis>
+                        <origin lengthUnit="m">
+                            <x>0.06060450151562691</x>
+                            <y>1.901390016078949</y>
+                            <z>-1.95999993593432E-4</z>
+                        </origin>
+                        <versor>
+                            <x>0.0</x>
+                            <y>1.0</y>
+                            <z>0.0</z>
+                        </versor>
+                    </axis>
+                    <limits>
+                        <home unit="deg">0.0</home>
+                        <low unit="deg">-90.0</low>
+                        <high unit="deg">90.0</high>
+                    </limits>
+                </rotation-axis>
+            </joint>
+            <geometry type="VRML" lengthUnit="m">
+                <geometry-uri>testa.wrl</geometry-uri>
+            </geometry>
+        </body>
+        <body id="braccio_dx">
+            <joint type="ROTATIONAL">
+                <current-attach-frame-id>ROOT</current-attach-frame-id>
+                <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                <rotation-axis name="R">
+                    <axis>
+                        <origin lengthUnit="m">
+                            <x>0.06</x>
+                            <y>1.4922599792480469</y>
+                            <z>0.2605385035276413</z>
+                        </origin>
+                        <versor>
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                        </versor>
+                    </axis>
+                    <limits>
+                        <home unit="deg">0.0</home>
+                        <low unit="deg">-90.0</low>
+                        <high unit="deg">90.0</high>
+                    </limits>
+                </rotation-axis>
+            </joint>
+            <geometry type="VRML" lengthUnit="m">
+                <geometry-uri>braccio_dx.wrl</geometry-uri>
+            </geometry>
+            <children>
+                <body id="avambraccio_dx">
+                    <joint type="ROTATIONAL">
+                        <current-attach-frame-id>ROOT</current-attach-frame-id>
+                        <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                        <rotation-axis name="R">
+                            <axis>
+<origin lengthUnit="m">
+    <x>0.053630001842975616</x>
+    <y>1.170009970664978</y>
+    <z>-0.25823599100112915</z>
+</origin>
+<versor>
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-1.0</z>
+</versor>
+                            </axis>
+                            <limits>
+<home unit="deg">0.0</home>
+<low unit="deg">-5.0</low>
+<high unit="deg">90.0</high>
+                            </limits>
+                        </rotation-axis>
+                    </joint>
+                    <geometry type="VRML" lengthUnit="m">
+                        <geometry-uri>avambraccio_dx.wrl</geometry-uri>
+                    </geometry>
+                    <children>
+                        <body id="mano_dx">
+                            <geometry type="VRML" lengthUnit="m">
+<geometry-uri>mano_dx.wrl</geometry-uri>
+                            </geometry>
+                        </body>
+                    </children>
+                </body>
+            </children>
+        </body>
+        <body id="braccio_sx">
+            <joint type="ROTATIONAL">
+                <current-attach-frame-id>ROOT</current-attach-frame-id>
+                <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                <rotation-axis name="R">
+                    <axis>
+                        <origin lengthUnit="m">
+                            <x>0.06</x>
+                            <y>1.4923</y>
+                            <z>0.0</z>
+                        </origin>
+                        <versor>
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                        </versor>
+                    </axis>
+                    <limits>
+                        <home unit="deg">0.0</home>
+                        <low unit="deg">-90.0</low>
+                        <high unit="deg">90.0</high>
+                    </limits>
+                </rotation-axis>
+            </joint>
+            <geometry type="VRML" lengthUnit="m">
+                <geometry-uri>braccio_sx.wrl</geometry-uri>
+            </geometry>
+            <children>
+                <body id="avambraccio_sx">
+                    <joint type="ROTATIONAL">
+                        <current-attach-frame-id>ROOT</current-attach-frame-id>
+                        <parent-attach-frame-id>ROOT</parent-attach-frame-id>
+                        <rotation-axis name="R">
+                            <axis>
+<origin lengthUnit="m">
+    <x>0.05353299900889397</x>
+    <y>1.170009970664978</y>
+    <z>0.2582480013370514</z>
+</origin>
+<versor>
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-1.0</z>
+</versor>
+                            </axis>
+                            <limits>
+<home unit="deg">0.0</home>
+<low unit="deg">-5.0</low>
+<high unit="deg">90.0</high>
+                            </limits>
+                        </rotation-axis>
+                    </joint>
+                    <geometry type="VRML" lengthUnit="m">
+                        <geometry-uri>avambraccio_sx.wrl</geometry-uri>
+                    </geometry>
+                    <children>
+                        <body id="mano_sx">
+                            <geometry type="VRML" lengthUnit="m">
+<geometry-uri>mano_sx.wrl</geometry-uri>
+                            </geometry>
+                        </body>
+                    </children>
+                </body>
+            </children>
+        </body>
+    </children>
+</body>
+                            </children>
+                        </body>
+                    </children>
+                </body>
+            </children>
+        </body>
+    </children>
+</body>

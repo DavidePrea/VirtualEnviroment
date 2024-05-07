@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><parametric-object>
+    <box x-side-lenght="200" y-side-lenght="600" z-side-lenght="50.0"/>
+    <appearance>
+        <ambientIntensity value="0.22527473"/>
+        <diffuseColor r="0.22" g="0.48" b="0.9"/>
+        <emissiveColor r="0.0" g="0.0" b="0.0"/>
+        <shininess value="0.0"/>
+        <specularColor r="0.0" g="0.0" b="0.0"/>
+        <transparency value="0.0"/>
+    </appearance>
+</parametric-object>

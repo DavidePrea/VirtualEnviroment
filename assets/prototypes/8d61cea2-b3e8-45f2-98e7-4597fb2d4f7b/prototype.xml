@@ -1,0 +1,15 @@
+<prototype uuid="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b" name="Fences" version="1">
+    <parameter name="length" type="double" value="4000">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="1800">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    
+    <property name="displayName" value="Fences" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="3DObjects" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="2000;0;900" type="double[]"/>
+    <property name="bounds_size" value="4080;80;1800" type="double[]"/>
+</prototype>

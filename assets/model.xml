@@ -4114,7 +4114,7 @@
                         <ns2:joint type="RIGID">
                            <ns2:transform>
                               <location lengthUnit="mm">
-                                 <x>-75.0</x>
+                                 <x>425.0</x>
                                  <y>0.0</y>
                                  <z>900.0</z>
                               </location>
@@ -12870,13 +12870,13 @@
                                                                            <ns2:transform>
                                                                               <location lengthUnit="mm">
                                                                                  <x>3180.64</x>
-                                                                                 <y>787.96096100824</y>
-                                                                                 <z>1584.116622834013</z>
+                                                                                 <y>-787.9541505769245</y>
+                                                                                 <z>1605.8816645150976</z>
                                                                               </location>
                                                                               <orientation angleUnit="deg">
-                                                                                 <x>0.5773502691896258</x>
-                                                                                 <y>-0.5773502691896258</y>
-                                                                                 <z>-0.5773502691896258</z>
+                                                                                 <x>-0.5773502691896258</x>
+                                                                                 <y>-0.5773502691896257</y>
+                                                                                 <z>0.5773502691896257</z>
                                                                                  <w>120.00000000000001</w>
                                                                               </orientation>
                                                                            </ns2:transform>
@@ -16582,9 +16582,9 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>297.07406680675894</x>
+                           <x>300.0</x>
                            <y>1000.0</y>
-                           <z>69.14520907024101</z>
+                           <z>-500.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>
@@ -16647,9 +16647,9 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>1000.0</x>
+                           <x>300.0</x>
                            <y>270.0</y>
-                           <z>0.0</z>
+                           <z>-500.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>
@@ -16712,9 +16712,9 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>292.80395180768227</x>
-                           <y>624.5903250266776</y>
-                           <z>0.0</z>
+                           <x>300.0</x>
+                           <y>625.0</y>
+                           <z>-500.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>
@@ -16777,9 +16777,9 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>292.7255354684319</x>
-                           <y>1347.0619184374623</y>
-                           <z>21.349671285843925</z>
+                           <x>290.0</x>
+                           <y>1345.0</y>
+                           <z>-500.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>

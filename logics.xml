@@ -3,7 +3,7 @@
     <variables/>
     <modules>
         <module-instance name="RobotGripper1" type="com.ttsnetwork.modules.standard.RobotGripper">
-            <visual x="-1196" y="1286"/>
+            <visual x="380" y="1286"/>
             <param name="tcpFrameId">RobotGripper1.GruppoPinza.tcp</param>
             <param name="leftJoint">RobotGripper1.pinza_singola_sx.T</param>
             <param name="rightJoint">RobotGripper1.pinza_singola_dx.T</param>
@@ -42,7 +42,7 @@
             <param name="zero">551.0</param>
         </module-instance>
         <module-instance name="ProgrammableLogics3" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="1000" y="270"/>
+            <visual x="300" y="270"/>
             <param name="id">ProgrammableLogics3</param>
             <param name="logicClassName">my.company.PLGlobal</param>
         </module-instance>
@@ -77,7 +77,7 @@
             <param name="startFrame">CD2.startFrame</param>
             <param name="endFrame">CD2.endFrame</param>
             <param name="sensorNames">D2_sen1</param>
-            <param name="sensorPositions">550</param>
+            <param name="sensorPositions">1050</param>
             <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
@@ -109,7 +109,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="ProgrammableLogics1" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="293" y="1347"/>
+            <visual x="290" y="1345"/>
             <param name="id">ProgrammableLogics1</param>
             <param name="logicClassName">my.company.PL1State</param>
         </module-instance>
@@ -201,7 +201,7 @@
             <param name="automatic">true</param>
         </module-instance>
         <module-instance name="ProgrammableLogics4" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="293" y="625"/>
+            <visual x="300" y="625"/>
             <param name="id">ProgrammableLogics4</param>
             <param name="logicClassName">my.company.PLFLow</param>
         </module-instance>
@@ -257,7 +257,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="ProgrammableLogics2" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="297" y="1000"/>
+            <visual x="300" y="1000"/>
             <param name="id">ProgrammableLogics2</param>
             <param name="logicClassName">my.company.PL2State</param>
         </module-instance>

@@ -4,7 +4,7 @@
       <background>
          <color1 r="0.2" g="0.4" b="0.6" a="1.0"/>
       </background>
-      <floor visible="true" shadows="true" reflections="false" width="10000.0" height="10000.0" user-specified="true">
+      <floor visible="true" shadows="true" reflections="false" width="15000.0" height="15000.0" user-specified="true">
          <axis>Z</axis>
          <center lengthUnit="mm">
             <x>0.0</x>
@@ -16,9 +16,9 @@
             <y>-50000.0</y>
             <z>100000.0</z>
          </sun-position>
-         <top-color r="1.0" g="1.0" b="1.0" a="0.5"/>
+         <top-color r="0.76862746" g="0.6313726" b="0.3882353" a="0.32941177"/>
          <bottom-color r="0.5" g="0.5" b="0.5" a="1.0"/>
-         <shadows-color r="0.0" g="0.0" b="0.0" a="0.2"/>
+         <shadows-color r="0.0" g="0.0" b="0.0" a="0.49803922"/>
       </floor>
       <camera-ortho/>
       <camera-perspective/>
@@ -12870,13 +12870,13 @@
                                                                            <ns2:transform>
                                                                               <location lengthUnit="mm">
                                                                                  <x>3180.64</x>
-                                                                                 <y>787.96096100824</y>
-                                                                                 <z>1584.116622834013</z>
+                                                                                 <y>-787.9541505769245</y>
+                                                                                 <z>1605.8816645150976</z>
                                                                               </location>
                                                                               <orientation angleUnit="deg">
-                                                                                 <x>0.5773502691896258</x>
-                                                                                 <y>-0.5773502691896258</y>
-                                                                                 <z>-0.5773502691896258</z>
+                                                                                 <x>-0.5773502691896258</x>
+                                                                                 <y>-0.5773502691896257</y>
+                                                                                 <z>0.5773502691896257</z>
                                                                                  <w>120.00000000000001</w>
                                                                               </orientation>
                                                                            </ns2:transform>
@@ -15928,15 +15928,15 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>-3589.5058245169967</x>
-                           <y>2307.4271158206507</y>
+                           <x>-3314.8390888489635</x>
+                           <y>2154.0522391060595</y>
                            <z>0.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>0.0</x>
                            <y>0.0</y>
-                           <z>1.0</z>
-                           <w>90.0</w>
+                           <z>1.0000000000000002</z>
+                           <w>135.0</w>
                         </orientation>
                      </ns2:transform>
                   </ns2:joint>
@@ -16584,7 +16584,7 @@
                         <location lengthUnit="mm">
                            <x>297.07406680675894</x>
                            <y>1000.0</y>
-                           <z>-17.168602158322358</z>
+                           <z>69.14520907024101</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>
@@ -16647,8 +16647,8 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>291.97615931821656</x>
-                           <y>270.0306552417429</y>
+                           <x>1000.0</x>
+                           <y>270.0</y>
                            <z>0.0</z>
                         </location>
                         <orientation angleUnit="deg">
@@ -16833,6 +16833,640 @@
                      </body>
                   </ns2:children>
                </group>
+            </ns2:children>
+         </group>
+         <group id="Operator2">
+            <properties>
+               <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+               <property name="#prototype.uuid" type="string">630fb14e-0949-46c8-ac36-40a0f15eea25</property>
+            </properties>
+            <ns2:frames/>
+            <ns2:joint type="RIGID">
+               <ns2:transform>
+                  <location lengthUnit="mm">
+                     <x>3200.853469098212</x>
+                     <y>-74.85852450401265</y>
+                     <z>0.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>0.0</x>
+                     <y>0.0</y>
+                     <z>-0.9999999999999999</z>
+                     <w>45.00000000000001</w>
+                  </orientation>
+               </ns2:transform>
+            </ns2:joint>
+            <ns2:children>
+               <body id="Operator2.piede_dx" visible="true">
+                  <properties>
+                     <property name="#local.name" type="string">piede_dx</property>
+                     <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                  </properties>
+                  <ns2:frames/>
+                  <ns2:joint type="RIGID">
+                     <ns2:transform>
+                        <location lengthUnit="mm">
+                           <x>0.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>1.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                           <w>90.0</w>
+                        </orientation>
+                     </ns2:transform>
+                  </ns2:joint>
+                  <ns2:geometry lengthUnit="m" type="VRML">
+                     <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/piede_dx.wrl</geometry-uri>
+                  </ns2:geometry>
+                  <ns2:children>
+                     <body id="Operator2.gamba_dx" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">gamba_dx</property>
+                           <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="ROTATIONAL">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                           <ns2:rotation-axis name="R">
+                              <axis>
+                                 <origin lengthUnit="mm">
+                                    <x>53.52099984884262</x>
+                                    <y>66.30299985408783</y>
+                                    <z>-105.5150032043457</z>
+                                 </origin>
+                                 <versor>
+                                    <x>0.0</x>
+                                    <y>0.0</y>
+                                    <z>1.0</z>
+                                 </versor>
+                              </axis>
+                              <limits>
+                                 <home unit="deg">0.0</home>
+                                 <low unit="deg">-50.0</low>
+                                 <high unit="deg">50.0</high>
+                              </limits>
+                           </ns2:rotation-axis>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="m" type="VRML">
+                           <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/gamba_dx.wrl</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children>
+                           <body id="Operator2.coscia_dx" visible="true">
+                              <properties>
+                                 <property name="#local.name" type="string">coscia_dx</property>
+                                 <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                              </properties>
+                              <ns2:frames/>
+                              <ns2:joint type="ROTATIONAL">
+                                 <ns2:transform>
+                                    <location lengthUnit="mm">
+                                       <x>0.0</x>
+                                       <y>0.0</y>
+                                       <z>0.0</z>
+                                    </location>
+                                    <orientation angleUnit="deg">
+                                       <x>1.0</x>
+                                       <y>0.0</y>
+                                       <z>0.0</z>
+                                       <w>0.0</w>
+                                    </orientation>
+                                 </ns2:transform>
+                                 <ns2:rotation-axis name="R">
+                                    <axis>
+                                       <origin lengthUnit="mm">
+                                          <x>55.21399900317192</x>
+                                          <y>551.3900000000001</y>
+                                          <z>-97.77099639177322</z>
+                                       </origin>
+                                       <versor>
+                                          <x>0.0</x>
+                                          <y>0.0</y>
+                                          <z>1.0</z>
+                                       </versor>
+                                    </axis>
+                                    <limits>
+                                       <home unit="deg">0.0</home>
+                                       <low unit="deg">-90.0</low>
+                                       <high unit="deg">10.0</high>
+                                    </limits>
+                                 </ns2:rotation-axis>
+                              </ns2:joint>
+                              <ns2:geometry lengthUnit="m" type="VRML">
+                                 <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/coscia_dx.wrl</geometry-uri>
+                              </ns2:geometry>
+                              <ns2:children>
+                                 <body id="Operator2.bacino" visible="true">
+                                    <properties>
+                                       <property name="#local.name" type="string">bacino</property>
+                                       <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                    </properties>
+                                    <ns2:frames/>
+                                    <ns2:joint type="ROTATIONAL">
+                                       <ns2:transform>
+                                          <location lengthUnit="mm">
+                                             <x>0.0</x>
+                                             <y>0.0</y>
+                                             <z>0.0</z>
+                                          </location>
+                                          <orientation angleUnit="deg">
+                                             <x>1.0</x>
+                                             <y>0.0</y>
+                                             <z>0.0</z>
+                                             <w>0.0</w>
+                                          </orientation>
+                                       </ns2:transform>
+                                       <ns2:rotation-axis name="R">
+                                          <axis>
+                                             <origin lengthUnit="mm">
+                                                <x>78.0</x>
+                                                <y>964.9</y>
+                                                <z>0.0</z>
+                                             </origin>
+                                             <versor>
+                                                <x>0.0</x>
+                                                <y>0.0</y>
+                                                <z>1.0</z>
+                                             </versor>
+                                          </axis>
+                                          <limits>
+                                             <home unit="deg">0.0</home>
+                                             <low unit="deg">-90.0</low>
+                                             <high unit="deg">90.0</high>
+                                          </limits>
+                                       </ns2:rotation-axis>
+                                    </ns2:joint>
+                                    <ns2:geometry lengthUnit="m" type="VRML">
+                                       <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/bacino.wrl</geometry-uri>
+                                    </ns2:geometry>
+                                    <ns2:children>
+                                       <body id="Operator2.coscia_sx" visible="true">
+                                          <properties>
+                                             <property name="#local.name" type="string">coscia_sx</property>
+                                             <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                          </properties>
+                                          <ns2:frames/>
+                                          <ns2:joint type="ROTATIONAL">
+                                             <ns2:transform>
+                                                <location lengthUnit="mm">
+                                                   <x>0.0</x>
+                                                   <y>0.0</y>
+                                                   <z>0.0</z>
+                                                </location>
+                                                <orientation angleUnit="deg">
+                                                   <x>1.0</x>
+                                                   <y>0.0</y>
+                                                   <z>0.0</z>
+                                                   <w>0.0</w>
+                                                </orientation>
+                                             </ns2:transform>
+                                             <ns2:rotation-axis name="R">
+                                                <axis>
+                                                   <origin lengthUnit="mm">
+                                                      <x>78.0</x>
+                                                      <y>964.94</y>
+                                                      <z>178.4520000219345</z>
+                                                   </origin>
+                                                   <versor>
+                                                      <x>0.0</x>
+                                                      <y>0.0</y>
+                                                      <z>1.0</z>
+                                                   </versor>
+                                                </axis>
+                                                <limits>
+                                                   <home unit="deg">0.0</home>
+                                                   <low unit="deg">-90.0</low>
+                                                   <high unit="deg">90.0</high>
+                                                </limits>
+                                             </ns2:rotation-axis>
+                                          </ns2:joint>
+                                          <ns2:geometry lengthUnit="m" type="VRML">
+                                             <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/coscia_sx.wrl</geometry-uri>
+                                          </ns2:geometry>
+                                          <ns2:children>
+                                             <body id="Operator2.gamba_sx" visible="true">
+                                                <properties>
+                                                   <property name="#local.name" type="string">gamba_sx</property>
+                                                   <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                </properties>
+                                                <ns2:frames/>
+                                                <ns2:joint type="ROTATIONAL">
+                                                   <ns2:transform>
+                                                      <location lengthUnit="mm">
+                                                         <x>0.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                      </location>
+                                                      <orientation angleUnit="deg">
+                                                         <x>1.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                         <w>0.0</w>
+                                                      </orientation>
+                                                   </ns2:transform>
+                                                   <ns2:rotation-axis name="R">
+                                                      <axis>
+                                                         <origin lengthUnit="mm">
+                                                            <x>55.22000044584274</x>
+                                                            <y>552.0</y>
+                                                            <z>97.78200089931488</z>
+                                                         </origin>
+                                                         <versor>
+                                                            <x>0.0</x>
+                                                            <y>0.0</y>
+                                                            <z>1.0</z>
+                                                         </versor>
+                                                      </axis>
+                                                      <limits>
+                                                         <home unit="deg">0.0</home>
+                                                         <low unit="deg">-10.0</low>
+                                                         <high unit="deg">90.0</high>
+                                                      </limits>
+                                                   </ns2:rotation-axis>
+                                                </ns2:joint>
+                                                <ns2:geometry lengthUnit="m" type="VRML">
+                                                   <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/gamba_sx.wrl</geometry-uri>
+                                                </ns2:geometry>
+                                                <ns2:children>
+                                                   <body id="Operator2.piede_sx" visible="true">
+                                                      <properties>
+                                                         <property name="#local.name" type="string">piede_sx</property>
+                                                         <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                      </properties>
+                                                      <ns2:frames/>
+                                                      <ns2:joint type="ROTATIONAL">
+                                                         <ns2:transform>
+                                                            <location lengthUnit="mm">
+                                                               <x>0.0</x>
+                                                               <y>0.0</y>
+                                                               <z>0.0</z>
+                                                            </location>
+                                                            <orientation angleUnit="deg">
+                                                               <x>1.0</x>
+                                                               <y>0.0</y>
+                                                               <z>0.0</z>
+                                                               <w>0.0</w>
+                                                            </orientation>
+                                                         </ns2:transform>
+                                                         <ns2:rotation-axis name="R">
+                                                            <axis>
+                                                               <origin lengthUnit="mm">
+                                                                  <x>53.62600088119507</x>
+                                                                  <y>66.30200147628784</y>
+                                                                  <z>105.52699863910675</z>
+                                                               </origin>
+                                                               <versor>
+                                                                  <x>0.0</x>
+                                                                  <y>0.0</y>
+                                                                  <z>1.0</z>
+                                                               </versor>
+                                                            </axis>
+                                                            <limits>
+                                                               <home unit="deg">0.0</home>
+                                                               <low unit="deg">-50.0</low>
+                                                               <high unit="deg">50.0</high>
+                                                            </limits>
+                                                         </ns2:rotation-axis>
+                                                      </ns2:joint>
+                                                      <ns2:geometry lengthUnit="m" type="VRML">
+                                                         <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/piede_sx.wrl</geometry-uri>
+                                                      </ns2:geometry>
+                                                      <ns2:children/>
+                                                   </body>
+                                                </ns2:children>
+                                             </body>
+                                          </ns2:children>
+                                       </body>
+                                       <body id="Operator2.torace" visible="true">
+                                          <properties>
+                                             <property name="#local.name" type="string">torace</property>
+                                             <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                          </properties>
+                                          <ns2:frames/>
+                                          <ns2:joint type="RIGID">
+                                             <ns2:transform>
+                                                <location lengthUnit="mm">
+                                                   <x>0.0</x>
+                                                   <y>0.0</y>
+                                                   <z>0.0</z>
+                                                </location>
+                                                <orientation angleUnit="deg">
+                                                   <x>1.0</x>
+                                                   <y>0.0</y>
+                                                   <z>0.0</z>
+                                                   <w>0.0</w>
+                                                </orientation>
+                                             </ns2:transform>
+                                          </ns2:joint>
+                                          <ns2:geometry lengthUnit="m" type="VRML">
+                                             <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/torace.wrl</geometry-uri>
+                                          </ns2:geometry>
+                                          <ns2:children>
+                                             <body id="Operator2.testa" visible="true">
+                                                <properties>
+                                                   <property name="#local.name" type="string">testa</property>
+                                                   <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                </properties>
+                                                <ns2:frames/>
+                                                <ns2:joint type="ROTATIONAL">
+                                                   <ns2:transform>
+                                                      <location lengthUnit="mm">
+                                                         <x>0.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                      </location>
+                                                      <orientation angleUnit="deg">
+                                                         <x>1.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                         <w>0.0</w>
+                                                      </orientation>
+                                                   </ns2:transform>
+                                                   <ns2:rotation-axis name="R">
+                                                      <axis>
+                                                         <origin lengthUnit="mm">
+                                                            <x>60.60450151562691</x>
+                                                            <y>1901.390016078949</y>
+                                                            <z>-0.195999993593432</z>
+                                                         </origin>
+                                                         <versor>
+                                                            <x>0.0</x>
+                                                            <y>1.0</y>
+                                                            <z>0.0</z>
+                                                         </versor>
+                                                      </axis>
+                                                      <limits>
+                                                         <home unit="deg">0.0</home>
+                                                         <low unit="deg">-90.0</low>
+                                                         <high unit="deg">90.0</high>
+                                                      </limits>
+                                                   </ns2:rotation-axis>
+                                                </ns2:joint>
+                                                <ns2:geometry lengthUnit="m" type="VRML">
+                                                   <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/testa.wrl</geometry-uri>
+                                                </ns2:geometry>
+                                                <ns2:children/>
+                                             </body>
+                                             <body id="Operator2.braccio_dx" visible="true">
+                                                <properties>
+                                                   <property name="#local.name" type="string">braccio_dx</property>
+                                                   <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                </properties>
+                                                <ns2:frames/>
+                                                <ns2:joint type="ROTATIONAL">
+                                                   <ns2:transform>
+                                                      <location lengthUnit="mm">
+                                                         <x>0.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                      </location>
+                                                      <orientation angleUnit="deg">
+                                                         <x>1.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                         <w>0.0</w>
+                                                      </orientation>
+                                                   </ns2:transform>
+                                                   <ns2:rotation-axis name="R">
+                                                      <axis>
+                                                         <origin lengthUnit="mm">
+                                                            <x>60.0</x>
+                                                            <y>1492.2599792480469</y>
+                                                            <z>260.5385035276413</z>
+                                                         </origin>
+                                                         <versor>
+                                                            <x>0.0</x>
+                                                            <y>0.0</y>
+                                                            <z>1.0</z>
+                                                         </versor>
+                                                      </axis>
+                                                      <limits>
+                                                         <home unit="deg">0.0</home>
+                                                         <low unit="deg">-90.0</low>
+                                                         <high unit="deg">90.0</high>
+                                                      </limits>
+                                                   </ns2:rotation-axis>
+                                                </ns2:joint>
+                                                <ns2:geometry lengthUnit="m" type="VRML">
+                                                   <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/braccio_dx.wrl</geometry-uri>
+                                                </ns2:geometry>
+                                                <ns2:children>
+                                                   <body id="Operator2.avambraccio_dx" visible="true">
+                                                      <properties>
+                                                         <property name="#local.name" type="string">avambraccio_dx</property>
+                                                         <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                      </properties>
+                                                      <ns2:frames/>
+                                                      <ns2:joint type="ROTATIONAL">
+                                                         <ns2:transform>
+                                                            <location lengthUnit="mm">
+                                                               <x>0.0</x>
+                                                               <y>0.0</y>
+                                                               <z>0.0</z>
+                                                            </location>
+                                                            <orientation angleUnit="deg">
+                                                               <x>1.0</x>
+                                                               <y>0.0</y>
+                                                               <z>0.0</z>
+                                                               <w>0.0</w>
+                                                            </orientation>
+                                                         </ns2:transform>
+                                                         <ns2:rotation-axis name="R">
+                                                            <axis>
+                                                               <origin lengthUnit="mm">
+                                                                  <x>53.63000184297562</x>
+                                                                  <y>1170.009970664978</y>
+                                                                  <z>-258.23599100112915</z>
+                                                               </origin>
+                                                               <versor>
+                                                                  <x>0.0</x>
+                                                                  <y>0.0</y>
+                                                                  <z>-1.0</z>
+                                                               </versor>
+                                                            </axis>
+                                                            <limits>
+                                                               <home unit="deg">0.0</home>
+                                                               <low unit="deg">-5.0</low>
+                                                               <high unit="deg">90.0</high>
+                                                            </limits>
+                                                         </ns2:rotation-axis>
+                                                      </ns2:joint>
+                                                      <ns2:geometry lengthUnit="m" type="VRML">
+                                                         <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/avambraccio_dx.wrl</geometry-uri>
+                                                      </ns2:geometry>
+                                                      <ns2:children>
+                                                         <body id="Operator2.mano_dx" visible="true">
+                                                            <properties>
+                                                               <property name="#local.name" type="string">mano_dx</property>
+                                                               <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                            </properties>
+                                                            <ns2:frames/>
+                                                            <ns2:joint type="RIGID">
+                                                               <ns2:transform>
+                                                                  <location lengthUnit="mm">
+                                                                     <x>0.0</x>
+                                                                     <y>0.0</y>
+                                                                     <z>0.0</z>
+                                                                  </location>
+                                                                  <orientation angleUnit="deg">
+                                                                     <x>1.0</x>
+                                                                     <y>0.0</y>
+                                                                     <z>0.0</z>
+                                                                     <w>0.0</w>
+                                                                  </orientation>
+                                                               </ns2:transform>
+                                                            </ns2:joint>
+                                                            <ns2:geometry lengthUnit="m" type="VRML">
+                                                               <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/mano_dx.wrl</geometry-uri>
+                                                            </ns2:geometry>
+                                                            <ns2:children/>
+                                                         </body>
+                                                      </ns2:children>
+                                                   </body>
+                                                </ns2:children>
+                                             </body>
+                                             <body id="Operator2.braccio_sx" visible="true">
+                                                <properties>
+                                                   <property name="#local.name" type="string">braccio_sx</property>
+                                                   <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                </properties>
+                                                <ns2:frames/>
+                                                <ns2:joint type="ROTATIONAL">
+                                                   <ns2:transform>
+                                                      <location lengthUnit="mm">
+                                                         <x>0.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                      </location>
+                                                      <orientation angleUnit="deg">
+                                                         <x>1.0</x>
+                                                         <y>0.0</y>
+                                                         <z>0.0</z>
+                                                         <w>0.0</w>
+                                                      </orientation>
+                                                   </ns2:transform>
+                                                   <ns2:rotation-axis name="R">
+                                                      <axis>
+                                                         <origin lengthUnit="mm">
+                                                            <x>60.0</x>
+                                                            <y>1492.3</y>
+                                                            <z>0.0</z>
+                                                         </origin>
+                                                         <versor>
+                                                            <x>0.0</x>
+                                                            <y>0.0</y>
+                                                            <z>1.0</z>
+                                                         </versor>
+                                                      </axis>
+                                                      <limits>
+                                                         <home unit="deg">0.0</home>
+                                                         <low unit="deg">-90.0</low>
+                                                         <high unit="deg">90.0</high>
+                                                      </limits>
+                                                   </ns2:rotation-axis>
+                                                </ns2:joint>
+                                                <ns2:geometry lengthUnit="m" type="VRML">
+                                                   <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/braccio_sx.wrl</geometry-uri>
+                                                </ns2:geometry>
+                                                <ns2:children>
+                                                   <body id="Operator2.avambraccio_sx" visible="true">
+                                                      <properties>
+                                                         <property name="#local.name" type="string">avambraccio_sx</property>
+                                                         <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                      </properties>
+                                                      <ns2:frames/>
+                                                      <ns2:joint type="ROTATIONAL">
+                                                         <ns2:transform>
+                                                            <location lengthUnit="mm">
+                                                               <x>0.0</x>
+                                                               <y>0.0</y>
+                                                               <z>0.0</z>
+                                                            </location>
+                                                            <orientation angleUnit="deg">
+                                                               <x>1.0</x>
+                                                               <y>0.0</y>
+                                                               <z>0.0</z>
+                                                               <w>0.0</w>
+                                                            </orientation>
+                                                         </ns2:transform>
+                                                         <ns2:rotation-axis name="R">
+                                                            <axis>
+                                                               <origin lengthUnit="mm">
+                                                                  <x>53.53299900889397</x>
+                                                                  <y>1170.009970664978</y>
+                                                                  <z>258.2480013370514</z>
+                                                               </origin>
+                                                               <versor>
+                                                                  <x>0.0</x>
+                                                                  <y>0.0</y>
+                                                                  <z>-1.0</z>
+                                                               </versor>
+                                                            </axis>
+                                                            <limits>
+                                                               <home unit="deg">0.0</home>
+                                                               <low unit="deg">-5.0</low>
+                                                               <high unit="deg">90.0</high>
+                                                            </limits>
+                                                         </ns2:rotation-axis>
+                                                      </ns2:joint>
+                                                      <ns2:geometry lengthUnit="m" type="VRML">
+                                                         <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/avambraccio_sx.wrl</geometry-uri>
+                                                      </ns2:geometry>
+                                                      <ns2:children>
+                                                         <body id="Operator2.mano_sx" visible="true">
+                                                            <properties>
+                                                               <property name="#local.name" type="string">mano_sx</property>
+                                                               <property name="#instance.uuid" type="string">abf0fddd-b2ea-448e-af07-52a31f445f51</property>
+                                                            </properties>
+                                                            <ns2:frames/>
+                                                            <ns2:joint type="RIGID">
+                                                               <ns2:transform>
+                                                                  <location lengthUnit="mm">
+                                                                     <x>0.0</x>
+                                                                     <y>0.0</y>
+                                                                     <z>0.0</z>
+                                                                  </location>
+                                                                  <orientation angleUnit="deg">
+                                                                     <x>1.0</x>
+                                                                     <y>0.0</y>
+                                                                     <z>0.0</z>
+                                                                     <w>0.0</w>
+                                                                  </orientation>
+                                                               </ns2:transform>
+                                                            </ns2:joint>
+                                                            <ns2:geometry lengthUnit="m" type="VRML">
+                                                               <geometry-uri>prototypes/630fb14e-0949-46c8-ac36-40a0f15eea25/model/mano_sx.wrl</geometry-uri>
+                                                            </ns2:geometry>
+                                                            <ns2:children/>
+                                                         </body>
+                                                      </ns2:children>
+                                                   </body>
+                                                </ns2:children>
+                                             </body>
+                                          </ns2:children>
+                                       </body>
+                                    </ns2:children>
+                                 </body>
+                              </ns2:children>
+                           </body>
+                        </ns2:children>
+                     </body>
+                  </ns2:children>
+               </body>
             </ns2:children>
          </group>
       </ns2:children>

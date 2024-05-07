@@ -120,7 +120,7 @@ public class PL1State extends StateMachine {
         rob.moveLinear(BoxUtils.targetTop(workingB), workingD.cF,VROB_attach);
         rob.release();
         gripper.moveGripTo(551, 500);
-        rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB_attach);
+       // rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB_attach);
         
         rob.home();
         schedule.attach(workingD.entity, workingB.entity);

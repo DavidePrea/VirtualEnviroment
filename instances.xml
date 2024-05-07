@@ -449,7 +449,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="550">
+      <parameter name="sensorPositions" type="double[]" value="1050">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -901,15 +901,15 @@
       <parameter name="delayInterval" type="long" value="6000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="50">
+      <parameter name="entityLength" type="double" value="75">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
-      <parameter name="entityWidth" type="double" value="200">
+      <parameter name="entityWidth" type="double" value="75">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity width [mm]"/>
       </parameter>
-      <parameter name="entityHeight" type="double" value="100">
+      <parameter name="entityHeight" type="double" value="75">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
@@ -962,15 +962,15 @@
       <parameter name="delayInterval" type="long" value="6000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="150">
+      <parameter name="entityLength" type="double" value="50">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
-      <parameter name="entityWidth" type="double" value="100">
+      <parameter name="entityWidth" type="double" value="50">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity width [mm]"/>
       </parameter>
-      <parameter name="entityHeight" type="double" value="200">
+      <parameter name="entityHeight" type="double" value="50">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
@@ -1023,15 +1023,15 @@
       <parameter name="delayInterval" type="long" value="6000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="50">
+      <parameter name="entityLength" type="double" value="75">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity length [mm]"/>
       </parameter>
-      <parameter name="entityWidth" type="double" value="200">
+      <parameter name="entityWidth" type="double" value="75">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity width [mm]"/>
       </parameter>
-      <parameter name="entityHeight" type="double" value="100">
+      <parameter name="entityHeight" type="double" value="75">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>

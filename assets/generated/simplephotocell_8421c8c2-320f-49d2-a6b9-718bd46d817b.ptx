@@ -1,0 +1,11 @@
+<parametric-object>
+   <box x-side-lenght="500.0" y-side-lenght="5.0" z-side-lenght="200.0"/>
+   <appearance>
+      <ambientIntensity value="0.2"/>
+      <diffuseColor r="1.0" g="0.0" b="0.0"/>
+      <emissiveColor r="0.0" g="0.0" b="0.0"/>
+      <shininess value="0.0"/>
+      <specularColor r="0.0" g="0.0" b="0.0"/>
+      <transparency value="0.5"/>
+   </appearance>
+</parametric-object>

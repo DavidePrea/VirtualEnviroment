@@ -1,0 +1,58 @@
+<prototype uuid="26e00061-2d73-4934-8d37-94ce4f116b71" name="RFIDSensor" version="1">	
+    <parameter name="refreshInterval" type="long" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Refresh interval [ms]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="codeName" type="string" value="rfid">
+        <property name="displayName" value="Code property name" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="additionalDataName" type="string[]" value="">
+        <property name="displayName" value="Additional property names" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="additionalDataDelimiter" type="string" value=";">
+        <property name="displayName" value="Additional data delimiter" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="length" type="double" value="400">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam length [mm]" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="200">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam height [mm]" type="string"/>
+    </parameter>
+    <parameter name="width" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam width [mm]" type="string"/>
+    </parameter>
+    <parameter name="marker" type="string" value="">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Object marker" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="writeDistinct" type="boolean" value="true">
+        <property name="displayName" value="Only changes" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <output name="outReading" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <property name="displayName" value="RFID Sensor" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="sensor" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;3" type="double[]"/>
+    <property name="bounds_size" value="400;200;100" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.RFIDSensor">
+        <param name="id" type="string">${instance.name}</param>
+        <param name="refreshInterval" type="long">${refreshInterval}</param>
+        <param name="sensorGeometryId" type="string">${instance.name}.pc_geom</param>
+        <param name="marker" type="string">${marker}</param>
+        <param name="codeName" type="string">${codeName}</param>
+        <param name="writeOnlyOnce" type="boolean">${writeDistinct}</param>
+        <param name="additionalDataDelimiter" type="string">${additionalDataDelimiter}</param>
+        <param name="additionalDataName" type="string[]">${additionalDataName}</param>
+    </logics>
+</prototype>

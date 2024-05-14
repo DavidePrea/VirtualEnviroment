@@ -34,6 +34,17 @@
             <param name="script"></param>
             <param name="logicClassName"></param>
         </module-instance>
+        <module-instance name="RFIDSensor1" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="6701" y="-1174"/>
+            <param name="id">RFIDSensor1</param>
+            <param name="refreshInterval">500</param>
+            <param name="sensorGeometryId">RFIDSensor1.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
+            <param name="additionalDataDelimiter">;</param>
+            <param name="additionalDataName"></param>
+        </module-instance>
         <module-instance name="CArch4" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="-2100" y="2100"/>
             <param name="conveyorSpeed">1</param>
@@ -126,6 +137,13 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="Photocell1" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="4100" y="315"/>
+            <param name="refreshInterval">500</param>
+            <param name="sensorGeometryId">Photocell1.pc_geom</param>
+            <param name="marker"></param>
+            <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="CArch3" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="-2100" y="-400"/>
@@ -260,6 +278,17 @@
             <param name="infoContent"></param>
             <param name="automatic">true</param>
         </module-instance>
+        <module-instance name="RFIDSensor2" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="8800" y="850"/>
+            <param name="id">RFIDSensor2</param>
+            <param name="refreshInterval">500</param>
+            <param name="sensorGeometryId">RFIDSensor2.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
+            <param name="additionalDataDelimiter">;</param>
+            <param name="additionalDataName"></param>
+        </module-instance>
         <module-instance name="ProgrammableLogics4" type="com.ttsnetwork.modules.standard.PLModule">
             <visual x="300" y="625"/>
             <param name="id">ProgrammableLogics4</param>
@@ -345,6 +374,25 @@
             <param name="id">ProgrammableLogics2</param>
             <param name="logicClassName">my.company.PL2State</param>
         </module-instance>
+        <module-instance name="CF" type="com.ttsnetwork.modules.standard.RandomConveyorSplit">
+            <visual x="3600" y="850"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="out1Frame">CF.outConv1.endFrame</param>
+            <param name="out2Frame">CF.outConv2.endFrame</param>
+            <param name="out3Frame">CF.outConv3.endFrame</param>
+            <param name="startFrame">CF.main.startFrame</param>
+            <param name="endFrame">CF.main.endFrame</param>
+            <param name="idleOnStart">${idleOnStart}</param>
+            <param name="infoContent">${infoContent}</param>
+            <param name="mainLength">1000</param>
+            <param name="out1Length">${in1Length}</param>
+            <param name="out2Length">${in2Length}</param>
+            <param name="out3Length">${in3Length}</param>
+            <param name="width">500</param>
+            <param name="out1Prob">0</param>
+            <param name="out2Prob">20</param>
+            <param name="out3Prob">80</param>
+        </module-instance>
         <module-instance name="D1" type="com.ttsnetwork.modules.standard.Sink">
             <visual x="9300" y="850"/>
             <param name="timeInterval">1000</param>
@@ -371,25 +419,6 @@
             <param name="out1Values">0</param>
             <param name="out2Values">1</param>
             <param name="out3Values"></param>
-        </module-instance>
-        <module-instance name="CF" type="com.ttsnetwork.modules.standard.RandomConveyorSplit">
-            <visual x="3600" y="850"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="out1Frame">CF.outConv1.endFrame</param>
-            <param name="out2Frame">CF.outConv2.endFrame</param>
-            <param name="out3Frame">CF.outConv3.endFrame</param>
-            <param name="startFrame">CF.main.startFrame</param>
-            <param name="endFrame">CF.main.endFrame</param>
-            <param name="idleOnStart">${idleOnStart}</param>
-            <param name="infoContent">${infoContent}</param>
-            <param name="mainLength">1000</param>
-            <param name="out1Length">${in1Length}</param>
-            <param name="out2Length">${in2Length}</param>
-            <param name="out3Length">${in3Length}</param>
-            <param name="width">500</param>
-            <param name="out1Prob">0</param>
-            <param name="out2Prob">20</param>
-            <param name="out3Prob">80</param>
         </module-instance>
     </modules>
     <connections>

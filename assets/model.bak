@@ -22689,9 +22689,9 @@
             <ns2:joint type="RIGID">
                <ns2:transform>
                   <location lengthUnit="mm">
-                     <x>4885.012731432803</x>
-                     <y>-2760.6688941512243</y>
-                     <z>0.0</z>
+                     <x>840.1345424437392</x>
+                     <y>1386.556402499732</y>
+                     <z>-500.0</z>
                   </location>
                   <orientation angleUnit="deg">
                      <x>1.0</x>

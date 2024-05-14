@@ -1,0 +1,40 @@
+<prototype uuid="8c1784c8-48f3-45f0-92f6-ba38ec17a296" name="Photocell" version="1">	
+    <parameter name="refreshInterval" type="long" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Refresh interval [ms]" type="string"/>
+    </parameter>
+    <parameter name="length" type="double" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam length [mm]" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="5">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam height [mm]" type="string"/>
+    </parameter>
+    <parameter name="width" type="double" value="5">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam width [mm]" type="string"/>
+    </parameter>
+    <parameter name="marker" type="string" value="">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Object marker" type="string"/>
+    </parameter>
+    <parameter name="writeDistinct" type="boolean" value="true">
+        <property name="displayName" value="Only changes" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <output name="interrupt" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <property name="displayName" value="Simple PhotoCell" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="sensor" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;3" type="double[]"/>
+	<property name="bounds_size" value="500;5;5" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+        <param name="refreshInterval" type="long">${refreshInterval}</param>
+        <param name="sensorGeometryId" type="string">${instance.name}.pc_geom</param>
+        <param name="marker" type="string">${marker}</param>
+        <param name="writeOnlyOnce" type="boolean">${writeDistinct}</param>
+    </logics>
+</prototype>

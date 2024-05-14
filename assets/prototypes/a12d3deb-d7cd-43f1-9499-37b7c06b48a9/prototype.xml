@@ -1,0 +1,44 @@
+<prototype uuid="a12d3deb-d7cd-43f1-9499-37b7c06b48a9" name="InfluxProxy"  version="1">	
+    <property name="displayName" value="Influx DB Proxy" type="string"/>
+    <property name="category" value="interface" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="generator" value="build.js" type="string"/>
+    <property name="bounds_center" value="0;0;50" type="double[]"/>
+    <property name="bounds_size" value="100;100;100" type="double[]"/>
+    <property name="position" type="integer" value="200"/>
+    <parameter name="width" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="depth" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="url" type="string" value="http://localhost:3306">
+        <property name="displayName" value="URL" type="string"/>
+    </parameter>
+    <parameter name="token" type="string" value="****">
+        <property name="displayName" value="API token" type="string"/>
+    </parameter>
+    <parameter name="org" type="string" value="">
+        <property name="displayName" value="Organization" type="string"/>
+    </parameter>
+    <parameter name="bucket" type="string" value="">
+        <property name="displayName" value="Bucket" type="string"/>
+    </parameter>
+<!--    <parameter name="port" type="integer" value="502">
+    </parameter>
+    <parameter name="timeout" type="integer" value="3000">
+    </parameter>
+    <parameter name="keepAlive" type="boolean" value="false">
+        <property name="displayName" value="Keep alive" type="string"/>
+    </parameter>-->
+    <logics type="com.ttsnetwork.modules.standard.InfluxModule">
+        <param name="id" type="string">${instance.name}</param>
+        <param name="url" type="string">${url}</param>
+        <param name="token" type="string">${token}</param>
+        <param name="org" type="string">${org}</param>
+        <param name="bucket" type="string">${bucket}</param>
+    </logics>
+</prototype>

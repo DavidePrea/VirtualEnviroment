@@ -2,6 +2,177 @@
 <model name="model.xml" xmlns="http://heron.ttsnetwork.com/xml/v1">
     <variables/>
     <modules>
+        <module-instance name="RFIDSensor1" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="6701" y="-1174"/>
+            <param name="id">RFIDSensor1</param>
+            <param name="refreshInterval">500</param>
+            <param name="sensorGeometryId">RFIDSensor1.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
+            <param name="additionalDataDelimiter">;</param>
+            <param name="additionalDataName"></param>
+        </module-instance>
+        <module-instance name="ProgrammableLogics3" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="300" y="270"/>
+            <param name="id">ProgrammableLogics3</param>
+            <param name="logicClassName">my.company.PLGlobal</param>
+        </module-instance>
+        <module-instance name="CC" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="0" y="-1000"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">CC.startFrame</param>
+            <param name="endFrame">CC.endFrame</param>
+            <param name="sensorNames">C_sen1;C_senInit;C_senFinish</param>
+            <param name="sensorPositions">1500;200;2800</param>
+            <param name="sensorsReveal">CENTER;CENTER;CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="Photocell1" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="4100" y="315"/>
+            <param name="refreshInterval">10</param>
+            <param name="sensorGeometryId">Photocell1.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
+        </module-instance>
+        <module-instance name="ProgrammableLogics1" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="290" y="1345"/>
+            <param name="id">ProgrammableLogics1</param>
+            <param name="logicClassName">my.company.PL1State</param>
+        </module-instance>
+        <module-instance name="join" type="com.ttsnetwork.modules.standard.ConveyorJoin">
+            <visual x="2600" y="850"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="in1Frame">join.inConv1.startFrame</param>
+            <param name="in2Frame">join.inConv2.startFrame</param>
+            <param name="in3Frame">join.inConv3.startFrame</param>
+            <param name="startFrame">join.main.startFrame</param>
+            <param name="endFrame">join.main.endFrame</param>
+            <param name="idleOnStart">${idleOnStart}</param>
+            <param name="infoContent">${infoContent}</param>
+            <param name="mainLength">1000</param>
+            <param name="in1Length">1250</param>
+            <param name="in2Length">1250</param>
+            <param name="in3Length">0</param>
+            <param name="width">500</param>
+        </module-instance>
+        <module-instance name="CA" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="-3600" y="850"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">CA.startFrame</param>
+            <param name="endFrame">CA.endFrame</param>
+            <param name="sensorNames">SA</param>
+            <param name="sensorPositions">900</param>
+            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="CB" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="0" y="2700"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">CB.startFrame</param>
+            <param name="endFrame">CB.endFrame</param>
+            <param name="sensorNames">B_sen1;B_senInit;B_senFinish</param>
+            <param name="sensorPositions">1500;200;2800</param>
+            <param name="sensorsReveal">CENTER;CENTER;CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="S4" type="com.ttsnetwork.modules.standard.ParametricSource2">
+            <visual x="761" y="4330"/>
+            <param name="modelName">S4</param>
+            <param name="creationFrameName">S4.creationFrame</param>
+            <param name="timeInterval">3000</param>
+            <param name="minCreationDistance">300</param>
+            <param name="marker">box</param>
+            <param name="counterName">counter</param>
+            <param name="entityNamePrefix">E_</param>
+            <param name="delayInterval">6000</param>
+            <param name="infoContent"></param>
+            <param name="automatic">true</param>
+        </module-instance>
+        <module-instance name="RFIDSensor2" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="8800" y="850"/>
+            <param name="id">RFIDSensor2</param>
+            <param name="refreshInterval">500</param>
+            <param name="sensorGeometryId">RFIDSensor2.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
+            <param name="additionalDataDelimiter">;</param>
+            <param name="additionalDataName"></param>
+        </module-instance>
+        <module-instance name="ProgrammableLogics5" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="840" y="1387"/>
+            <param name="id">ProgrammableLogics5</param>
+            <param name="logicClassName">my.company.Control</param>
+        </module-instance>
+        <module-instance name="CE" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="750" y="-2150"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">CE.startFrame</param>
+            <param name="endFrame">CE.endFrame</param>
+            <param name="sensorNames">E_sen1</param>
+            <param name="sensorPositions">1300</param>
+            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="S3" type="com.ttsnetwork.modules.standard.ParametricSource2">
+            <visual x="750" y="-2900"/>
+            <param name="modelName">S3</param>
+            <param name="creationFrameName">S3.creationFrame</param>
+            <param name="timeInterval">6000</param>
+            <param name="minCreationDistance">200</param>
+            <param name="marker">box</param>
+            <param name="counterName">counter</param>
+            <param name="entityNamePrefix">E_</param>
+            <param name="delayInterval">6000</param>
+            <param name="infoContent"></param>
+            <param name="automatic">true</param>
+        </module-instance>
+        <module-instance name="CArch2" type="com.ttsnetwork.modules.standard.ConveyorArc">
+            <visual x="1500" y="2700"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">CArch2.startFrame</param>
+            <param name="endFrame">CArch2.endFrame</param>
+            <param name="direction">right</param>
+            <param name="sensorNames"></param>
+            <param name="sensorPositions"></param>
+            <param name="sensorsReveal"></param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="ProgrammableLogics2" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="300" y="1000"/>
+            <param name="id">ProgrammableLogics2</param>
+            <param name="logicClassName">my.company.PL2State</param>
+        </module-instance>
+        <module-instance name="CF" type="com.ttsnetwork.modules.standard.RandomConveyorSplit">
+            <visual x="3600" y="850"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="out1Frame">CF.outConv1.endFrame</param>
+            <param name="out2Frame">CF.outConv2.endFrame</param>
+            <param name="out3Frame">CF.outConv3.endFrame</param>
+            <param name="startFrame">CF.main.startFrame</param>
+            <param name="endFrame">CF.main.endFrame</param>
+            <param name="idleOnStart">${idleOnStart}</param>
+            <param name="infoContent">${infoContent}</param>
+            <param name="mainLength">1000</param>
+            <param name="out1Length">${in1Length}</param>
+            <param name="out2Length">${in2Length}</param>
+            <param name="out3Length">${in3Length}</param>
+            <param name="width">500</param>
+            <param name="out1Prob">0</param>
+            <param name="out2Prob">20</param>
+            <param name="out3Prob">80</param>
+        </module-instance>
         <module-instance name="CArchControl1" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="4100" y="-150"/>
             <param name="conveyorSpeed">1</param>
@@ -33,17 +204,6 @@
             <param name="showAllGhosts">false</param>
             <param name="script"></param>
             <param name="logicClassName"></param>
-        </module-instance>
-        <module-instance name="RFIDSensor1" type="com.ttsnetwork.modules.standard.RFIDSensor">
-            <visual x="6701" y="-1174"/>
-            <param name="id">RFIDSensor1</param>
-            <param name="refreshInterval">500</param>
-            <param name="sensorGeometryId">RFIDSensor1.pc_geom</param>
-            <param name="marker">box</param>
-            <param name="codeName">rfid</param>
-            <param name="writeOnlyOnce">true</param>
-            <param name="additionalDataDelimiter">;</param>
-            <param name="additionalDataName"></param>
         </module-instance>
         <module-instance name="CArch4" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="-2100" y="2100"/>
@@ -84,35 +244,18 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="ProgrammableLogics3" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="300" y="270"/>
-            <param name="id">ProgrammableLogics3</param>
-            <param name="logicClassName">my.company.PLGlobal</param>
-        </module-instance>
         <module-instance name="S2" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="250" y="-2900"/>
             <param name="modelName">S2</param>
             <param name="creationFrameName">S2.creationFrame</param>
             <param name="timeInterval">6000</param>
             <param name="minCreationDistance">300</param>
-            <param name="marker"></param>
+            <param name="marker">box</param>
             <param name="counterName">counter</param>
             <param name="entityNamePrefix">E_</param>
             <param name="delayInterval">6000</param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
-        </module-instance>
-        <module-instance name="CC" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="0" y="-1000"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="startFrame">CC.startFrame</param>
-            <param name="endFrame">CC.endFrame</param>
-            <param name="sensorNames">C_sen1;C_senInit;C_senFinish</param>
-            <param name="sensorPositions">1500;200;2800</param>
-            <param name="sensorsReveal">CENTER;CENTER;CENTER</param>
-            <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
-            <param name="infoContent"></param>
         </module-instance>
         <module-instance name="CD2" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="761" y="3705"/>
@@ -137,13 +280,6 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
-        </module-instance>
-        <module-instance name="Photocell1" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
-            <visual x="4100" y="315"/>
-            <param name="refreshInterval">500</param>
-            <param name="sensorGeometryId">Photocell1.pc_geom</param>
-            <param name="marker"></param>
-            <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="CArch3" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="-2100" y="-400"/>
@@ -170,27 +306,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="ProgrammableLogics1" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="290" y="1345"/>
-            <param name="id">ProgrammableLogics1</param>
-            <param name="logicClassName">my.company.PL1State</param>
-        </module-instance>
-        <module-instance name="join" type="com.ttsnetwork.modules.standard.ConveyorJoin">
-            <visual x="2600" y="850"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="in1Frame">join.inConv1.startFrame</param>
-            <param name="in2Frame">join.inConv2.startFrame</param>
-            <param name="in3Frame">join.inConv3.startFrame</param>
-            <param name="startFrame">join.main.startFrame</param>
-            <param name="endFrame">join.main.endFrame</param>
-            <param name="idleOnStart">${idleOnStart}</param>
-            <param name="infoContent">${infoContent}</param>
-            <param name="mainLength">1000</param>
-            <param name="in1Length">1250</param>
-            <param name="in2Length">1250</param>
-            <param name="in3Length">0</param>
-            <param name="width">500</param>
-        </module-instance>
         <module-instance name="CJ" type="com.ttsnetwork.modules.standard.ConveyorJoin">
             <visual x="8800" y="850"/>
             <param name="conveyorSpeed">1</param>
@@ -207,27 +322,23 @@
             <param name="in3Length">1000</param>
             <param name="width">500</param>
         </module-instance>
-        <module-instance name="CA" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="-3600" y="850"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="startFrame">CA.startFrame</param>
-            <param name="endFrame">CA.endFrame</param>
-            <param name="sensorNames">SA</param>
-            <param name="sensorPositions">900</param>
-            <param name="sensorsReveal">CENTER</param>
-            <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
-            <param name="infoContent"></param>
-        </module-instance>
         <module-instance name="PS1" type="com.ttsnetwork.modules.standard.PlanSource">
             <visual x="-4100" y="850"/>
             <param name="modelName">PS1</param>
             <param name="prodPlanFileName">inputSource/f625cd6a-ffb9-4f83-8d6f-ae7015065f89/PlanSource1_prodPlan.csv</param>
             <param name="creationFrameName">PS1.creationFrame</param>
-            <param name="marker"></param>
+            <param name="marker">box</param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
             <param name="minCreationDistance">3000</param>
+        </module-instance>
+        <module-instance name="InfluxProxy1" type="com.ttsnetwork.modules.standard.InfluxModule">
+            <visual x="813" y="1043"/>
+            <param name="id">InfluxProxy1</param>
+            <param name="url">http://localhost:8086</param>
+            <param name="token">jH6tJGOyzae404qP2jez3VNK680T6LdoYGYwxSwuh1Tr5LbFyUhfizpnmy23e2Y8A3rv6P1XlBNi1xCCruLzRQ==</param>
+            <param name="org">SUPSI</param>
+            <param name="bucket">VE2024</param>
         </module-instance>
         <module-instance name="R1" type="com.ttsnetwork.modules.standard.Robot6DOF2">
             <visual x="-120" y="3790"/>
@@ -241,6 +352,15 @@
             <param name="script"></param>
             <param name="logicClassName"></param>
         </module-instance>
+        <module-instance name="DistanceSensor1" type="com.ttsnetwork.modules.standard.SimpleDistanceRanger">
+            <visual x="3130" y="850"/>
+            <param name="refreshInterval">10</param>
+            <param name="sensorFrameId">DistanceSensor1.ds_geom.reference</param>
+            <param name="marker">box</param>
+            <param name="tree">true</param>
+            <param name="onlyBB">false</param>
+            <param name="maxDistance">1000</param>
+        </module-instance>
         <module-instance name="CD1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="250" y="-2150"/>
             <param name="conveyorSpeed">1</param>
@@ -253,51 +373,10 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="CB" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="0" y="2700"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="startFrame">CB.startFrame</param>
-            <param name="endFrame">CB.endFrame</param>
-            <param name="sensorNames">B_sen1;B_senInit;B_senFinish</param>
-            <param name="sensorPositions">1500;200;2800</param>
-            <param name="sensorsReveal">CENTER;CENTER;CENTER</param>
-            <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
-            <param name="infoContent"></param>
-        </module-instance>
-        <module-instance name="S4" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="761" y="4330"/>
-            <param name="modelName">S4</param>
-            <param name="creationFrameName">S4.creationFrame</param>
-            <param name="timeInterval">3000</param>
-            <param name="minCreationDistance">300</param>
-            <param name="marker"></param>
-            <param name="counterName">counter</param>
-            <param name="entityNamePrefix">E_</param>
-            <param name="delayInterval">6000</param>
-            <param name="infoContent"></param>
-            <param name="automatic">true</param>
-        </module-instance>
-        <module-instance name="RFIDSensor2" type="com.ttsnetwork.modules.standard.RFIDSensor">
-            <visual x="8800" y="850"/>
-            <param name="id">RFIDSensor2</param>
-            <param name="refreshInterval">500</param>
-            <param name="sensorGeometryId">RFIDSensor2.pc_geom</param>
-            <param name="marker">box</param>
-            <param name="codeName">rfid</param>
-            <param name="writeOnlyOnce">true</param>
-            <param name="additionalDataDelimiter">;</param>
-            <param name="additionalDataName"></param>
-        </module-instance>
         <module-instance name="ProgrammableLogics4" type="com.ttsnetwork.modules.standard.PLModule">
             <visual x="300" y="625"/>
             <param name="id">ProgrammableLogics4</param>
             <param name="logicClassName">my.company.PLFLow</param>
-        </module-instance>
-        <module-instance name="ProgrammableLogics5" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="840" y="1387"/>
-            <param name="id">ProgrammableLogics5</param>
-            <param name="logicClassName">my.company.Control</param>
         </module-instance>
         <module-instance name="CArch1" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="1500" y="-1000"/>
@@ -305,44 +384,6 @@
             <param name="startFrame">CArch1.startFrame</param>
             <param name="endFrame">CArch1.endFrame</param>
             <param name="direction">left</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
-            <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
-            <param name="infoContent"></param>
-        </module-instance>
-        <module-instance name="CE" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="750" y="-2150"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="startFrame">CE.startFrame</param>
-            <param name="endFrame">CE.endFrame</param>
-            <param name="sensorNames">E_sen1</param>
-            <param name="sensorPositions">1300</param>
-            <param name="sensorsReveal">CENTER</param>
-            <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
-            <param name="infoContent"></param>
-        </module-instance>
-        <module-instance name="S3" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="750" y="-2900"/>
-            <param name="modelName">S3</param>
-            <param name="creationFrameName">S3.creationFrame</param>
-            <param name="timeInterval">6000</param>
-            <param name="minCreationDistance">200</param>
-            <param name="marker"></param>
-            <param name="counterName">counter</param>
-            <param name="entityNamePrefix">E_</param>
-            <param name="delayInterval">6000</param>
-            <param name="infoContent"></param>
-            <param name="automatic">true</param>
-        </module-instance>
-        <module-instance name="CArch2" type="com.ttsnetwork.modules.standard.ConveyorArc">
-            <visual x="1500" y="2700"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="startFrame">CArch2.startFrame</param>
-            <param name="endFrame">CArch2.endFrame</param>
-            <param name="direction">right</param>
             <param name="sensorNames"></param>
             <param name="sensorPositions"></param>
             <param name="sensorsReveal"></param>
@@ -368,30 +409,6 @@
             <param name="out1Prob">0</param>
             <param name="out2Prob">2</param>
             <param name="out3Prob">98</param>
-        </module-instance>
-        <module-instance name="ProgrammableLogics2" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="300" y="1000"/>
-            <param name="id">ProgrammableLogics2</param>
-            <param name="logicClassName">my.company.PL2State</param>
-        </module-instance>
-        <module-instance name="CF" type="com.ttsnetwork.modules.standard.RandomConveyorSplit">
-            <visual x="3600" y="850"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="out1Frame">CF.outConv1.endFrame</param>
-            <param name="out2Frame">CF.outConv2.endFrame</param>
-            <param name="out3Frame">CF.outConv3.endFrame</param>
-            <param name="startFrame">CF.main.startFrame</param>
-            <param name="endFrame">CF.main.endFrame</param>
-            <param name="idleOnStart">${idleOnStart}</param>
-            <param name="infoContent">${infoContent}</param>
-            <param name="mainLength">1000</param>
-            <param name="out1Length">${in1Length}</param>
-            <param name="out2Length">${in2Length}</param>
-            <param name="out3Length">${in3Length}</param>
-            <param name="width">500</param>
-            <param name="out1Prob">0</param>
-            <param name="out2Prob">20</param>
-            <param name="out3Prob">80</param>
         </module-instance>
         <module-instance name="D1" type="com.ttsnetwork.modules.standard.Sink">
             <visual x="9300" y="850"/>

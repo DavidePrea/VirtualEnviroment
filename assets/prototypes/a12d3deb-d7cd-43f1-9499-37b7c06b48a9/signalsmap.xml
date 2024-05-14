@@ -1,0 +1,178 @@
+<signals>
+   <input group="1:Input-Word">
+      <signal type="int" address="modbus://input-register:1" name="Example connection">
+<!--         <endpoint>module1.in1</endpoint>
+         <endpoint>module2.in1</endpoint>-->
+      </signal>
+      <signal type="int" address="modbus://input-register:2"/>
+      <signal type="int" address="modbus://input-register:3"/>
+      <signal type="int" address="modbus://input-register:4"/>
+      <signal type="int" address="modbus://input-register:5"/>
+      <signal type="int" address="modbus://input-register:6"/>
+      <signal type="int" address="modbus://input-register:7"/>
+      <signal type="int" address="modbus://input-register:8"/>
+      <signal type="int" address="modbus://input-register:9"/>
+      <signal type="int" address="modbus://input-register:10"/>
+      <signal type="int" address="modbus://input-register:11"/>
+      <signal type="int" address="modbus://input-register:12"/>
+      <signal type="int" address="modbus://input-register:13"/>
+      <signal type="int" address="modbus://input-register:14"/>
+      <signal type="int" address="modbus://input-register:15"/>
+      <signal type="int" address="modbus://input-register:16"/>
+      <signal type="int" address="modbus://input-register:17"/>
+      <signal type="int" address="modbus://input-register:18"/>
+      <signal type="int" address="modbus://input-register:19"/>
+      <signal type="int" address="modbus://input-register:20"/>
+      <signal type="int" address="modbus://input-register:21"/>
+      <signal type="int" address="modbus://input-register:22"/>
+      <signal type="int" address="modbus://input-register:23"/>
+      <signal type="int" address="modbus://input-register:24"/>
+      <signal type="int" address="modbus://input-register:25"/>
+      <signal type="int" address="modbus://input-register:26"/>
+      <signal type="int" address="modbus://input-register:27"/>
+      <signal type="int" address="modbus://input-register:28"/>
+      <signal type="int" address="modbus://input-register:29"/>
+      <signal type="int" address="modbus://input-register:30"/>
+      <signal type="int" address="modbus://input-register:31"/>
+      <signal type="int" address="modbus://input-register:32"/>
+   </input>
+   <input group="1:Input-Bit">
+      <signal type="boolean" address="modbus://discrete-input:1" name="Example connection">
+<!--         <endpoint>module1.in1</endpoint>
+         <endpoint>module2.in1</endpoint>-->
+      </signal>
+      <signal type="boolean" address="modbus://discrete-input:2"/>
+      <signal type="boolean" address="modbus://discrete-input:3"/>
+      <signal type="boolean" address="modbus://discrete-input:4"/>
+      <signal type="boolean" address="modbus://discrete-input:5"/>
+      <signal type="boolean" address="modbus://discrete-input:6"/>
+      <signal type="boolean" address="modbus://discrete-input:7"/>
+      <signal type="boolean" address="modbus://discrete-input:8"/>
+      <signal type="boolean" address="modbus://discrete-input:9"/>
+      <signal type="boolean" address="modbus://discrete-input:10"/>
+      <signal type="boolean" address="modbus://discrete-input:11"/>
+      <signal type="boolean" address="modbus://discrete-input:12"/>
+      <signal type="boolean" address="modbus://discrete-input:13"/>
+      <signal type="boolean" address="modbus://discrete-input:14"/>
+      <signal type="boolean" address="modbus://discrete-input:15"/>
+      <signal type="boolean" address="modbus://discrete-input:16"/>
+      <signal type="boolean" address="modbus://discrete-input:17"/>
+      <signal type="boolean" address="modbus://discrete-input:18"/>
+      <signal type="boolean" address="modbus://discrete-input:19"/>
+      <signal type="boolean" address="modbus://discrete-input:20"/>
+      <signal type="boolean" address="modbus://discrete-input:21"/>
+      <signal type="boolean" address="modbus://discrete-input:22"/>
+      <signal type="boolean" address="modbus://discrete-input:23"/>
+      <signal type="boolean" address="modbus://discrete-input:24"/>
+      <signal type="boolean" address="modbus://discrete-input:25"/>
+      <signal type="boolean" address="modbus://discrete-input:26"/>
+      <signal type="boolean" address="modbus://discrete-input:27"/>
+      <signal type="boolean" address="modbus://discrete-input:28"/>
+      <signal type="boolean" address="modbus://discrete-input:29"/>
+      <signal type="boolean" address="modbus://discrete-input:30"/>
+      <signal type="boolean" address="modbus://discrete-input:31"/>
+      <signal type="boolean" address="modbus://discrete-input:32"/>
+   </input>
+   <input group="1:Holding-Input">
+      <signal type="int" address="modbus://holding-register:1"/>
+      <signal type="int" address="modbus://holding-register:2"/>
+      <signal type="int" address="modbus://holding-register:3"/>
+      <signal type="int" address="modbus://holding-register:4"/>
+      <signal type="int" address="modbus://holding-register:5"/>
+      <signal type="int" address="modbus://holding-register:6"/>
+      <signal type="int" address="modbus://holding-register:7"/>
+      <signal type="int" address="modbus://holding-register:8"/>
+      <signal type="int" address="modbus://holding-register:9"/>
+      <signal type="int" address="modbus://holding-register:10"/>
+      <signal type="int" address="modbus://holding-register:11"/>
+      <signal type="int" address="modbus://holding-register:12"/>
+      <signal type="int" address="modbus://holding-register:13"/>
+      <signal type="int" address="modbus://holding-register:14"/>
+      <signal type="int" address="modbus://holding-register:15"/>
+      <signal type="int" address="modbus://holding-register:16"/>
+      <signal type="int" address="modbus://holding-register:17"/>
+      <signal type="int" address="modbus://holding-register:18"/>
+      <signal type="int" address="modbus://holding-register:19"/>
+      <signal type="int" address="modbus://holding-register:20"/>
+      <signal type="int" address="modbus://holding-register:21"/>
+      <signal type="int" address="modbus://holding-register:22"/>
+      <signal type="int" address="modbus://holding-register:23"/>
+      <signal type="int" address="modbus://holding-register:24"/>
+      <signal type="int" address="modbus://holding-register:25"/>
+      <signal type="int" address="modbus://holding-register:26"/>
+      <signal type="int" address="modbus://holding-register:27"/>
+      <signal type="int" address="modbus://holding-register:28"/>
+      <signal type="int" address="modbus://holding-register:29"/>
+      <signal type="int" address="modbus://holding-register:30"/>
+      <signal type="int" address="modbus://holding-register:31"/>
+      <signal type="int" address="modbus://holding-register:32"/>
+   </input>
+   <output group="1:Holding-Output">
+      <signal type="int" address="modbus://holding-register:1"/>
+      <signal type="int" address="modbus://holding-register:2"/>
+      <signal type="int" address="modbus://holding-register:3"/>
+      <signal type="int" address="modbus://holding-register:4"/>
+      <signal type="int" address="modbus://holding-register:5"/>
+      <signal type="int" address="modbus://holding-register:6"/>
+      <signal type="int" address="modbus://holding-register:7"/>
+      <signal type="int" address="modbus://holding-register:8"/>
+      <signal type="int" address="modbus://holding-register:9"/>
+      <signal type="int" address="modbus://holding-register:10"/>
+      <signal type="int" address="modbus://holding-register:11"/>
+      <signal type="int" address="modbus://holding-register:12"/>
+      <signal type="int" address="modbus://holding-register:13"/>
+      <signal type="int" address="modbus://holding-register:14"/>
+      <signal type="int" address="modbus://holding-register:15"/>
+      <signal type="int" address="modbus://holding-register:16"/>
+      <signal type="int" address="modbus://holding-register:17"/>
+      <signal type="int" address="modbus://holding-register:18"/>
+      <signal type="int" address="modbus://holding-register:19"/>
+      <signal type="int" address="modbus://holding-register:20"/>
+      <signal type="int" address="modbus://holding-register:21"/>
+      <signal type="int" address="modbus://holding-register:22"/>
+      <signal type="int" address="modbus://holding-register:23"/>
+      <signal type="int" address="modbus://holding-register:24"/>
+      <signal type="int" address="modbus://holding-register:25"/>
+      <signal type="int" address="modbus://holding-register:26"/>
+      <signal type="int" address="modbus://holding-register:27"/>
+      <signal type="int" address="modbus://holding-register:28"/>
+      <signal type="int" address="modbus://holding-register:29"/>
+      <signal type="int" address="modbus://holding-register:30"/>
+      <signal type="int" address="modbus://holding-register:31"/>
+      <signal type="int" address="modbus://holding-register:32"/>
+   </output>
+   <output group="Output-Bit">
+      <signal type="boolean" address="modbus://coil:1"/>
+      <signal type="boolean" address="modbus://coil:2"/>
+      <signal type="boolean" address="modbus://coil:3"/>
+      <signal type="boolean" address="modbus://coil:4"/>
+      <signal type="boolean" address="modbus://coil:5"/>
+      <signal type="boolean" address="modbus://coil:6"/>
+      <signal type="boolean" address="modbus://coil:7"/>
+      <signal type="boolean" address="modbus://coil:8"/>
+      <signal type="boolean" address="modbus://coil:9"/>
+      <signal type="boolean" address="modbus://coil:10"/>
+      <signal type="boolean" address="modbus://coil:11"/>
+      <signal type="boolean" address="modbus://coil:12"/>
+      <signal type="boolean" address="modbus://coil:13"/>
+      <signal type="boolean" address="modbus://coil:14"/>
+      <signal type="boolean" address="modbus://coil:15"/>
+      <signal type="boolean" address="modbus://coil:16"/>
+      <signal type="boolean" address="modbus://coil:17"/>
+      <signal type="boolean" address="modbus://coil:18"/>
+      <signal type="boolean" address="modbus://coil:19"/>
+      <signal type="boolean" address="modbus://coil:20"/>
+      <signal type="boolean" address="modbus://coil:21"/>
+      <signal type="boolean" address="modbus://coil:22"/>
+      <signal type="boolean" address="modbus://coil:23"/>
+      <signal type="boolean" address="modbus://coil:24"/>
+      <signal type="boolean" address="modbus://coil:25"/>
+      <signal type="boolean" address="modbus://coil:26"/>
+      <signal type="boolean" address="modbus://coil:27"/>
+      <signal type="boolean" address="modbus://coil:28"/>
+      <signal type="boolean" address="modbus://coil:29"/>
+      <signal type="boolean" address="modbus://coil:30"/>
+      <signal type="boolean" address="modbus://coil:31"/>
+      <signal type="boolean" address="modbus://coil:32"/>
+   </output>
+</signals>

@@ -886,6 +886,24 @@
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
+   <instance name="DistanceSensor1" uuid="7f0664d2-d160-4eba-9df7-0afef3a61010" version="1" prototype="3e09bffb-d353-460a-868f-60f961e715b6">
+      <parameter name="refreshInterval" type="long" value="10">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="maxDistance" type="double" value="1000">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Max revealing distance [mm]"/>
+      </parameter>
+      <parameter name="tree" type="boolean" value="true">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="All geometries [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+   </instance>
    <instance name="Fences1" uuid="f04885f1-022b-4a5b-9865-55fb54172a7b" version="1" prototype="8d61cea2-b3e8-45f2-98e7-4597fb2d4f7b">
       <parameter name="length" type="double" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
@@ -948,6 +966,29 @@
       </parameter>
       <parameter name="height" type="double" value="1800">
          <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="InfluxProxy1" uuid="bb3d0be4-741f-4aa1-9200-c41b312ccdbd" version="1" prototype="a12d3deb-d7cd-43f1-9499-37b7c06b48a9">
+      <parameter name="width" type="double" value="250">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="depth" type="double" value="250">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="250">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="url" type="string" value="http://localhost:8086">
+         <property name="displayName" type="string" value="URL"/>
+      </parameter>
+      <parameter name="token" type="string" value="jH6tJGOyzae404qP2jez3VNK680T6LdoYGYwxSwuh1Tr5LbFyUhfizpnmy23e2Y8A3rv6P1XlBNi1xCCruLzRQ==">
+         <property name="displayName" type="string" value="API token"/>
+      </parameter>
+      <parameter name="org" type="string" value="SUPSI">
+         <property name="displayName" type="string" value="Organization"/>
+      </parameter>
+      <parameter name="bucket" type="string" value="VE2024">
+         <property name="displayName" type="string" value="Bucket"/>
       </parameter>
    </instance>
    <instance name="Operator1" uuid="951ffb2b-680b-4e17-8954-61b5a395d027" version="1" prototype="630fb14e-0949-46c8-ac36-40a0f15eea25">
@@ -1036,7 +1077,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="">
+      <parameter name="marker" type="string" value="box">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1079,15 +1120,15 @@
       </parameter>
    </instance>
    <instance name="Photocell1" uuid="8421c8c2-320f-49d2-a6b9-718bd46d817b" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
-      <parameter name="refreshInterval" type="long" value="500">
+      <parameter name="refreshInterval" type="long" value="10">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Refresh interval [ms]"/>
       </parameter>
-      <parameter name="length" type="double" value="500">
+      <parameter name="length" type="double" value="5">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam length [mm]"/>
       </parameter>
-      <parameter name="height" type="double" value="200">
+      <parameter name="height" type="double" value="5">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam height [mm]"/>
       </parameter>
@@ -1095,11 +1136,11 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam width [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="">
+      <parameter name="marker" type="string" value="box">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Object marker"/>
       </parameter>
-      <parameter name="writeDistinct" type="boolean" value="true">
+      <parameter name="writeDistinct" type="boolean" value="false">
          <property name="displayName" type="string" value="Only changes"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1245,11 +1286,11 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam length [mm]"/>
       </parameter>
-      <parameter name="height" type="double" value="300">
+      <parameter name="height" type="double" value="5">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam height [mm]"/>
       </parameter>
-      <parameter name="width" type="double" value="100">
+      <parameter name="width" type="double" value="50">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam width [mm]"/>
       </parameter>
@@ -1285,11 +1326,11 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam length [mm]"/>
       </parameter>
-      <parameter name="height" type="double" value="300">
+      <parameter name="height" type="double" value="5">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam height [mm]"/>
       </parameter>
-      <parameter name="width" type="double" value="100">
+      <parameter name="width" type="double" value="50">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam width [mm]"/>
       </parameter>
@@ -1329,7 +1370,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="">
+      <parameter name="marker" type="string" value="box">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1390,7 +1431,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="">
+      <parameter name="marker" type="string" value="box">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1451,7 +1492,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="">
+      <parameter name="marker" type="string" value="box">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>

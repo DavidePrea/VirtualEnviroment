@@ -1,0 +1,34 @@
+<prototype uuid="3e09bffb-d353-460a-868f-60f961e715b6" name="DistanceSensor" version="1">	
+    <parameter name="refreshInterval" type="long" value="100">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Refresh interval [ms]" type="string"/>
+    </parameter>
+    <parameter name="maxDistance" type="double" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Max revealing distance [mm]" type="string"/>
+    </parameter>
+    <parameter name="tree" type="boolean" value="true">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="All geometries [mm]" type="string"/>
+    </parameter>
+    <parameter name="marker" type="string" value="">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Object marker" type="string"/>
+    </parameter>
+    <output name="distance" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <property name="displayName" value="Distance Sensor" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="sensor" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="265;0;0" type="double[]"/>
+    <property name="bounds_size" value="530;20;20" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.SimpleDistanceRanger">
+        <param name="refreshInterval" type="long">${refreshInterval}</param>
+        <param name="sensorFrameId" type="string">${instance.name}.ds_geom.reference</param>
+        <param name="marker" type="string">${marker}</param>
+        <param name="tree" type="boolean">${tree}</param>
+        <param name="onlyBB" type="boolean">false</param>
+        <param name="maxDistance" type="double">${maxDistance}</param>
+    </logics>
+</prototype>

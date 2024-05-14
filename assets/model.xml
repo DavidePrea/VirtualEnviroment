@@ -22678,57 +22678,18 @@
                      </body>
                   </ns2:children>
                </group>
-            </ns2:children>
-         </group>
-         <group id="ProgrammableLogics5">
-            <properties>
-               <property name="#instance.uuid" type="string">15e994bb-9c88-4fcb-89da-fc4d643aac3f</property>
-               <property name="#prototype.uuid" type="string">ffb20cba-6216-40c1-81f5-4d18313ca199</property>
-            </properties>
-            <ns2:frames/>
-            <ns2:joint type="RIGID">
-               <ns2:transform>
-                  <location lengthUnit="mm">
-                     <x>840.1345424437392</x>
-                     <y>1386.556402499732</y>
-                     <z>-500.0</z>
-                  </location>
-                  <orientation angleUnit="deg">
-                     <x>1.0</x>
-                     <y>0.0</y>
-                     <z>0.0</z>
-                     <w>0.0</w>
-                  </orientation>
-               </ns2:transform>
-            </ns2:joint>
-            <ns2:children>
-               <body id="ProgrammableLogics5.pl_geom" visible="true">
+               <group id="ProgrammableLogics5">
                   <properties>
-                     <property name="#local.name" type="string">pl_geom</property>
                      <property name="#instance.uuid" type="string">15e994bb-9c88-4fcb-89da-fc4d643aac3f</property>
-                     <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                     <property name="#prototype.uuid" type="string">ffb20cba-6216-40c1-81f5-4d18313ca199</property>
                   </properties>
-                  <ns2:frames>
-                     <frame name="control">
-                        <location lengthUnit="mm">
-                           <x>0.0</x>
-                           <y>0.0</y>
-                           <z>300.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                           <x>0.0</x>
-                           <y>-1.0</y>
-                           <z>0.0</z>
-                           <w>90.0</w>
-                        </orientation>
-                     </frame>
-                  </ns2:frames>
+                  <ns2:frames/>
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>0.0</x>
-                           <y>0.0</y>
-                           <z>0.0</z>
+                           <x>840.1345424437392</x>
+                           <y>1386.556402499732</y>
+                           <z>-500.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>
@@ -22738,62 +22699,62 @@
                         </orientation>
                      </ns2:transform>
                   </ns2:joint>
-                  <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                     <geometry-uri>generated/pl_15e994bb-9c88-4fcb-89da-fc4d643aac3f.ptx</geometry-uri>
-                  </ns2:geometry>
-                  <ns2:children/>
-               </body>
-            </ns2:children>
-         </group>
-         <group id="RFIDSensor1">
-            <properties>
-               <property name="#instance.uuid" type="string">8fb2a359-3481-451b-8129-ce98bc48f06c</property>
-               <property name="#prototype.uuid" type="string">26e00061-2d73-4934-8d37-94ce4f116b71</property>
-            </properties>
-            <ns2:frames/>
-            <ns2:joint type="RIGID">
-               <ns2:transform>
-                  <location lengthUnit="mm">
-                     <x>6701.355416470832</x>
-                     <y>-1173.842619089127</y>
-                     <z>900.0</z>
-                  </location>
-                  <orientation angleUnit="deg">
-                     <x>1.0</x>
-                     <y>0.0</y>
-                     <z>0.0</z>
-                     <w>0.0</w>
-                  </orientation>
-               </ns2:transform>
-            </ns2:joint>
-            <ns2:children>
-               <body id="RFIDSensor1.pc_geom" visible="true">
+                  <ns2:children>
+                     <body id="ProgrammableLogics5.pl_geom" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">pl_geom</property>
+                           <property name="#instance.uuid" type="string">15e994bb-9c88-4fcb-89da-fc4d643aac3f</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames>
+                           <frame name="control">
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>300.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>0.0</x>
+                                 <y>-1.0</y>
+                                 <z>0.0</z>
+                                 <w>90.0</w>
+                              </orientation>
+                           </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/pl_15e994bb-9c88-4fcb-89da-fc4d643aac3f.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
+                  </ns2:children>
+               </group>
+               <body id="InfluxProxy1" visible="true">
                   <properties>
-                     <property name="#local.name" type="string">pc_geom</property>
-                     <property name="#instance.uuid" type="string">8fb2a359-3481-451b-8129-ce98bc48f06c</property>
-                     <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                     <property name="#instance.uuid" type="string">bb3d0be4-741f-4aa1-9200-c41b312ccdbd</property>
+                     <property name="#prototype.uuid" type="string">a12d3deb-d7cd-43f1-9499-37b7c06b48a9</property>
                   </properties>
-                  <ns2:frames>
-                     <frame name="reference">
-                        <location lengthUnit="mm">
-                           <x>0.0</x>
-                           <y>0.0</y>
-                           <z>0.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                           <x>1.0</x>
-                           <y>0.0</y>
-                           <z>0.0</z>
-                           <w>0.0</w>
-                        </orientation>
-                     </frame>
-                  </ns2:frames>
+                  <ns2:frames/>
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>0.0</x>
-                           <y>0.0</y>
-                           <z>0.0</z>
+                           <x>813.2412167135709</x>
+                           <y>1042.5210321715992</y>
+                           <z>-500.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>
@@ -22804,61 +22765,42 @@
                      </ns2:transform>
                   </ns2:joint>
                   <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                     <geometry-uri>generated/weight_8fb2a359-3481-451b-8129-ce98bc48f06c.ptx</geometry-uri>
+                     <geometry-uri>parametrics/bb3d0be4-741f-4aa1-9200-c41b312ccdbd.ptx</geometry-uri>
                   </ns2:geometry>
                   <ns2:children/>
                </body>
             </ns2:children>
          </group>
-         <group id="RFIDSensor2">
-            <properties>
-               <property name="#instance.uuid" type="string">65dac45b-e342-4587-9c38-54e9015113a7</property>
-               <property name="#prototype.uuid" type="string">26e00061-2d73-4934-8d37-94ce4f116b71</property>
-            </properties>
+         <group id="sensors">
             <ns2:frames/>
             <ns2:joint type="RIGID">
                <ns2:transform>
                   <location lengthUnit="mm">
-                     <x>8800.0</x>
-                     <y>850.0</y>
-                     <z>900.0</z>
-                  </location>
-                  <orientation angleUnit="deg">
                      <x>0.0</x>
                      <y>0.0</y>
-                     <z>-1.0</z>
-                     <w>90.0</w>
+                     <z>0.0</z>
+                  </location>
+                  <orientation angleUnit="deg">
+                     <x>1.0</x>
+                     <y>0.0</y>
+                     <z>0.0</z>
+                     <w>0.0</w>
                   </orientation>
                </ns2:transform>
             </ns2:joint>
             <ns2:children>
-               <body id="RFIDSensor2.pc_geom" visible="true">
+               <group id="RFIDSensor1">
                   <properties>
-                     <property name="#local.name" type="string">pc_geom</property>
-                     <property name="#instance.uuid" type="string">65dac45b-e342-4587-9c38-54e9015113a7</property>
-                     <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                     <property name="#instance.uuid" type="string">8fb2a359-3481-451b-8129-ce98bc48f06c</property>
+                     <property name="#prototype.uuid" type="string">26e00061-2d73-4934-8d37-94ce4f116b71</property>
                   </properties>
-                  <ns2:frames>
-                     <frame name="reference">
-                        <location lengthUnit="mm">
-                           <x>0.0</x>
-                           <y>0.0</y>
-                           <z>0.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                           <x>1.0</x>
-                           <y>0.0</y>
-                           <z>0.0</z>
-                           <w>0.0</w>
-                        </orientation>
-                     </frame>
-                  </ns2:frames>
+                  <ns2:frames/>
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>0.0</x>
-                           <y>0.0</y>
-                           <z>0.0</z>
+                           <x>6701.355416470832</x>
+                           <y>-1173.842619089127</y>
+                           <z>900.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>1.0</x>
@@ -22868,24 +22810,193 @@
                         </orientation>
                      </ns2:transform>
                   </ns2:joint>
-                  <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                     <geometry-uri>generated/weight_65dac45b-e342-4587-9c38-54e9015113a7.ptx</geometry-uri>
-                  </ns2:geometry>
-                  <ns2:children/>
-               </body>
+                  <ns2:children>
+                     <body id="RFIDSensor1.pc_geom" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">pc_geom</property>
+                           <property name="#instance.uuid" type="string">8fb2a359-3481-451b-8129-ce98bc48f06c</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames>
+                           <frame name="reference">
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/weight_8fb2a359-3481-451b-8129-ce98bc48f06c.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
+                  </ns2:children>
+               </group>
+               <group id="RFIDSensor2">
+                  <properties>
+                     <property name="#instance.uuid" type="string">65dac45b-e342-4587-9c38-54e9015113a7</property>
+                     <property name="#prototype.uuid" type="string">26e00061-2d73-4934-8d37-94ce4f116b71</property>
+                  </properties>
+                  <ns2:frames/>
+                  <ns2:joint type="RIGID">
+                     <ns2:transform>
+                        <location lengthUnit="mm">
+                           <x>8800.0</x>
+                           <y>850.0</y>
+                           <z>900.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>0.0</x>
+                           <y>0.0</y>
+                           <z>-1.0</z>
+                           <w>90.0</w>
+                        </orientation>
+                     </ns2:transform>
+                  </ns2:joint>
+                  <ns2:children>
+                     <body id="RFIDSensor2.pc_geom" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">pc_geom</property>
+                           <property name="#instance.uuid" type="string">65dac45b-e342-4587-9c38-54e9015113a7</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames>
+                           <frame name="reference">
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/weight_65dac45b-e342-4587-9c38-54e9015113a7.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
+                  </ns2:children>
+               </group>
+               <group id="Photocell1">
+                  <properties>
+                     <property name="#instance.uuid" type="string">8421c8c2-320f-49d2-a6b9-718bd46d817b</property>
+                     <property name="#prototype.uuid" type="string">8c1784c8-48f3-45f0-92f6-ba38ec17a296</property>
+                  </properties>
+                  <ns2:frames/>
+                  <ns2:joint type="RIGID">
+                     <ns2:transform>
+                        <location lengthUnit="mm">
+                           <x>4100.0</x>
+                           <y>315.0</y>
+                           <z>900.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>0.0</x>
+                           <y>0.0</y>
+                           <z>1.0</z>
+                           <w>180.0</w>
+                        </orientation>
+                     </ns2:transform>
+                  </ns2:joint>
+                  <ns2:children>
+                     <body id="Photocell1.pc_geom" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">pc_geom</property>
+                           <property name="#instance.uuid" type="string">8421c8c2-320f-49d2-a6b9-718bd46d817b</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames>
+                           <frame name="reference">
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/simplephotocell_8421c8c2-320f-49d2-a6b9-718bd46d817b.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
+                  </ns2:children>
+               </group>
             </ns2:children>
          </group>
-         <group id="Photocell1">
+         <group id="DistanceSensor1">
             <properties>
-               <property name="#instance.uuid" type="string">8421c8c2-320f-49d2-a6b9-718bd46d817b</property>
-               <property name="#prototype.uuid" type="string">8c1784c8-48f3-45f0-92f6-ba38ec17a296</property>
+               <property name="#instance.uuid" type="string">7f0664d2-d160-4eba-9df7-0afef3a61010</property>
+               <property name="#prototype.uuid" type="string">3e09bffb-d353-460a-868f-60f961e715b6</property>
             </properties>
             <ns2:frames/>
             <ns2:joint type="RIGID">
                <ns2:transform>
                   <location lengthUnit="mm">
-                     <x>4100.0</x>
-                     <y>315.0</y>
+                     <x>3130.0</x>
+                     <y>850.0</y>
                      <z>900.0</z>
                   </location>
                   <orientation angleUnit="deg">
@@ -22897,16 +23008,16 @@
                </ns2:transform>
             </ns2:joint>
             <ns2:children>
-               <body id="Photocell1.pc_geom" visible="true">
+               <group id="DistanceSensor1.ds_geom">
                   <properties>
-                     <property name="#local.name" type="string">pc_geom</property>
-                     <property name="#instance.uuid" type="string">8421c8c2-320f-49d2-a6b9-718bd46d817b</property>
+                     <property name="#local.name" type="string">ds_geom</property>
+                     <property name="#instance.uuid" type="string">7f0664d2-d160-4eba-9df7-0afef3a61010</property>
                      <property name="#prototype.element.expert_mode" type="boolean">true</property>
                   </properties>
                   <ns2:frames>
                      <frame name="reference">
                         <location lengthUnit="mm">
-                           <x>0.0</x>
+                           <x>30.0</x>
                            <y>0.0</y>
                            <z>0.0</z>
                         </location>
@@ -22933,11 +23044,63 @@
                         </orientation>
                      </ns2:transform>
                   </ns2:joint>
-                  <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                     <geometry-uri>generated/simplephotocell_8421c8c2-320f-49d2-a6b9-718bd46d817b.ptx</geometry-uri>
-                  </ns2:geometry>
-                  <ns2:children/>
-               </body>
+                  <ns2:children>
+                     <body id="DistanceSensor1.ds_body" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">ds_body</property>
+                           <property name="#instance.uuid" type="string">7f0664d2-d160-4eba-9df7-0afef3a61010</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>0.0</x>
+                                 <y>1.0</y>
+                                 <z>0.0</z>
+                                 <w>90.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/ds_body_7f0664d2-d160-4eba-9df7-0afef3a61010.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
+                     <body id="DistanceSensor1.ds_beam" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">ds_beam</property>
+                           <property name="#instance.uuid" type="string">7f0664d2-d160-4eba-9df7-0afef3a61010</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>30.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>0.0</x>
+                                 <y>1.0</y>
+                                 <z>0.0</z>
+                                 <w>90.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/ds_beam_7f0664d2-d160-4eba-9df7-0afef3a61010.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
+                  </ns2:children>
+               </group>
             </ns2:children>
          </group>
       </ns2:children>

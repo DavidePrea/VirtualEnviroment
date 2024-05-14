@@ -22,6 +22,9 @@ public class PL1State extends StateMachine {
 
     double VROB = 6000;
     double VROB_attach = 500;
+    long tempo = 0;
+    long tempof = 0;
+    
     public PLGlobal cont;
     IRobotCommands rob;
     IGripper gripper;
@@ -84,12 +87,17 @@ public class PL1State extends StateMachine {
     }
     public void b_sensorInit(SensorCatch sc) {
         schedule.startSerial();
-             cont.N1++;
+            tempo = model.getClock();
+            sc.box.entity.setProperty("tempo", tempo);
+            cont.N1++;
         schedule.end();
     }
     public void b_sensorFinish(SensorCatch sc) {
         schedule.startSerial();
-             cont.N1--;
+            tempof = model.getClock();
+            tempo = sc.box.entity.getProperty("tempo");
+            sc.box.entity.setProperty("tempo", String.valueOf(tempof-tempo));
+            cont.N1--;
         schedule.end();
     }
     public void state_100() {

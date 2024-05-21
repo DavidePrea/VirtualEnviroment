@@ -2,6 +2,17 @@
 <model name="model.xml" xmlns="http://heron.ttsnetwork.com/xml/v1">
     <variables/>
     <modules>
+        <module-instance name="RFIDSensor_tempoBDE" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="2092" y="0"/>
+            <param name="id">RFIDSensor_tempoBDE</param>
+            <param name="refreshInterval">10</param>
+            <param name="sensorGeometryId">RFIDSensor_tempoBDE.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">tempo</param>
+            <param name="writeOnlyOnce">false</param>
+            <param name="additionalDataDelimiter">;</param>
+            <param name="additionalDataName"></param>
+        </module-instance>
         <module-instance name="RFIDSensor_scarto" type="com.ttsnetwork.modules.standard.RFIDSensor">
             <visual x="6701" y="-1174"/>
             <param name="id">RFIDSensor_scarto</param>
@@ -18,7 +29,7 @@
             <param name="id">RFIDSensor_PAsotto</param>
             <param name="refreshInterval">10</param>
             <param name="sensorGeometryId">RFIDSensor_PAsotto.pc_geom</param>
-            <param name="marker"></param>
+            <param name="marker">box</param>
             <param name="codeName">rfid</param>
             <param name="writeOnlyOnce">true</param>
             <param name="additionalDataDelimiter">;</param>
@@ -46,6 +57,17 @@
             <param name="id">ProgrammableLogics1</param>
             <param name="logicClassName">my.company.PL1State</param>
         </module-instance>
+        <module-instance name="RFIDSensor_ispeziona" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="4100" y="250"/>
+            <param name="id">RFIDSensor_ispeziona</param>
+            <param name="refreshInterval">500</param>
+            <param name="sensorGeometryId">RFIDSensor_ispeziona.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
+            <param name="additionalDataDelimiter">;</param>
+            <param name="additionalDataName"></param>
+        </module-instance>
         <module-instance name="join" type="com.ttsnetwork.modules.standard.ConveyorJoin">
             <visual x="2600" y="850"/>
             <param name="conveyorSpeed">1</param>
@@ -61,17 +83,6 @@
             <param name="in2Length">1250</param>
             <param name="in3Length">0</param>
             <param name="width">500</param>
-        </module-instance>
-        <module-instance name="RFIDSensor_ispeziona" type="com.ttsnetwork.modules.standard.RFIDSensor">
-            <visual x="4100" y="250"/>
-            <param name="id">RFIDSensor_ispeziona</param>
-            <param name="refreshInterval">500</param>
-            <param name="sensorGeometryId">RFIDSensor_ispeziona.pc_geom</param>
-            <param name="marker">box</param>
-            <param name="codeName">rfid</param>
-            <param name="writeOnlyOnce">true</param>
-            <param name="additionalDataDelimiter">;</param>
-            <param name="additionalDataName"></param>
         </module-instance>
         <module-instance name="CA" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="-3600" y="850"/>

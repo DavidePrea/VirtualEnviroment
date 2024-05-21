@@ -1276,7 +1276,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Beam width [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="">
+      <parameter name="marker" type="string" value="box">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Object marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1402,6 +1402,46 @@
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
       <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="RFIDSensor_tempoBDE" uuid="68f8003b-1809-4f6f-831c-4b176bf714b9" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="10">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="tempo">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="additionalDataName" type="string[]" value="">
+         <property name="displayName" type="string" value="Additional property names"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="additionalDataDelimiter" type="string" value=";">
+         <property name="displayName" type="string" value="Additional data delimiter"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="5">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
          <property name="displayName" type="string" value="Only changes"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>

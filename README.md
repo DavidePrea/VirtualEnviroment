@@ -1,20 +1,32 @@
 # Design and Configuration of Automated Production Systems using Virtual Environments
-![picture](assets/images/virtualenviroment.png)
+<center>
+<table style="width:100%">
+  <tr>
+    <td align="center">
+      <img src="assets/images/virtualenviroment.png" width="300" />
+    </td>
+  </tr>
+</table>
+</center>
  
 ## Getting Started
-
-
-
+The primary goal of this project is to model an industrial plant and simulate its behavior using advanced virtual environments. This endeavor seeks to enhance the design, configuration, and optimization processes for automated production systems. Formally, it's a course of University of Applied Sciences of Southern Switzerland.
 
 ## Requirements
-* The model requires at least [Java 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) to run.
-* To store data we use [InfluxDb 2]
-* In order to properly display the sensors measurment properly, we will use [Grafana 11] (https://grafana.com/grafana/download)
-* 
-## Features
-The features we have realized are listed as follows:
+To bring this project to life, you'll need the following tools and technologies:
 
-## Sidenote for Apple Silicon macOS users
+* **Java JDK 11**: Our model runs on [Java JDK 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html). Ensure you have it installed.
+* **DDDModelEditor**: For the modeling part, we utilize [DDDModelEditor].
+* **InfluxDB 2.7.6**: All data is stored efficiently using [InfluxDB 2.7.6](https://portal.influxdata.com/downloads/).
+* **Grafana v.11**: To visualize sensor measurements, we use [Grafana v.11](https://grafana.com/grafana/download).
+
+With these tools in your toolkit, you'll be well-equipped to dive into the world of automated production systems.
+
+### Sidenote for Windows
+* **DDDModelEditor**: [Windows](https://drive.switch.ch/index.php/s/uaz6sIOhuMdvfLt)
+
+### Sidenote for Apple Silicon macOS users
+* **DDDModelEditor**: [MacOs](https://drive.switch.ch/index.php/s/9Qi5fRmON4E24ZD)
 
 
 ## Docs

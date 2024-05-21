@@ -1,0 +1,55 @@
+<prototype uuid="0af35ad7-ac7b-417c-9f50-7240bd03714d" name="XMLSource" version="1">	
+    <parameter name="creationtimeInterval" type="long" value="3000">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="modelFile" type="string" value="entity.xml">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="VRML model file:" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <parameter name="sourceSzX" type="double" value="500"> <!--400-->
+        <property name="displayName" value="Source size X [mm]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="sourceSzY" type="double" value="500"> <!--400-->
+        <property name="displayName" value="Source size Y [mm]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="sourceSzZ" type="double" value="900"> <!--400-->
+        <property name="displayName" value="Source size Z [mm]" type="string"/>
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+    <parameter name="minCreationDistance" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Min creation distance [mm]" type="string"/>
+    </parameter>
+    <parameter name="marker" type="string" value="">
+        <property name="displayName" value="Marker" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="color" type="string" value="0x999999">
+        <property name="displayName" value="Color" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <output name="out" type="com.ttsnetwork.modulespack.conveyors.TConveyorIO">
+        <property name="frame" value="creationFrame" type="string"/>
+        <property name="logicsPort" value="out" type="string"/>
+    </output>
+    <output name="control" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="commandsFrame" type="string"/>
+        <property name="logicsPort" value="control" type="string"/>
+    </output>
+    <property name="displayName" value="XML Source" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="source" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;450" type="double[]"/>
+    <property name="bounds_size" value="500;500;900" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.XMLSource">
+        <param name="modelName" type="string">${instance.name}</param>
+        <param name="creationFrameName" type="string">${instance.name}.creationFrame</param>
+        <param name="timeInterval" type="long">${creationtimeInterval}</param>
+        <param name="minCreationDistance" type="double">${minCreationDistance}</param>
+        <param name="marker" type="string">${marker}</param>
+    </logics>
+</prototype>

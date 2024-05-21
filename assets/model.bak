@@ -23173,6 +23173,71 @@
                      </body>
                   </ns2:children>
                </group>
+               <group id="RFIDSensor_tempoBDE">
+                  <properties>
+                     <property name="#instance.uuid" type="string">68f8003b-1809-4f6f-831c-4b176bf714b9</property>
+                     <property name="#prototype.uuid" type="string">26e00061-2d73-4934-8d37-94ce4f116b71</property>
+                  </properties>
+                  <ns2:frames/>
+                  <ns2:joint type="RIGID">
+                     <ns2:transform>
+                        <location lengthUnit="mm">
+                           <x>2091.5027333380685</x>
+                           <y>0.0</y>
+                           <z>900.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                           <x>1.0</x>
+                           <y>0.0</y>
+                           <z>0.0</z>
+                           <w>0.0</w>
+                        </orientation>
+                     </ns2:transform>
+                  </ns2:joint>
+                  <ns2:children>
+                     <body id="RFIDSensor_tempoBDE.pc_geom" visible="true">
+                        <properties>
+                           <property name="#local.name" type="string">pc_geom</property>
+                           <property name="#instance.uuid" type="string">68f8003b-1809-4f6f-831c-4b176bf714b9</property>
+                           <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames>
+                           <frame name="reference">
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                           <ns2:transform>
+                              <location lengthUnit="mm">
+                                 <x>0.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                              </location>
+                              <orientation angleUnit="deg">
+                                 <x>1.0</x>
+                                 <y>0.0</y>
+                                 <z>0.0</z>
+                                 <w>0.0</w>
+                              </orientation>
+                           </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                           <geometry-uri>generated/weight_68f8003b-1809-4f6f-831c-4b176bf714b9.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                     </body>
+                  </ns2:children>
+               </group>
             </ns2:children>
          </group>
       </ns2:children>

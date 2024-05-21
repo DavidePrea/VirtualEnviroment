@@ -1,0 +1,2 @@
+code;length;width;height;probability;interval;columns[X];rows[Y];layers[Z];boxL;boxW;boxH;color;weight;rfid
+1;1200;800;150;100;3000;3;4;5;210;200;150;#00CC00;450;P001

@@ -1,0 +1,2 @@
+code;length;width;height;probability;interval;weight;rfid;model
+1;300;200;100;38;3000;450;P001;./assets/PartD/PartD.xml

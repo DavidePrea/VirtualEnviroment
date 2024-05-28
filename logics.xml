@@ -2,6 +2,16 @@
 <model name="model.xml" xmlns="http://heron.ttsnetwork.com/xml/v1">
     <variables/>
     <modules>
+        <module-instance name="S3" type="com.ttsnetwork.modules.standard.PlanSource">
+            <visual x="750" y="-2900"/>
+            <param name="modelName">S3</param>
+            <param name="prodPlanFileName">inputSource/ca6e198a-8766-4e5e-8b21-8f380aa2f6cf/PlanSource1_prodPlan.csv</param>
+            <param name="creationFrameName">S3.creationFrame</param>
+            <param name="marker"></param>
+            <param name="infoContent"></param>
+            <param name="automatic">true</param>
+            <param name="minCreationDistance">100</param>
+        </module-instance>
         <module-instance name="RFIDSensor_tempoBDE" type="com.ttsnetwork.modules.standard.RFIDSensor">
             <visual x="2092" y="0"/>
             <param name="id">RFIDSensor_tempoBDE</param>
@@ -108,19 +118,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="S4" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="761" y="4330"/>
-            <param name="modelName">S4</param>
-            <param name="creationFrameName">S4.creationFrame</param>
-            <param name="timeInterval">3000</param>
-            <param name="minCreationDistance">300</param>
-            <param name="marker">box</param>
-            <param name="counterName">counter</param>
-            <param name="entityNamePrefix">E_</param>
-            <param name="delayInterval">6000</param>
-            <param name="infoContent"></param>
-            <param name="automatic">true</param>
-        </module-instance>
         <module-instance name="RFIDSensor_totaleprod" type="com.ttsnetwork.modules.standard.RFIDSensor">
             <visual x="8800" y="850"/>
             <param name="id">RFIDSensor_totaleprod</param>
@@ -149,19 +146,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="S3" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="750" y="-2900"/>
-            <param name="modelName">S3</param>
-            <param name="creationFrameName">S3.creationFrame</param>
-            <param name="timeInterval">6000</param>
-            <param name="minCreationDistance">200</param>
-            <param name="marker">box</param>
-            <param name="counterName">counter</param>
-            <param name="entityNamePrefix">E_</param>
-            <param name="delayInterval">6000</param>
-            <param name="infoContent"></param>
-            <param name="automatic">true</param>
-        </module-instance>
         <module-instance name="CArch2" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="1500" y="2700"/>
             <param name="conveyorSpeed">1</param>
@@ -179,6 +163,16 @@
             <visual x="300" y="1000"/>
             <param name="id">ProgrammableLogics2</param>
             <param name="logicClassName">my.company.PL2State</param>
+        </module-instance>
+        <module-instance name="S4" type="com.ttsnetwork.modules.standard.PlanSource">
+            <visual x="761" y="4330"/>
+            <param name="modelName">S4</param>
+            <param name="prodPlanFileName">inputSource/d90ca198-8293-48c0-ad3f-3ee285eb1883/PlanSource1_prodPlan.csv</param>
+            <param name="creationFrameName">S4.creationFrame</param>
+            <param name="marker"></param>
+            <param name="infoContent"></param>
+            <param name="automatic">true</param>
+            <param name="minCreationDistance">100</param>
         </module-instance>
         <module-instance name="CF" type="com.ttsnetwork.modules.standard.RandomConveyorSplit">
             <visual x="3600" y="850"/>
@@ -281,19 +275,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="S2" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="250" y="-2900"/>
-            <param name="modelName">S2</param>
-            <param name="creationFrameName">S2.creationFrame</param>
-            <param name="timeInterval">6000</param>
-            <param name="minCreationDistance">300</param>
-            <param name="marker">box</param>
-            <param name="counterName">counter</param>
-            <param name="entityNamePrefix">E_</param>
-            <param name="delayInterval">6000</param>
-            <param name="infoContent"></param>
-            <param name="automatic">true</param>
-        </module-instance>
         <module-instance name="CD2" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="761" y="3705"/>
             <param name="conveyorSpeed">1</param>
@@ -363,7 +344,7 @@
             <visual x="813" y="1043"/>
             <param name="id">InfluxProxy1</param>
             <param name="url">http://localhost:8086</param>
-            <param name="token">jH6tJGOyzae404qP2jez3VNK680T6LdoYGYwxSwuh1Tr5LbFyUhfizpnmy23e2Y8A3rv6P1XlBNi1xCCruLzRQ==</param>
+            <param name="token">p7d1_8okn40rH8Y_EGw2QLmJHm2nQpQoTvLC5FBvK2z_CZyOUuHu3k_NLglvxTbVY1CFvDQpCE6QDGN3okJrnw==</param>
             <param name="org">SUPSI</param>
             <param name="bucket">VE2024</param>
         </module-instance>
@@ -400,6 +381,16 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="S2" type="com.ttsnetwork.modules.standard.PlanSource">
+            <visual x="250" y="-2900"/>
+            <param name="modelName">S2</param>
+            <param name="prodPlanFileName">inputSource/0e0c0ee2-3898-4d65-939c-89fa675972d3/PlanSource1_prodPlan.csv</param>
+            <param name="creationFrameName">S2.creationFrame</param>
+            <param name="marker"></param>
+            <param name="infoContent"></param>
+            <param name="automatic">true</param>
+            <param name="minCreationDistance">100</param>
         </module-instance>
         <module-instance name="ProgrammableLogics4" type="com.ttsnetwork.modules.standard.PLModule">
             <visual x="300" y="625"/>
@@ -475,14 +466,6 @@
     </modules>
     <connections>
         <connection>
-            <port-out module="S2" port="out"/>
-            <port-in module="CD1" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="S3" port="out"/>
-            <port-in module="CE" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="CArch1" port="flowOut"/>
             <port-in module="join" port="in2"/>
         </connection>
@@ -543,10 +526,6 @@
             <port-in module="R1" port="tool"/>
         </connection>
         <connection>
-            <port-out module="S4" port="out"/>
-            <port-in module="CD2" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="join" port="flowOut"/>
             <port-in module="CF" port="flowIn"/>
         </connection>
@@ -585,6 +564,18 @@
         <connection>
             <port-out module="CJ" port="flowOut"/>
             <port-in module="D1" port="in"/>
+        </connection>
+        <connection>
+            <port-out module="S2" port="out"/>
+            <port-in module="CD1" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="S3" port="out"/>
+            <port-in module="CE" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="S4" port="out"/>
+            <port-in module="CD2" port="flowIn"/>
         </connection>
     </connections>
 </model>

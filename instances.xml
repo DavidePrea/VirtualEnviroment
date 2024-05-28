@@ -963,7 +963,7 @@
       <parameter name="url" type="string" value="http://localhost:8086">
          <property name="displayName" type="string" value="URL"/>
       </parameter>
-      <parameter name="token" type="string" value="jH6tJGOyzae404qP2jez3VNK680T6LdoYGYwxSwuh1Tr5LbFyUhfizpnmy23e2Y8A3rv6P1XlBNi1xCCruLzRQ==">
+      <parameter name="token" type="string" value="p7d1_8okn40rH8Y_EGw2QLmJHm2nQpQoTvLC5FBvK2z_CZyOUuHu3k_NLglvxTbVY1CFvDQpCE6QDGN3okJrnw==">
          <property name="displayName" type="string" value="API token"/>
       </parameter>
       <parameter name="org" type="string" value="SUPSI">
@@ -1488,153 +1488,19 @@
    </instance>
    <instance name="RobotGripper1" uuid="a99e6390-eae0-4679-85a3-b7e20f54d564" version="1" prototype="24925e13-84ee-4438-a2c8-e7e33076f003"/>
    <instance name="RobotGripper2" uuid="576c655d-eb1b-43d2-90a7-2f167cefde96" version="1" prototype="24925e13-84ee-4438-a2c8-e7e33076f003"/>
-   <instance name="S2" uuid="959d80dc-deeb-40d3-beeb-b5e854d78676" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
-      <parameter name="creationtimeInterval" type="long" value="6000">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Creation interval [ms]"/>
-      </parameter>
-      <parameter name="delayInterval" type="long" value="6000">
-         <property name="displayName" type="string" value="Initial delay [ms]"/>
-      </parameter>
-      <parameter name="entityLength" type="double" value="75">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity length [mm]"/>
-      </parameter>
-      <parameter name="entityWidth" type="double" value="75">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity width [mm]"/>
-      </parameter>
-      <parameter name="entityHeight" type="double" value="75">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity height [mm]"/>
-      </parameter>
-      <parameter name="minCreationDistance" type="double" value="300">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Min creation distance [mm]"/>
-      </parameter>
-      <parameter name="marker" type="string" value="box">
-         <property name="displayName" type="string" value="Marker"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="counterName" type="string" value="counter">
-         <property name="displayName" type="string" value="Counter name"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="entityNamePrefix" type="string" value="E_">
-         <property name="displayName" type="string" value="Entity name prefix"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="color" type="string" value="#c5dbe9">
-         <property name="displayName" type="string" value="Color"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="infoContent" type="string" value="">
-         <property name="displayName" type="string" value="HUD content (HTML)"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="automatic" type="boolean" value="true">
-         <property name="displayName" type="string" value="Automatic"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="baseWidth" type="double" value="500">
-         <property name="displayName" type="string" value="Base width [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="baseLength" type="double" value="300">
-         <property name="displayName" type="string" value="Base length [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="baseHeight" type="double" value="900">
-         <property name="displayName" type="string" value="Base height [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-   </instance>
-   <instance name="S3" uuid="c5c20bac-d2e1-4207-bb62-354390587443" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
-      <parameter name="creationtimeInterval" type="long" value="6000">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Creation interval [ms]"/>
-      </parameter>
-      <parameter name="delayInterval" type="long" value="6000">
-         <property name="displayName" type="string" value="Initial delay [ms]"/>
-      </parameter>
-      <parameter name="entityLength" type="double" value="50">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity length [mm]"/>
-      </parameter>
-      <parameter name="entityWidth" type="double" value="50">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity width [mm]"/>
-      </parameter>
-      <parameter name="entityHeight" type="double" value="50">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity height [mm]"/>
-      </parameter>
-      <parameter name="minCreationDistance" type="double" value="200">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Min creation distance [mm]"/>
-      </parameter>
-      <parameter name="marker" type="string" value="box">
-         <property name="displayName" type="string" value="Marker"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="counterName" type="string" value="counter">
-         <property name="displayName" type="string" value="Counter name"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="entityNamePrefix" type="string" value="E_">
-         <property name="displayName" type="string" value="Entity name prefix"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="color" type="string" value="#d8a8d8">
-         <property name="displayName" type="string" value="Color"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="infoContent" type="string" value="">
-         <property name="displayName" type="string" value="HUD content (HTML)"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="automatic" type="boolean" value="true">
-         <property name="displayName" type="string" value="Automatic"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
-      </parameter>
-      <parameter name="baseWidth" type="double" value="500">
-         <property name="displayName" type="string" value="Base width [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="baseLength" type="double" value="300">
-         <property name="displayName" type="string" value="Base length [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="baseHeight" type="double" value="900">
-         <property name="displayName" type="string" value="Base height [mm]"/>
-         <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-   </instance>
-   <instance name="S4" uuid="13f28092-9e56-451d-8e45-ff39473aaeb1" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
+   <instance name="S2" uuid="0e0c0ee2-3898-4d65-939c-89fa675972d3" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
       <parameter name="creationtimeInterval" type="long" value="3000">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Creation interval [ms]"/>
       </parameter>
-      <parameter name="delayInterval" type="long" value="6000">
+      <parameter name="delayInterval" type="long" value="3000">
          <property name="displayName" type="string" value="Initial delay [ms]"/>
       </parameter>
-      <parameter name="entityLength" type="double" value="75">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity length [mm]"/>
-      </parameter>
-      <parameter name="entityWidth" type="double" value="75">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity width [mm]"/>
-      </parameter>
-      <parameter name="entityHeight" type="double" value="75">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Entity height [mm]"/>
-      </parameter>
-      <parameter name="minCreationDistance" type="double" value="300">
+      <parameter name="minCreationDistance" type="double" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="box">
+      <parameter name="marker" type="string" value="">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1646,9 +1512,14 @@
          <property name="displayName" type="string" value="Entity name prefix"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="color" type="string" value="#c5dbe9">
+      <parameter name="color" type="string" value="0x999999">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="prodPlan" type="string" value="inputSource/0e0c0ee2-3898-4d65-939c-89fa675972d3/PlanSource1_prodPlan.csv">
+         <property name="displayName" type="string" value="Production Plan File"/>
+         <property name="file_chooser" type="string" value="file"/>
+         <property name="file_edit" type="boolean" value="true"/>
       </parameter>
       <parameter name="infoContent" type="string" value="">
          <property name="displayName" type="string" value="HUD content (HTML)"/>
@@ -1662,7 +1533,115 @@
          <property name="displayName" type="string" value="Base width [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="baseLength" type="double" value="300">
+      <parameter name="baseLength" type="double" value="500">
+         <property name="displayName" type="string" value="Base length [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseHeight" type="double" value="900">
+         <property name="displayName" type="string" value="Base height [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+   </instance>
+   <instance name="S3" uuid="ca6e198a-8766-4e5e-8b21-8f380aa2f6cf" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
+      <parameter name="creationtimeInterval" type="long" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Creation interval [ms]"/>
+      </parameter>
+      <parameter name="delayInterval" type="long" value="3000">
+         <property name="displayName" type="string" value="Initial delay [ms]"/>
+      </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="">
+         <property name="displayName" type="string" value="Marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="counterName" type="string" value="counter">
+         <property name="displayName" type="string" value="Counter name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="entityNamePrefix" type="string" value="E_">
+         <property name="displayName" type="string" value="Entity name prefix"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="color" type="string" value="0x999999">
+         <property name="displayName" type="string" value="Color"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="prodPlan" type="string" value="inputSource/ca6e198a-8766-4e5e-8b21-8f380aa2f6cf/PlanSource1_prodPlan.csv">
+         <property name="displayName" type="string" value="Production Plan File"/>
+         <property name="file_chooser" type="string" value="file"/>
+         <property name="file_edit" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="infoContent" type="string" value="">
+         <property name="displayName" type="string" value="HUD content (HTML)"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="automatic" type="boolean" value="true">
+         <property name="displayName" type="string" value="Automatic"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="baseWidth" type="double" value="500">
+         <property name="displayName" type="string" value="Base width [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseLength" type="double" value="500">
+         <property name="displayName" type="string" value="Base length [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseHeight" type="double" value="900">
+         <property name="displayName" type="string" value="Base height [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+   </instance>
+   <instance name="S4" uuid="d90ca198-8293-48c0-ad3f-3ee285eb1883" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
+      <parameter name="creationtimeInterval" type="long" value="3000">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Creation interval [ms]"/>
+      </parameter>
+      <parameter name="delayInterval" type="long" value="3000">
+         <property name="displayName" type="string" value="Initial delay [ms]"/>
+      </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="">
+         <property name="displayName" type="string" value="Marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="counterName" type="string" value="counter">
+         <property name="displayName" type="string" value="Counter name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="entityNamePrefix" type="string" value="E_">
+         <property name="displayName" type="string" value="Entity name prefix"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="color" type="string" value="0x999999">
+         <property name="displayName" type="string" value="Color"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="prodPlan" type="string" value="inputSource/d90ca198-8293-48c0-ad3f-3ee285eb1883/PlanSource1_prodPlan.csv">
+         <property name="displayName" type="string" value="Production Plan File"/>
+         <property name="file_chooser" type="string" value="file"/>
+         <property name="file_edit" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="infoContent" type="string" value="">
+         <property name="displayName" type="string" value="HUD content (HTML)"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="automatic" type="boolean" value="true">
+         <property name="displayName" type="string" value="Automatic"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="baseWidth" type="double" value="500">
+         <property name="displayName" type="string" value="Base width [mm]"/>
+         <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="baseLength" type="double" value="500">
          <property name="displayName" type="string" value="Base length [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -1717,8 +1696,6 @@
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
    </instance>
-   <relationship sourcePortName="out" sourceInstanceUuid="959d80dc-deeb-40d3-beeb-b5e854d78676" targetPortName="in" targetInstanceUuid="051f9e0f-b8e3-4ce3-ad67-47e7808f0e73"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="c5c20bac-d2e1-4207-bb62-354390587443" targetPortName="in" targetInstanceUuid="5c174963-7335-489c-874d-2da96c33d648"/>
    <relationship sourcePortName="out" sourceInstanceUuid="486efa0f-84f5-475b-847b-92d68a790796" targetPortName="in2" targetInstanceUuid="51b572cc-1de3-4488-940c-e4555fd45aa7"/>
    <relationship sourcePortName="out" sourceInstanceUuid="4a1996ce-47d6-422c-beab-8b8c059e89f8" targetPortName="in1" targetInstanceUuid="51b572cc-1de3-4488-940c-e4555fd45aa7"/>
    <relationship sourcePortName="out" sourceInstanceUuid="ee2bc794-f939-4a8a-a127-6a584622166f" targetPortName="in" targetInstanceUuid="4a1996ce-47d6-422c-beab-8b8c059e89f8"/>
@@ -1734,7 +1711,6 @@
    <relationship sourcePortName="TOOL" sourceInstanceUuid="a99e6390-eae0-4679-85a3-b7e20f54d564" targetPortName="TOOL" targetInstanceUuid="a62e06b0-9682-4057-9fb6-782d793f708f"/>
    <relationship sourcePortName="TOOL" sourceInstanceUuid="576c655d-eb1b-43d2-90a7-2f167cefde96" targetPortName="in" targetInstanceUuid="36ef34ee-8206-418e-a34d-2bef9b998571"/>
    <relationship sourcePortName="TOOL" sourceInstanceUuid="576c655d-eb1b-43d2-90a7-2f167cefde96" targetPortName="TOOL" targetInstanceUuid="cf237796-1b1c-479f-8fc4-c4616e054bec"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="13f28092-9e56-451d-8e45-ff39473aaeb1" targetPortName="in" targetInstanceUuid="cf1e5285-3300-42aa-b723-f097ca98ae91"/>
    <relationship sourcePortName="out" sourceInstanceUuid="51b572cc-1de3-4488-940c-e4555fd45aa7" targetPortName="in" targetInstanceUuid="9fc4bd0a-9876-4cda-8400-11a28b0b912c"/>
    <relationship sourcePortName="out2" sourceInstanceUuid="9fc4bd0a-9876-4cda-8400-11a28b0b912c" targetPortName="in" targetInstanceUuid="480e2316-7f9a-4877-bf33-8aee47a017a9"/>
    <relationship sourcePortName="out" sourceInstanceUuid="480e2316-7f9a-4877-bf33-8aee47a017a9" targetPortName="in" targetInstanceUuid="98137a74-9e80-4007-9311-615d5db29a3f"/>
@@ -1745,6 +1721,9 @@
    <relationship sourcePortName="out3" sourceInstanceUuid="8d0e50c8-0bb5-431d-9223-8f4168df0886" targetPortName="in" targetInstanceUuid="64e3a034-ee3d-41e4-a6de-651ab07b5a6d"/>
    <relationship sourcePortName="out" sourceInstanceUuid="98137a74-9e80-4007-9311-615d5db29a3f" targetPortName="in" targetInstanceUuid="8d0e50c8-0bb5-431d-9223-8f4168df0886"/>
    <relationship sourcePortName="out" sourceInstanceUuid="6a2354e3-4ef0-4cc5-bc09-065205d9176c" targetPortName="in" targetInstanceUuid="bbdad5a4-2b1b-4ad6-8291-10510f503a26"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="0e0c0ee2-3898-4d65-939c-89fa675972d3" targetPortName="in" targetInstanceUuid="051f9e0f-b8e3-4ce3-ad67-47e7808f0e73"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="ca6e198a-8766-4e5e-8b21-8f380aa2f6cf" targetPortName="in" targetInstanceUuid="5c174963-7335-489c-874d-2da96c33d648"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="d90ca198-8293-48c0-ad3f-3ee285eb1883" targetPortName="in" targetInstanceUuid="cf1e5285-3300-42aa-b723-f097ca98ae91"/>
    <modifiers type="attach">
       <property name="childInstance" type="string" value="a99e6390-eae0-4679-85a3-b7e20f54d564"/>
       <property name="parentInstance" type="string" value="a62e06b0-9682-4057-9fb6-782d793f708f"/>

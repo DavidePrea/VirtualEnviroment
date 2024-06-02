@@ -11,4 +11,5 @@ dist/
 assets/prototypes/.DS_Store
 .DS_Store
 **/nbproject/private/
+DDDSimulator.log/
 

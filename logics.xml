@@ -190,8 +190,8 @@
             <param name="out3Length">${in3Length}</param>
             <param name="width">500</param>
             <param name="out1Prob">0</param>
-            <param name="out2Prob">40</param>
-            <param name="out3Prob">60</param>
+            <param name="out2Prob">20</param>
+            <param name="out3Prob">80</param>
         </module-instance>
         <module-instance name="CArchControl1" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="4100" y="-150"/>
@@ -426,8 +426,8 @@
             <param name="out3Length">${in3Length}</param>
             <param name="width">500</param>
             <param name="out1Prob">0</param>
-            <param name="out2Prob">30</param>
-            <param name="out3Prob">70</param>
+            <param name="out2Prob">2</param>
+            <param name="out3Prob">98</param>
         </module-instance>
         <module-instance name="Photocell2_PAsopra" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
             <visual x="-2105" y="1557"/>

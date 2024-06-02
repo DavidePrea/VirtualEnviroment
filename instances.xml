@@ -682,11 +682,11 @@
          <property name="displayName" type="string" value="OUT1 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="out2Prob" type="double" value="40">
+      <parameter name="out2Prob" type="double" value="20">
          <property name="displayName" type="string" value="OUT2 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="out3Prob" type="double" value="60">
+      <parameter name="out3Prob" type="double" value="80">
          <property name="displayName" type="string" value="OUT3 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -831,11 +831,11 @@
          <property name="displayName" type="string" value="OUT1 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="out2Prob" type="double" value="30">
+      <parameter name="out2Prob" type="double" value="2">
          <property name="displayName" type="string" value="OUT2 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="out3Prob" type="double" value="70">
+      <parameter name="out3Prob" type="double" value="98">
          <property name="displayName" type="string" value="OUT3 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>

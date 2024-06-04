@@ -426,8 +426,8 @@
             <param name="out3Length">${in3Length}</param>
             <param name="width">500</param>
             <param name="out1Prob">0</param>
-            <param name="out2Prob">2</param>
-            <param name="out3Prob">98</param>
+            <param name="out2Prob">4</param>
+            <param name="out3Prob">96</param>
         </module-instance>
         <module-instance name="Photocell2_PAsopra" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
             <visual x="-2105" y="1557"/>

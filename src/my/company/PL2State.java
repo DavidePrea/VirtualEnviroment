@@ -168,7 +168,8 @@ public class PL2State extends StateMachine {
 // rob.move(BoxUtils.targetTop(workingC), workingD.cF, 2300.0);
         rob.release();
         gripper.moveGripTo(551, 500);
-        rob.home();
+        //rob.home();
+         rob.move(driver.getFrameTransform("root.homeLine2"), VROB);
         schedule.attach(workingD.entity, workingC.entity);
         setVar(finishedAD, true);
         schedule.end();
@@ -243,8 +244,7 @@ public class PL2State extends StateMachine {
         rob.release();
         gripper.moveGripTo(551, 500);
         schedule.attach(workingE.entity, workingD.entity);
-        rob.home();
-
+        rob.move(driver.getFrameTransform("root.homeLine2"), VROB);
         setVar(finishedBDE, true);
         schedule.end();
 

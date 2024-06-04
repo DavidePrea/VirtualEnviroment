@@ -24,7 +24,37 @@
       <camera-perspective/>
    </ns2:view>
    <ns2:group id="root">
-      <ns2:frames/>
+      <ns2:frames>
+         <frame name="homeLine2">
+            <properties>
+               <property name="#visible" type="boolean">true</property>
+            </properties>
+            <location lengthUnit="mm">
+               <x>250.0</x>
+               <y>-1625.0</y>
+               <z>1400.0</z>
+            </location>
+            <orientation angleUnit="deg">
+               <x>0.0</x>
+               <y>0.0</y>
+               <z>-1.0</z>
+               <w>90.00000000000001</w>
+            </orientation>
+         </frame>
+         <frame name="homeLine1">
+            <location lengthUnit="mm">
+               <x>790.98</x>
+               <y>3280.3</y>
+               <z>1400.0</z>
+            </location>
+            <orientation angleUnit="deg">
+               <x>0.0</x>
+               <y>0.0</y>
+               <z>-1.0</z>
+               <w>90.0</w>
+            </orientation>
+         </frame>
+      </ns2:frames>
       <ns2:children>
          <group id="Sources">
             <ns2:frames/>
@@ -17688,8 +17718,8 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>-407.78901033609947</x>
-                           <y>-1894.9605451295877</y>
+                           <x>-407.78901033609935</x>
+                           <y>-1894.960545129588</y>
                            <z>0.0</z>
                         </location>
                         <orientation angleUnit="deg">
@@ -18784,7 +18814,7 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>-120.21459337485913</x>
+                           <x>-120.21459337485904</x>
                            <y>3789.864928200331</y>
                            <z>0.0</z>
                         </location>
@@ -21806,15 +21836,15 @@
                   <ns2:joint type="RIGID">
                      <ns2:transform>
                         <location lengthUnit="mm">
-                           <x>4705.96262039259</x>
-                           <y>-1706.001923703656</y>
+                           <x>5168.007584063187</x>
+                           <y>-1620.1427766620113</y>
                            <z>0.0</z>
                         </location>
                         <orientation angleUnit="deg">
                            <x>0.0</x>
                            <y>0.0</y>
-                           <z>1.0</z>
-                           <w>70.99999999999996</w>
+                           <z>-1.0</z>
+                           <w>139.00000000000006</w>
                         </orientation>
                      </ns2:transform>
                   </ns2:joint>

@@ -831,11 +831,11 @@
          <property name="displayName" type="string" value="OUT1 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="out2Prob" type="double" value="2">
+      <parameter name="out2Prob" type="double" value="4">
          <property name="displayName" type="string" value="OUT2 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="out3Prob" type="double" value="98">
+      <parameter name="out3Prob" type="double" value="96">
          <property name="displayName" type="string" value="OUT3 probability"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>

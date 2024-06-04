@@ -4,6 +4,7 @@
  */
 package my.company;
 
+import com.ttsnetwork.core.WFrame;
 import com.ttsnetwork.modules.standard.BoxUtils;
 import com.ttsnetwork.modules.standard.IConveyorCommands;
 import com.ttsnetwork.modules.standard.IGripper;
@@ -13,6 +14,7 @@ import com.ttsnetwork.modules.standard.SimpleStateVar;
 import com.ttsnetwork.modules.standard.StateMachine;
 import com.ttsnetwork.modulespack.conveyors.ConveyorBox;
 import com.ttsnetwork.modulespack.conveyors.SensorCatch;
+import java.awt.Frame;
 
 /**
  *
@@ -64,6 +66,7 @@ public class PL1State extends StateMachine {
         CbSen3.registerOnSensors(this::b_sensorFinish, "B_senFinish");
         
         CdSen1.registerOnSensors(this::d_sensor1, "D2_sen1");
+       
 
     }
 
@@ -133,7 +136,8 @@ public class PL1State extends StateMachine {
         gripper.moveGripTo(551, 500);
        // rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB_attach);
         
-        rob.home();
+       // rob.home();
+        rob.move(driver.getFrameTransform("root.homeLine1"), VROB_attach);
         schedule.attach(workingD.entity, workingB.entity);
         setVar(finished, true);
         schedule.end();

@@ -29,25 +29,22 @@ With these tools in your toolkit, you'll be well-equipped to dive into the world
 ### Sidenote for Apple Silicon macOS users
 * **DDDModelEditor**: [MacOs](https://drive.switch.ch/index.php/s/9Qi5fRmON4E24ZD)
 
-## Examples of KPIs on Grafana
-<left>
+## Examples of KPIs with Grafana
+
+<center>
 <table style="width:100%">
   <tr>
     <td align="center">
-      <img src="assets/images/overview.jpg" width="300" />
+      <img src="assets/images/details.JPG" width="1000" />
     </td>
   </tr>
-</table>
-</left>
- <right>
-<table style="width:100%">
   <tr>
-    <td align="center">
-      <img src="assets/images/details" width="300" />
+    <td>
+       <img src="assets/images/overview.JPG" width="1000" />
     </td>
   </tr>
 </table>
-</right>
+</center>
  
 ## List of Authors:
 

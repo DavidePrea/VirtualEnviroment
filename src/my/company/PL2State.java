@@ -156,14 +156,16 @@ public class PL2State extends StateMachine {
 
         schedule.startSerial();
 
-        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 0), VROB);
-        rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 90), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0,   BoxUtils.zSize(workingD), 0, 0, 90), VROB);
         gripper.moveGripTo(BoxUtils.ySize(workingD), 500);
         rob.pick(workingD.entity);
+       
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 90), VROB);
         Cd.remove(workingD);
-        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300 + BoxUtils.zSize(workingC), 0, 0, 0), VROB);
-        rob.move(BoxUtils.targetTop(workingC), workingD.cF, 2300.0);
+        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, BoxUtils.zSize(workingD)+10, 0, 0, 0), VROB);
+// rob.move(BoxUtils.targetTop(workingC), workingD.cF, 2300.0);
         rob.release();
         gripper.moveGripTo(551, 500);
         rob.home();
@@ -215,25 +217,29 @@ public class PL2State extends StateMachine {
 
         schedule.startSerial();
 
-        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 0), VROB);
-        rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 90), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0,  BoxUtils.zSize(workingD), 0, 0, 90), VROB);
+        
         gripper.moveGripTo(BoxUtils.ySize(workingD), 500);
         rob.pick(workingD.entity);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 90), VROB);
         Cd.remove(workingD);
-        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300 + BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 300 + BoxUtils.zSize(workingC), 0, 0, 0), VROB);
-        rob.moveLinear(BoxUtils.targetTop(workingC), workingD.cF, VROB_attach);
+        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0,  BoxUtils.zSize(workingD)+10, 0, 0, 0), VROB);
+        //rob.moveLinear(BoxUtils.targetTop(workingC), workingD.cF, VROB_attach);
         rob.release();
         gripper.moveGripTo(551, 500);
         schedule.attach(workingD.entity, workingC.entity);
-        rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0, 300 + BoxUtils.zSize(workingE), 0, 0, 0), VROB);
-        rob.moveLinear(BoxUtils.targetTop(workingE), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0, 300 + BoxUtils.zSize(workingE), 0, 0, 90), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0,  BoxUtils.zSize(workingE), 0, 0, 90), VROB);
         gripper.moveGripTo(BoxUtils.ySize(workingE), 500);
         rob.pick(workingE.entity);
+        
+        rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0, 300 + BoxUtils.zSize(workingE), 0, 0, 90), VROB);
         Ce.remove(workingE);
-        rob.moveLinear(BoxUtils.targetOffset(workingE, 0, 0, 300 + BoxUtils.zSize(workingE), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, 200 + BoxUtils.zSize(workingD) + BoxUtils.zSize(workingC), 0, 0, 0), VROB);
-        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, BoxUtils.zSize(workingD) + BoxUtils.zSize(workingC), 0, 0, 0), workingE.cF, VROB_attach); // variante del movimento del concetto di external TCP
+     //   rob.moveLinear(BoxUtils.targetTop(workingC), workingE.cF, VROB_attach);
+        rob.moveLinear(BoxUtils.targetOffset(workingC, 0, 0, BoxUtils.zSize(workingD) + BoxUtils.zSize(workingC)-70, 0, 0, -90), workingE.cF, VROB_attach); // variante del movimento del concetto di external TCP
         rob.release();
         gripper.moveGripTo(551, 500);
         schedule.attach(workingE.entity, workingD.entity);

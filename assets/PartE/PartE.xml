@@ -33,7 +33,7 @@
                   <location lengthUnit="mm">
                      <x>0.0</x>
                      <y>0.0</y>
-                     <z>0.0</z>
+                     <z>35.0</z>
                   </location>
                   <orientation angleUnit="deg">
                      <x>1.0</x>

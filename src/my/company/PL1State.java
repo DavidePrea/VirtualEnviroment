@@ -118,14 +118,17 @@ public class PL1State extends StateMachine {
     public void AssmBD() {
         schedule.startSerial();
      
-        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
-        rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 90), VROB);
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, BoxUtils.zSize(workingD), 0, 0, 90), VROB);
+        //rob.moveLinear(BoxUtils.targetTop(workingD), VROB);
         gripper.moveGripTo(BoxUtils.ySize(workingD), 500);
         rob.pick(workingD.entity);
+        
+        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 90), VROB);
         Cd.remove(workingD);
-        rob.moveLinear(BoxUtils.targetOffset(workingD, 0, 0, 300+BoxUtils.zSize(workingD), 0, 0, 0), VROB);
         rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB);
-        rob.moveLinear(BoxUtils.targetTop(workingB), workingD.cF,VROB_attach);
+        rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0,BoxUtils.zSize(workingD)+10, 0, 0, 0), VROB);
+       // rob.moveLinear(BoxUtils.targetTop(workingB) , workingD.cF,VROB_attach);
         rob.release();
         gripper.moveGripTo(551, 500);
        // rob.moveLinear(BoxUtils.targetOffset(workingB, 0, 0, 300+BoxUtils.zSize(workingB), 0, 0, 0), VROB_attach);

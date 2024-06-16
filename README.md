@@ -15,10 +15,11 @@ The primary goal of this project is to model an industrial plant and simulate it
 ## Requirements
 To bring this project to life, you'll need the following tools and technologies:
 
-* **Java JDK 11**: Our model runs on [Java JDK 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html). Ensure you have it installed.
-* **DDDModelEditor**: For the modeling part, we utilize [DDDModelEditor].
-* **InfluxDB 2.7.6**: All data is stored efficiently using [InfluxDB 2.7.6](https://portal.influxdata.com/downloads/).
-* **Grafana v.11**: To visualize sensor measurements, we use [Grafana v.11](https://grafana.com/grafana/download).
+* **Java JDK 11**: Our model runs on JDK11 [download](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html). Ensure you have it installed.
+* **DDDModelEditor**: For the modeling part [download].
+* **InfluxDB 2.7.6**: All data is stored efficiently for time series data: [download](https://portal.influxdata.com/downloads/).
+* **Grafana v.11**: To visualize sensor measurements, we use [download](https://grafana.com/grafana/download).
+* **Fusion360**:To create custom items and put them into production. [download](https://www.autodesk.ch/it/products/fusion-360/overview?term=1-YEAR&tab=subscription).
 
 With these tools in your toolkit, you'll be well-equipped to dive into the world of automated production systems.
 
@@ -28,24 +29,23 @@ With these tools in your toolkit, you'll be well-equipped to dive into the world
 ### Sidenote for Apple Silicon macOS users
 * **DDDModelEditor**: [MacOs](https://drive.switch.ch/index.php/s/9Qi5fRmON4E24ZD)
 
+## Examples of KPIs with Grafana
 
-## Docs
-In this section you will find all the documentation regarding the project:
-
-###  diagrams
-
-
-### Examples of Grafana
-
-
-<a name="built"></a>
-### Built with
-* [Java 11]()
-* [DDDmodeleditor]()
-* [InfluxDB]()
-* [Grafana]()
-
-
+<center>
+<table style="width:100%">
+  <tr>
+    <td align="center">
+      <img src="assets/images/details.JPG" width="1000" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+       <img src="assets/images/overview.JPG" width="1000" />
+    </td>
+  </tr>
+</table>
+</center>
+ 
 ## List of Authors:
 
  - *[Davide Preatoni](https://github.com/)*

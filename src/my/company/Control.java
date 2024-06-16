@@ -25,17 +25,14 @@ public class Control extends ProgrammableLogics{
         Ch = useSkill(IConveyorCommands.class, "CH");
         ChSen = useSkill(ISensorProvider.class, "CH");
         ChSen.registerOnSensors(this::control, "CH_sensor");
+        //triangle distribution for ispection time
         randomDist = model.getRandomGenerator().getTriangularDistribution(1000,1500,2000);
     }
-    @Override
-    public void onStart() {
-        
-    }
     public void control(SensorCatch sc){
-        double time = randomDist.sample();
+        double time = randomDist.sample(); //get time for wait
         schedule.startSerial();
         Ch.lock(sc.box);
-        schedule.waitTime((long) time);
+        schedule.waitTime((long) time); //we wait for the sample taken
         Ch.release(sc.box);
         schedule.end();
 

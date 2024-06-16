@@ -15,27 +15,25 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
  */
 public class PLFLow extends ProgrammableLogics{
     
+    //skills variables
     ISensorProvider CaSen;
     IConveyorCommands Ca;
     public PLGlobal cont;
       
     @Override
     public void onInit() {
-  
+     //skills declaretion
      Ca = useSkill(IConveyorCommands.class, "CA");
      CaSen = useSkill(ISensorProvider.class, "CA");
      CaSen.registerOnSensors(this::sensor, "SA");
     }
-     @Override
-    public void onStart() {
-    
-    }
     
     public void sensor(SensorCatch sc){
+        //sensor decide how to maintain the balance
         schedule.startSerial();
         String type = sc.box.entity.getProperty("rfid");
         
-        if(type.equals("PA")){
+        if(type.equals("PA")){ //PA could go up or down
             if(cont.N1<cont.N2){
                //Set Property 
                sc.box.entity.setProperty("SU", 0);
